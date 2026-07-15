@@ -1,0 +1,97 @@
+.hero { padding-top: 80px; }
+
+.em { font-style: italic; color: var(--accent-blue); }
+
+.dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--accent-blue);
+  display: inline-block;
+}
+
+.metrics { padding-top: 8px; border-top: 1px solid var(--border); margin-top: 8px; }
+
+.metric { display: flex; flex-direction: column; gap: 2px; }
+
+.metricVal { font-size: 1.5rem; font-weight: 700; font-family: var(--font-serif); letter-spacing: -0.02em; }
+
+/* ── Dashboard Card ── */
+.dashboard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lifted);
+  overflow: hidden;
+}
+
+.dashHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-muted);
+}
+
+.dashDots { display: flex; gap: 6px; }
+.dashDots span { width: 12px; height: 12px; border-radius: 50%; }
+
+.dashBody { padding: 24px; display: flex; flex-direction: column; gap: 20px; }
+
+.dashMeta { align-items: flex-start; }
+
+.dashBig { font-size: 1.75rem; font-weight: 700; font-family: var(--font-serif); letter-spacing: -0.02em; margin-top: 2px; }
+
+.badge {
+  background: #DCFCE7;
+  color: var(--accent-green);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.chartBar {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 100px;
+  padding: 4px;
+  background: var(--bg-muted);
+  border-radius: var(--radius-sm);
+}
+
+.bar {
+  flex: 1;
+  background: var(--bg-dark);
+  border-radius: 3px 3px 0 0;
+  transition: opacity 0.2s;
+  opacity: 0.85;
+}
+
+.bar:nth-child(7) { opacity: 1; }
+
+.dashCards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+
+.dashCard {
+  padding: 12px;
+  border-radius: var(--radius-sm);
+}
+
+/* Light-mode tinted backgrounds */
+.dashCard[data-color="blue"]   { background: #EEF2FF; }
+.dashCard[data-color="green"]  { background: #DCFCE7; }
+.dashCard[data-color="yellow"] { background: #FEF9C3; }
+
+/* Dark-mode: switch to muted dark surfaces so text stays readable */
+[data-theme="dark"] .dashCard[data-color="blue"]   { background: #1e2235; }
+[data-theme="dark"] .dashCard[data-color="green"]  { background: #162318; }
+[data-theme="dark"] .dashCard[data-color="yellow"] { background: #211e0e; }
+[data-theme="dark"] .dashCard { color: var(--text-primary); }
+
+.dashCardVal { font-weight: 700; font-size: 1.0625rem; margin-top: 4px; }
+
+@media (max-width: 900px) {
+  .left { order: 1; }
+  .dashboard { order: 0; }
+}

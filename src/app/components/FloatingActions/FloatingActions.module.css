@@ -1,0 +1,37 @@
+.floatingContainer {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;  
+  z-index: 9999; 
+}
+
+.floatingButton {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.floatingButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+.mailBtn {
+  background-color: #1a73e8;
+}
+
+
+.whatsappBtn {
+  background-color: #25d366;
+}

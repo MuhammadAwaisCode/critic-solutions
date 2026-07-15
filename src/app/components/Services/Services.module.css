@@ -1,0 +1,30 @@
+.card { padding: 28px; }
+
+.icon { font-size: 1.5rem; color: var(--accent-blue); line-height: 1; }
+
+.title { font-size: 1.0625rem; font-weight: 700; }
+
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+
+.tag {
+  font-size: 0.71875rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--bg-muted);
+  padding: 3px 9px;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.03em;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 4px;
+  transition: gap 0.18s;
+}
+
+.link:hover { gap: 10px; }

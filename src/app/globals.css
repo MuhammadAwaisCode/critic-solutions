@@ -1,0 +1,270 @@
+/* ─── Google Fonts Import ───────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap');
+
+/* ─── CSS Variables — LIGHT MODE (default) ─────────────────── */
+:root {
+  --bg-base:   #F7F6F3;
+  --bg-card:   #FFFFFF;
+  --bg-dark:   #111110;
+  --bg-muted:  #EFEFEC;
+
+  --text-primary:   #111110;
+  --text-secondary: #4A4A47;
+  --text-muted:     #8A8A85;
+  --text-invert:    #F7F6F3;
+
+  --border:      #E0DFD9;
+  --border-dark: #2A2A28;
+
+  --accent-blue:  #2563EB;
+  --accent-green: #16A34A;
+  --accent-light: #EEF2FF;
+
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  --radius-pill: 999px;
+
+  --shadow-card:   0 1px 4px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04);
+  --shadow-lifted: 0 8px 32px rgba(0,0,0,0.10);
+
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans:  'Inter', 'Segoe UI', system-ui, sans-serif;
+
+  --max-w:      1200px;
+  --section-y:  96px;
+  --gap-md:     24px;
+  --gap-lg:     48px;
+}
+
+/* ─── CSS Variables — DARK MODE ─────────────────────────────── */
+/*
+  THIS IS THE KEY FIX.
+  When ThemeContext sets data-theme="dark" on <html>,
+  every var() throughout the entire site automatically flips.
+  No component-level changes needed for basic text/bg visibility.
+*/
+[data-theme="dark"] {
+  --bg-base:  #0F0F0E;
+  --bg-card:  #1A1A18;
+  --bg-dark:  #F0EFE9;   /* inverted: light bg becomes light in dark mode */
+  --bg-muted: #222220;
+
+  --text-primary:   #F0EFE9;
+  --text-secondary: #A8A8A3;
+  --text-muted:     #6A6A65;
+  --text-invert:    #111110;  /* inverted: what was light is now dark */
+
+  --border:      #2E2E2C;
+  --border-dark: #E0DFD9;
+
+  --accent-blue:  #60A5FA;    /* lighter blue for dark bg contrast */
+  --accent-green: #4ADE80;    /* lighter green for dark bg contrast */
+  --accent-light: #1E3A5F;
+
+  --shadow-card:   0 1px 4px rgba(0,0,0,0.35), 0 4px 16px rgba(0,0,0,0.25);
+  --shadow-lifted: 0 8px 32px rgba(0,0,0,0.50);
+}
+
+/* ─── Reset & Base ──────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-base);
+  color: var(--text-primary);
+  line-height: 1.65;
+  font-size: 16px;
+  /* Smooth transition when theme flips */
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+ul, ol { list-style: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+/* ─── Typography ────────────────────────────────────────────── */
+h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
+
+.serif { font-family: var(--font-serif); }
+
+.display-xl {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.display-lg {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3.5vw, 2.75rem);
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+}
+
+.body-lg { font-size: 1.0625rem; color: var(--text-secondary); line-height: 1.75; }
+.body-sm { font-size: 0.875rem; color: var(--text-muted); }
+.label   { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+
+/* ─── Layout Utilities ──────────────────────────────────────── */
+.section { padding: var(--section-y) 0; }
+
+.section--dark {
+  background: var(--bg-dark);
+  color: var(--text-invert);
+}
+
+/* Extra rule: in dark mode, section--dark should still look dark */
+[data-theme="dark"] .section--dark {
+  background: #0A0A09;
+  color: #F0EFE9;
+}
+
+.section--muted { background: var(--bg-muted); }
+
+.container {
+  width: 100%;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.split              { display: grid; grid-template-columns: 1fr 1fr;      gap: var(--gap-lg); align-items: center; }
+.split--60-40       { grid-template-columns: 1.4fr 1fr; }
+.split--40-60       { grid-template-columns: 1fr 1.4fr; }
+
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--gap-md); }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap-md); }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--gap-md); }
+
+.stack       { display: flex; flex-direction: column; }
+.stack--sm   { gap: 12px; }
+.stack--md   { gap: 20px; }
+.stack--lg   { gap: 32px; }
+
+.row         { display: flex; align-items: center; }
+.row--gap-sm { gap: 10px; }
+.row--gap-md { gap: 20px; }
+.row--between{ justify-content: space-between; }
+.row--center { justify-content: center; }
+
+/* ─── Buttons ───────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 28px;
+  border-radius: var(--radius-pill);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  transition: opacity 0.18s, transform 0.18s, box-shadow 0.18s;
+  white-space: nowrap;
+}
+.btn:hover  { transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+
+.btn-dark {
+  background: var(--text-primary);   /* always the "foreground" colour */
+  color: var(--bg-base);
+}
+.btn-dark:hover { opacity: 0.88; box-shadow: 0 4px 16px rgba(0,0,0,0.22); }
+
+.btn-light {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1.5px solid var(--border);
+}
+.btn-light:hover { border-color: var(--text-primary); background: rgba(128,128,128,0.06); }
+
+.btn-invert {
+  background: var(--text-invert);
+  color: var(--bg-dark);
+}
+.btn-invert:hover { opacity: 0.90; box-shadow: 0 4px 16px rgba(255,255,255,0.18); }
+
+/* ─── Tag Badge ─────────────────────────────────────────────── */
+.tag-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 13px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--border);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+}
+.tag-badge--dark {
+  border-color: var(--border-dark);
+  background: rgba(255,255,255,0.05);
+  color: rgba(255,255,255,0.65);
+}
+.tag-badge--accent {
+  border-color: #BFDBFE;
+  background: var(--accent-light);
+  color: var(--accent-blue);
+}
+
+/* ─── Card Base ─────────────────────────────────────────────── */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  box-shadow: var(--shadow-card);
+  transition: box-shadow 0.2s, transform 0.2s, background 0.25s, border-color 0.25s;
+}
+.card:hover   { box-shadow: var(--shadow-lifted); transform: translateY(-2px); }
+.card--dark   { background: #1A1A18; border-color: var(--border-dark); color: var(--text-invert); }
+
+/* ─── Section Header ────────────────────────────────────────── */
+.section-header        { margin-bottom: 56px; }
+.section-header--center {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 56px;
+}
+
+/* ─── Check Item ────────────────────────────────────────────── */
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+}
+.check-item::before {
+  content: '';
+  width: 20px; height: 20px; min-width: 20px;
+  border-radius: 50%;
+  background: #DCFCE7;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%2316A34A'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3E%3C%2Fsvg%3E");
+  background-size: contain;
+  margin-top: 2px;
+}
+
+/* ─── Divider ───────────────────────────────────────────────── */
+.divider { height: 1px; background: var(--border); border: none; margin: 0; }
+
+/* ─── Responsive ────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  :root { --section-y: 64px; }
+  .split, .split--60-40, .split--40-60 { grid-template-columns: 1fr; }
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .container { padding: 0 20px; }
+}
+
+@media (max-width: 560px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .display-xl { font-size: 2rem; }
+  .display-lg { font-size: 1.6rem; }
+}

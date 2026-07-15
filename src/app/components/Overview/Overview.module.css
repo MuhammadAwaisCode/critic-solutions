@@ -1,0 +1,16 @@
+.em { font-style: italic; color: var(--accent-blue); }
+
+.pillar { padding: 20px 24px; }
+
+.pillarHead { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+
+.checkIcon {
+  width: 24px; height: 24px; min-width: 24px;
+  background: #DCFCE7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pillarTitle { font-size: 0.9375rem; font-weight: 700; }

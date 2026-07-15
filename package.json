@@ -1,0 +1,25 @@
+{
+  "name": "yae-solutions",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.3.0",
+    "@fortawesome/free-brands-svg-icons": "^7.3.0",
+    "@fortawesome/react-fontawesome": "^3.4.0",
+    "next": "^16.2.10",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "react-icons": "^5.7.0",
+    "resend": "^6.16.0"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "^16.2.10"
+  }
+}
