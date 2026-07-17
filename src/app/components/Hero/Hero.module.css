@@ -95,3 +95,17 @@
   .left { order: 1; }
   .dashboard { order: 0; }
 }
+
+@media (max-width: 640px) {
+  .hero { padding-top: 56px; }
+  .metrics { flex-wrap: wrap; row-gap: 12px; }
+}
+
+@media (max-width: 480px) {
+  .dashBody { padding: 16px; gap: 16px; }
+  /* Three stat cards get too cramped in a single-column phone layout —
+     drop to one column so labels/values never truncate or overlap. */
+  .dashCards { grid-template-columns: 1fr; }
+  .dashBig { font-size: 1.5rem; }
+  .chartBar { height: 80px; }
+}

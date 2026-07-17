@@ -72,6 +72,9 @@
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  /* Prevents any stray wide child from ever creating horizontal scroll */
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -82,12 +85,28 @@ body {
   font-size: 16px;
   /* Smooth transition when theme flips */
   transition: background 0.25s ease, color 0.25s ease;
+  /* Belt-and-suspenders: same guard as html, keeps every page pinned to viewport width */
+  overflow-x: hidden;
+  width: 100%;
+  min-width: 320px;
 }
 
-img, svg { display: block; max-width: 100%; }
+/* Root wrapper Next.js mounts the app into — some browsers need the guard
+   applied here too, since html/body alone don't always contain absolutely
+   positioned or transformed descendants that overflow. */
+#__next, body > div:first-child {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+img, svg { display: block; max-width: 100%; height: auto; }
 a { color: inherit; text-decoration: none; }
 ul, ol { list-style: none; }
 button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+/* Long unbroken strings (emails, URLs, phone numbers) must wrap instead of
+   forcing the page wider than the viewport on narrow phones. */
+p, a, span, li, h1, h2, h3, h4 { overflow-wrap: break-word; word-break: break-word; }
 
 /* ─── Typography ────────────────────────────────────────────── */
 h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
@@ -132,7 +151,9 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
   width: 100%;
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 0 32px;
+  /* Fluid horizontal padding: 16px at 320px viewports, scaling up to 32px
+     by ~700px and staying there — no separate breakpoint needed. */
+  padding: 0 clamp(16px, 4.5vw, 32px);
 }
 
 .split              { display: grid; grid-template-columns: 1fr 1fr;      gap: var(--gap-lg); align-items: center; }
@@ -256,15 +277,31 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
 .divider { height: 1px; background: var(--border); border: none; margin: 0; }
 
 /* ─── Responsive ────────────────────────────────────────────── */
+
+/* Ultra-wide monitors: let the canvas breathe a little more instead of
+   staying pinned to the same 1200px column on 1440p/4K/ultrawide displays. */
+@media (min-width: 1600px) {
+  :root { --max-w: 1320px; }
+}
+
 @media (max-width: 900px) {
   :root { --section-y: 64px; }
   .split, .split--60-40, .split--40-60 { grid-template-columns: 1fr; }
   .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
-  .container { padding: 0 20px; }
 }
 
 @media (max-width: 560px) {
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
-  .display-xl { font-size: 2rem; }
-  .display-lg { font-size: 1.6rem; }
+  .display-xl { font-size: clamp(1.9rem, 9vw, 2.25rem); }
+  .display-lg { font-size: clamp(1.5rem, 7vw, 1.75rem); }
+  :root { --section-y: 48px; --gap-md: 16px; --gap-lg: 28px; }
+  .section-header, .section-header--center { margin-bottom: 36px; }
+}
+
+/* Smallest phones (iPhone SE and below, 320–380px) */
+@media (max-width: 380px) {
+  .display-xl { font-size: 1.7rem; }
+  .display-lg { font-size: 1.35rem; }
+  .btn { padding: 11px 20px; font-size: 0.875rem; }
+  :root { --gap-md: 14px; }
 }

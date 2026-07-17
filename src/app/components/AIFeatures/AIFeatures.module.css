@@ -145,3 +145,11 @@
 
 .aiInput:disabled { opacity: 0.5; cursor: not-allowed; }
 .sendBtn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+@media (max-width: 480px) {
+  .mockupBody { padding: 14px; gap: 10px; }
+  .metricRow { flex-wrap: wrap; }
+  .metricCell { min-width: calc(50% - 5px); flex: 1 1 calc(50% - 5px); }
+  .chatBubble { max-width: 94%; }
+  .aiInput { min-width: 0; }
+}

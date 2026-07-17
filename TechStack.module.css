@@ -1,0 +1,70 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 40px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 6px;
+  width: fit-content;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tab {
+  padding: 9px 24px;
+  border-radius: var(--radius-pill);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: all 0.18s;
+}
+
+.tab:hover { color: var(--text-primary); }
+
+.tabActive {
+  background: var(--bg-dark);
+  color: var(--text-invert);
+}
+
+.badgeGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+}
+
+.techBadge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 24px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  transition: box-shadow 0.18s, transform 0.18s;
+}
+
+.techBadge:hover { box-shadow: var(--shadow-lifted); transform: translateY(-2px); }
+
+.techIcon {
+  font-size: 1.5rem;
+  width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--bg-muted);
+  border-radius: var(--radius-sm);
+}
+
+.techName { font-size: 0.8125rem; font-weight: 600; text-align: center; }
+
+@media (max-width: 900px) { .badgeGrid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 560px) { .badgeGrid { grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 380px) {
+  .tab { padding: 8px 14px; font-size: 0.8rem; }
+  .techBadge { padding: 18px 10px; }
+}

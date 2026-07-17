@@ -35,3 +35,18 @@
 .whatsappBtn {
   background-color: #25d366;
 }
+@media (max-width: 480px) {
+  .floatingContainer {
+    bottom: 16px;
+    right: 16px;
+    gap: 12px;
+  }
+  .floatingButton {
+    width: 46px;
+    height: 46px;
+  }
+  .floatingButton svg {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -163,6 +163,7 @@
   }
   .columns {
     grid-template-columns: repeat(2, 1fr);
+    gap: 28px 20px;
   }
 }
 
@@ -174,4 +175,16 @@
     flex-direction: column;
     align-items: flex-start;
   }
+  .main { padding: 48px 0 28px; }
+}
+
+@media (max-width: 420px) {
+  /* Long link labels like "Custom Web Development" wrap awkwardly at two
+     narrow columns on the smallest phones — go full width. */
+  .columns {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .capsuleGrid { gap: 8px; }
+  .capsule { padding: 7px 14px; font-size: 0.75rem; }
 }

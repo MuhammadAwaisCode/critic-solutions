@@ -78,3 +78,12 @@
   .metricBox { border-bottom: none; border-right: 1px solid var(--border); }
   .metricBox:last-child { border-right: none; }
 }
+
+@media (max-width: 480px) {
+  .caseLeft { padding: 24px; }
+  /* Three metrics side-by-side get too tight once labels start wrapping
+     on small phones — go back to a stacked column here. */
+  .caseRight { flex-direction: column; }
+  .metricBox { border-right: none; border-bottom: 1px solid var(--border); padding: 18px 24px; }
+  .metricBox:last-child { border-bottom: none; }
+}

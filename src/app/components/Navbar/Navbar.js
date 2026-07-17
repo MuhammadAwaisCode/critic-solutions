@@ -56,6 +56,17 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
+            {/* Only visible on the smallest screens, where the top-bar CTA
+                is hidden to save space — see .ctaMobile in Navbar.module.css */}
+            <li className={styles.ctaMobileItem}>
+              <a
+                href="#pricing"
+                className={`btn btn-dark ${styles.ctaMobile}`}
+                onClick={() => setOpen(false)}
+              >
+                {t.nav.getStarted}
+              </a>
+            </li>
           </ul>
 
           <div className={styles.actions}>
@@ -134,7 +145,7 @@ export default function Navbar() {
             </div>
 
             {/* ── Get Started ── */}
-            <a href="#pricing" className="btn btn-dark">{t.nav.getStarted}</a>
+            <a href="#pricing" className={`btn btn-dark ${styles.ctaDesktop}`}>{t.nav.getStarted}</a>
 
             {/* ── Burger ── */}
             <button
