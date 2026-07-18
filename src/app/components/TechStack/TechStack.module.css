@@ -3,20 +3,13 @@
   margin-bottom: 14px;
 }
 
-/* Scrollable container specifically for mobile touch compatibility */
+/* Centered wrapper for the 2 buttons on all screens */
 .tabsWrapper {
   width: 100%;
-  overflow-x: auto;
   display: flex;
   justify-content: center;
   padding: 4px 10px;
   margin-bottom: 40px;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Hide standard Firefox scroll bar */
-}
-
-.tabsWrapper::-webkit-scrollbar {
-  display: none; /* Hide Chrome/Safari scroll bar */
 }
 
 .tabs {
@@ -26,11 +19,13 @@
   border: 1px solid var(--border);
   border-radius: var(--radius-pill);
   padding: 6px;
-  width: fit-content;
-  flex-shrink: 0; /* Guard against tab collapsing on small views */
+  width: 100%;
+  max-width: 450px; /* Limits size on large monitors to look premium */
 }
 
 .tab {
+  flex: 1; /* Makes both buttons identical in width */
+  text-align: center;
   padding: 10px 24px;
   border: none;
   background: transparent;
@@ -44,12 +39,13 @@
 }
 
 .tab:hover { 
-  color: var(--text-primary); 
+  color: var(--text-primary) !important; 
 }
 
+/* Hardcoded backup colors for tab active state to prevent white-on-white text */
 .tabActive {
-  background: var(--bg-dark);
-  color: var(--text-invert);
+  background: var(--text-primary) !important;
+  color: var(--bg-card) !important;
 }
 
 /* ── Grid Settings ── */
@@ -90,7 +86,7 @@
   justify-content: center;
   background: var(--bg-muted);
   border-radius: var(--radius-sm);
-  padding: 8px; /* Safe bounds spacing for vectors */
+  padding: 8px;
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
@@ -104,6 +100,14 @@
   font-weight: 700; 
   text-align: center; 
   color: var(--text-primary);
+  opacity: 1 !important; /* Prevents text from going invisible */
+  transition: color 0.2s ease;
+}
+
+/* Safety lock: ensures card text is always fully visible on card hover */
+.techBadge:hover .techName {
+  color: var(--text-primary) !important;
+  opacity: 1 !important;
 }
 
 /* Smooth tab switcher content micro-animation */
@@ -128,9 +132,8 @@
 }
 
 @media (max-width: 768px) {
-  /* Aligns scrollbars left on phones so users know they can swipe */
   .tabsWrapper {
-    justify-content: flex-start;
+    justify-content: center; /* Explicitly centered on mobile tablets */
   }
 }
 
@@ -149,5 +152,10 @@
     height: 40px;
     min-width: 40px;
     padding: 6px;
+  }
+  
+  .tab {
+    padding: 8px 14px; /* Compact padding for small 320px screens */
+    font-size: 0.85rem;
   }
 }
