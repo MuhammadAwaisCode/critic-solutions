@@ -1,21 +1,18 @@
+.headline {
+  margin-top: 16px;
+  margin-bottom: 14px;
+}
+
 /* ── 6-card responsive grid ─────────────────────────────────── */
-/* 3 columns on desktop, 2 on tablet, 1 on mobile               */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--gap-md, 24px);
   align-items: stretch;
+  margin-top: 48px;
 }
 
-@media (max-width: 1024px) {
-  .grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 640px) {
-  .grid { grid-template-columns: 1fr; }
-}
-
-/* ── Card ───────────────────────────────────────────────────── */
+/* ── Card Styles ───────────────────────────────────────────── */
 .plan {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -27,6 +24,14 @@
   box-shadow: var(--shadow-card);
   position: relative;
   height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+/* Premium smooth lift micro-interaction for standard plans */
+.plan:not(.planHighlight):hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lifted);
+  border-color: var(--text-muted);
 }
 
 .planHighlight {
@@ -36,82 +41,185 @@
   box-shadow: var(--shadow-lifted);
 }
 
+/* Subtle extra dynamic lift for the popular cards */
+.planHighlight:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25), 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
 .popularBadge {
   position: absolute;
   top: -14px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--accent-blue);
+  background: var(--accent-blue, #0070f3);
   color: white;
   font-size: 0.75rem;
   font-weight: 700;
   padding: 5px 16px;
   border-radius: var(--radius-pill);
   white-space: nowrap;
+  letter-spacing: 0.02em;
 }
 
-.planName { font-size: 1.0625rem; font-weight: 700; }
+.planName { 
+  font-size: 1.125rem; 
+  font-weight: 700; 
+  color: var(--text-primary);
+}
 
-.priceLine { display: flex; align-items: baseline; gap: 4px; }
+.planHighlight .planName {
+  color: var(--text-invert, #ffffff);
+}
+
+.priceLine { 
+  display: flex; 
+  align-items: baseline; 
+  gap: 6px; 
+}
 
 .price {
   font-size: 2.25rem;
   font-weight: 800;
   font-family: var(--font-serif);
   letter-spacing: -0.02em;
+  color: var(--text-primary);
 }
 
-.period { font-size: 0.875rem; color: var(--text-muted); }
+.planHighlight .price {
+  color: var(--text-invert, #ffffff);
+}
 
-.planHighlight .period { color: rgba(247,246,243,0.45); }
+.period { 
+  font-size: 0.875rem; 
+  color: var(--text-secondary); 
+}
 
-.planDesc { font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; }
+.planHighlight .period { 
+  color: rgba(247, 246, 243, 0.5); 
+}
 
-.planHighlight .planDesc { color: rgba(247,246,243,0.6); }
+.planDesc { 
+  font-size: 0.875rem; 
+  color: var(--text-secondary); 
+  line-height: 1.6; 
+}
 
-.divider { height: 1px; border: none; background: var(--border); margin: 0; }
+.planHighlight .planDesc { 
+  color: rgba(247, 246, 243, 0.65); 
+}
 
-.planHighlight .divider { background: rgba(255,255,255,0.1); }
+.divider { 
+  height: 1px; 
+  border: none; 
+  background: var(--border); 
+  margin: 0; 
+}
 
-.features { flex: 1; }
+.planHighlight .divider { 
+  background: rgba(255, 255, 255, 0.12); 
+}
+
+.features { 
+  flex: 1; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 .feature {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 12px;
   font-size: 0.875rem;
   color: var(--text-secondary);
   line-height: 1.5;
 }
 
-.planHighlight .feature { color: rgba(247,246,243,0.75); }
+.planHighlight .feature { 
+  color: rgba(247, 246, 243, 0.85); 
+}
 
-.featureIcon { color: var(--accent-green); min-width: 16px; margin-top: 2px; }
+.featureIcon { 
+  color: var(--accent-green, #16a34a); 
+  min-width: 16px; 
+  height: 16px;
+  margin-top: 3px; /* Centers perfectly with the first line of fluid text wrapping */
+}
 
-.planHighlight .featureIcon { color: #4ADE80; }
+.planHighlight .featureIcon { 
+  color: #4ADE80; 
+}
 
 .cta {
   display: inline-flex;
   width: auto;
-  min-width: 175px;
-  padding: 10px 22px !important;
+  min-width: 180px;
+  padding: 12px 24px !important;
   font-size: 0.875rem;
   font-weight: 600;
   align-self: center;
   justify-content: center;
   border-radius: var(--radius-pill, 99px);
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+}
+
+.cta:active {
+  transform: scale(0.98);
 }
 
 .footnote {
   text-align: center;
-  margin-top: 36px;
+  margin-top: 40px;
   font-size: 0.875rem;
-  color: var(--text-muted);
+  color: var(--text-secondary);
 }
 
-.footnote a { color: var(--accent-blue); font-weight: 600; }
+.footLink { 
+  color: var(--accent-blue, #0070f3); 
+  font-weight: 600; 
+  text-decoration: none;
+  margin-left: 4px;
+}
+.footLink:hover {
+  text-decoration: underline;
+}
 
-/* ── Dark-mode fixes (unchanged from original) ──────────────── */
+/* ─── RESPONSIVE BREAKPOINTS ─── */
+
+/* 1. Large Tablets & Small Laptops */
+@media (max-width: 1024px) {
+  .grid { 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+  }
+}
+
+/* 2. Small Tablets & Phones */
+@media (max-width: 768px) {
+  .plan {
+    padding: 24px; /* Compress space overhead safely */
+    gap: 20px;
+  }
+  .cta {
+    align-self: stretch; /* Transform CTAs to massive clickable buttons */
+    width: 100%;
+  }
+}
+
+/* 3. Mobile Screens (Stacking completely) */
+@media (max-width: 640px) {
+  .grid { 
+    grid-template-columns: 1fr; 
+    gap: 28px; /* Slightly uniform space to visually distinguish stacked plans */
+  }
+  .price {
+    font-size: 2rem;
+  }
+}
+
+/* ── Dark-mode configuration fixes ──────────────── */
 [data-theme="dark"] .planHighlight {
   background: #111110 !important;
   border-color: #2E2E2C !important;

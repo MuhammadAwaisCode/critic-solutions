@@ -63,17 +63,14 @@ export default function AIFeatures() {
       const lower = input.toLowerCase().trim();
       for (const entry of cb.faqs) {
         if (entry.keywords.some((kw) => lower.includes(kw))) {
-      
           return `${entry.response}\n\n---\n${cb.furtherInfo}`;
         }
       }
-  
       return `${cb.fallback}\n\n---\n${cb.furtherInfo}`;
     },
     [cb.faqs, cb.fallback, cb.furtherInfo]
   );
 
-  
   const sendMessage = useCallback(async () => {
     const text = inputValue.trim();
     if (!text || isTyping) return;
@@ -102,12 +99,15 @@ export default function AIFeatures() {
       sendMessage();
     }
   };
+
   return (
     <section className="section section--dark" id="ai-features">
       <div className="container">
         <div className="split split--40-60">
           <div className="stack stack--lg">
-            <span className="tag-badge tag-badge--dark">{cb.badge}</span>
+            <div>
+              <span className="tag-badge tag-badge--dark">{cb.badge}</span>
+            </div>
             <h2 className="display-lg" style={{ color: 'var(--text-invert)' }}>
               {cb.headline1}<br />
               <em className={styles.em}>{cb.headlineEm}</em>
@@ -125,15 +125,17 @@ export default function AIFeatures() {
               ))}
             </ul>
 
-            <a href="#pricing" className="btn btn-invert" style={{ alignSelf: 'flex-start' }}>
-              {cb.deployBtn}
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </a>
+            <div className={styles.btnWrapper}>
+              <a href="#pricing" className="btn btn-invert">
+                {cb.deployBtn}
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </a>
+            </div>
           </div>
 
-          {/* ── Right: Live AI Chatbot (unchanged structure) ── */}
+          {/* ── Right: Live AI Chatbot ── */}
           <div className={styles.mockup}>
             <div className={styles.mockupHeader}>
               <div className={styles.mockupTitle}>

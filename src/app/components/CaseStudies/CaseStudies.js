@@ -8,7 +8,7 @@ export default function CaseStudies({ t }) {
       <div className="container">
         <div className="section-header--center">
           <span className="tag-badge">{t.badge}</span>
-          <h2 className="display-lg" style={{ marginTop: '16px', marginBottom: '14px' }}>
+          <h2 className={`display-lg ${styles.mainHeading}`}>
             {t.headline}
           </h2>
           <p className="body-lg">{t.sub}</p>
@@ -21,9 +21,11 @@ export default function CaseStudies({ t }) {
                 className={styles.caseLeft}
                 style={{ '--case-bg': c.accent }}
               >
-                <span className="tag-badge">{c.category}</span>
+                <div>
+                  <span className="tag-badge">{c.category}</span>
+                </div>
                 <h3 className={styles.client}>{c.client}</h3>
-                <p className="body-sm" style={{ fontSize: '0.9rem', marginTop: '8px' }}>
+                <p className={`body-sm ${styles.caseDesc}`}>
                   {c.desc}
                 </p>
               </div>
@@ -32,7 +34,7 @@ export default function CaseStudies({ t }) {
                 {c.metrics.map(([val, label]) => (
                   <div key={label} className={styles.metricBox}>
                     <span className={styles.metricVal}>{val}</span>
-                    <span className="body-sm">{label}</span>
+                    <span className={`body-sm ${styles.metricLabel}`}>{label}</span>
                   </div>
                 ))}
               </div>

@@ -8,7 +8,7 @@ export default function Pricing({ t }) {
       <div className="container">
         <div className="section-header--center">
           <span className="tag-badge">{t.badge}</span>
-          <h2 className="display-lg" style={{ marginTop: '16px', marginBottom: '14px' }}>
+          <h2 className={`display-lg ${styles.headline}`}>
             {t.headline}
           </h2>
           <p className="body-lg">{t.sub}</p>
@@ -40,9 +40,9 @@ export default function Pricing({ t }) {
                 {plan.features.map((f, i) => (
                   <li key={i} className={styles.feature}>
                     <svg className={styles.featureIcon} width="16" height="16" viewBox="0 0 16 16" fill="none">
-                      <path d="M3 8l4 4 6-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M3 8l4 4 6-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                    {f}
+                    <span>{f}</span>
                   </li>
                 ))}
               </ul>
@@ -58,7 +58,7 @@ export default function Pricing({ t }) {
         </div>
 
         <p className={styles.footnote}>
-          {t.footnote}<a href="/contact">{t.footnoteLink}</a>
+          {t.footnote}<Link href="/contact" className={styles.footLink}>{t.footnoteLink}</Link>
         </p>
       </div>
     </section>

@@ -15,12 +15,18 @@
   margin-top: 1px;
 }
 
+.btnWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
 /* ── Mockup ── */
 .mockup {
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: var(--radius-lg);
   background: #191917;
   overflow: hidden;
+  width: 100%;
 }
 
 .mockupHeader {
@@ -51,6 +57,7 @@
   font-size: 0.875rem;
   line-height: 1.6;
   max-width: 88%;
+  word-break: break-word; /* Prevents text overflow */
 }
 
 .chatAI { background: rgba(255,255,255,0.06); color: rgba(247,246,243,0.85); }
@@ -80,7 +87,7 @@
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: var(--radius-pill);
   padding: 10px 16px;
-  color: rgba(247,246,243,0.6);
+  color: rgba(247,246,243,0.9);
   font-family: var(--font-sans);
   font-size: 0.875rem;
   outline: none;
@@ -93,6 +100,7 @@
   display: flex; align-items: center; justify-content: center;
   cursor: pointer;
   transition: opacity 0.18s;
+  flex-shrink: 0;
 }
 
 .sendBtn:hover { opacity: 0.85; }
@@ -146,10 +154,23 @@
 .aiInput:disabled { opacity: 0.5; cursor: not-allowed; }
 .sendBtn:disabled { opacity: 0.4; cursor: not-allowed; }
 
+/* ── Media Queries for perfect responsive views ── */
+@media (max-width: 768px) {
+  .btnWrapper {
+    justify-content: center;
+    width: 100%;
+  }
+  .btnWrapper a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 480px) {
-  .mockupBody { padding: 14px; gap: 10px; }
-  .metricRow { flex-wrap: wrap; }
-  .metricCell { min-width: calc(50% - 5px); flex: 1 1 calc(50% - 5px); }
-  .chatBubble { max-width: 94%; }
-  .aiInput { min-width: 0; }
+  .mockupBody { padding: 12px; gap: 10px; }
+  .metricRow { flex-wrap: wrap; gap: 6px; }
+  .metricCell { min-width: calc(50% - 3px); flex: 1 1 calc(50% - 3px); padding: 8px; }
+  .chatBubble { max-width: 92%; padding: 10px 12px; font-size: 0.8125rem; }
+  .aiInput { min-width: 0; padding: 8px 12px; font-size: 0.8125rem; }
+  .sendBtn { width: 34px; height: 34px; }
 }

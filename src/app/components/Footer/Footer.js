@@ -1,90 +1,76 @@
+'use client';
+import Link from 'next/link'; // Next.js fast routing ke liye
+import { usePathname } from 'next/navigation'; // Current page track karne ke liye
 import styles from './Footer.module.css';
 import { BsWhatsapp, BsLinkedin, BsFacebook, BsInstagram, BsTwitterX } from "react-icons/bs";
 
-const MORE_SERVICES = [
-  'Brand Identity Design', 'SEO & Content Strategy', 'Social Media Management',
-  'Cloud Infrastructure', 'DevOps & CI/CD', 'Mobile App Development',
-  'Email Marketing Automation', 'Analytics & BI Dashboards',
-];
+// Only hrefs live here — the visible labels/titles come from t.footer at
+// render time. Each hrefs array must stay in the same order as the
+// corresponding `links` array inside t.footer.columns[key] in LangContext.js.
+const COLUMN_HREFS = {
+  services: ['#services', '#services', '#services', '#services', '#services'],
+  products: ['#ai-features', '#pricing', '#pricing', '#pricing'],
+  company: ['#overview', '#case-studies', '#', '#', '/contact'],
+  legal: ['/privacy-policy', '/terms-of-service', '/cookie-policy'],
+};
 
-const COLUMNS = [
-  {
-    title: 'Services',
-    links: [
-      { label: 'Custom Web Development', href: '#services' },
-      { label: 'E-Commerce Solutions',   href: '#services' },
-      { label: 'Web App Development',    href: '#services' },
-      { label: 'UI/UX Design',           href: '#services' },
-      { label: 'API Integration',        href: '#services' },
-    ],
-  },
-  {
-    title: 'Products',
-    links: [
-      { label: 'Criticpick ERP Suite',    href: '#ai-features' },
-      { label: 'Lead Gen Engine',  href: '#pricing' },
-      { label: 'Automation Suite', href: '#pricing' },
-      { label: 'Business OS',      href: '#pricing' },
-    ],
-  },
-  {
-    title: 'Company',
-    links: [
-      { label: 'About Criticpick',    href: '#overview' },
-      { label: 'Case Studies', href: '#case-studies' },
-      { label: 'Careers',      href: '#' },
-      { label: 'Blog',         href: '#' },
-      { label: 'Contact Us',   href: '/contact' },
-    ],
-  },
-  {
-    title: 'Legal',
-    links: [
-      { label: 'Privacy Policy',    href: '#' },
-      { label: 'Terms of Service',  href: '#' },
-      { label: 'Cookie Policy',     href: '#' },
-    ],
-  },
-];
+// Visual left-to-right order of the footer columns.
+const COLUMN_ORDER = ['services', 'products', 'company', 'legal'];
 
 const SOCIALS = [
-  { 
-    label: 'LinkedIn', 
+  {
+    label: 'LinkedIn',
     href: 'https://www.linkedin.com/in/critic-pick-88a074284?utm_source=share_via&utm_content=profile&utm_medium=member_android',
     Icon: BsLinkedin
   },
-  { 
-    label: 'Whatsapp', 
+  {
+    label: 'Whatsapp',
     href: 'https://wa.me/+15595712010',
     Icon: BsWhatsapp
   },
-  { 
-    label: 'Facebook', 
-    href: 'https://www.facebook.com/share/1D4c3j9QcW/', 
+  {
+    label: 'Facebook',
+    href: 'https://www.facebook.com/share/1D4c3j9QcW/',
     Icon: BsFacebook
   },
-  { 
-    label: 'Twitter', 
-    href: 'https://x.com/criticpickmarkt', 
+  {
+    label: 'Twitter',
+    href: 'https://x.com/criticpickmarkt',
     Icon: BsTwitterX
   },
-  { 
-    label: 'Instagram', 
-    href: 'https://www.instagram.com/critic_solutions?igsh=a2NleTA0YTI0MjFp', 
+  {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/critic_solutions?igsh=a2NleTA0YTI0MjFp',
     Icon: BsInstagram
   },
 ];
 
 export default function Footer({ t }) {
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
+
+  const tags = t?.tags || [];
+  const columns = t?.columns || {};
+
+  // Smart routing function for hash links
+  const getHref = (href) => {
+    if (href.startsWith('#')) {
+      return isHomePage ? href : `/${href}`; // Sub-page se home page ke sections par navigation handle karega
+    }
+    return href; // Contact aur Legal pages ke liye same rahega
+  };
+
   return (
     <footer id="footer">
 
       <div className={styles.moreServices}>
         <div className="container">
-          <p className="label" style={{ color: 'var(--text-muted)', marginBottom: '16px' }}>Explore More Services</p>
+          <p className={`${styles.exploreLabel} label`}>{t?.exploreServices}</p>
           <div className={styles.capsuleGrid}>
-            {MORE_SERVICES.map((s) => (
-              <a key={s} href="#pricing" className={styles.capsule}>{s}</a>
+            {tags.map((tag) => (
+              <Link key={tag} href={getHref('#pricing')} className={styles.capsule}>
+                {tag}
+              </Link>
             ))}
           </div>
         </div>
@@ -95,7 +81,7 @@ export default function Footer({ t }) {
           <div className={styles.top}>
 
             <div className={styles.brand}>
-              <div className={styles.logo}>
+              <Link href={isHomePage ? '#' : '/'} className={styles.logo}>
                 <span className={styles.logoMark}>
                   <img
                     src="/logo.png"
@@ -104,35 +90,32 @@ export default function Footer({ t }) {
                   />
                 </span>
                 <span>Critics Solutions</span>
-              </div>
+              </Link>
               <p className={styles.brandDesc}>{t?.tagline || ""}</p>
-              
+
               <div className={styles.contact}>
                 <a href="mailto:criticpickindustries@gmail.com" className={styles.contactLink}>criticpickindustries@gmail.com</a>
-                <a href="https://wa.me/923019465427"><span className={styles.contactLink}>+923019465427</span></a>
-                <a href="https://wa.me/923496257662"><span className={styles.contactLink}>+923496257662</span></a>
-                <a href="https://wa.me/1(559)571-2010"><span className={styles.contactLink}>+1 (559) 571-2010</span></a>
+                <a href="https://wa.me/923019465427" className={styles.contactLink}><span>+923019465427</span></a>
+                <a href="https://wa.me/923496257662" className={styles.contactLink}><span>+923496257662</span></a>
+                <a href="https://wa.me/1(559)571-2010" className={styles.contactLink}><span>+1 (559) 571-2010</span></a>
                 <span className={styles.contactLink}>Lahore, Punjab, Pakistan</span>
               </div>
 
-              <div className={styles.socials} style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+              <div className={styles.socials}>
                 {SOCIALS.map((s) => {
                   const IconComponent = s.Icon;
-                  
-                  // Guard clause in case an icon component fails to import properly
+
                   if (!IconComponent) return null;
 
                   return (
-                    <a 
-                      key={s.label} 
-                      href={s.href} 
+                    <a
+                      key={s.label}
+                      href={s.href}
                       className={styles.socialLink}
-                      style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {/* FIXED: Explicit layout wrapper forces the icon to render with structural integrity */}
-                      <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                      <span className={styles.socialIconWrapper}>
                         <IconComponent size={16} />
                       </span>
                       <span>{s.label}</span>
@@ -143,21 +126,27 @@ export default function Footer({ t }) {
             </div>
 
             <div className={styles.columns}>
-              {COLUMNS.map((col) => (
-                <div key={col.title} className="stack stack--sm">
-                  <p className={styles.colTitle}>{col.title}</p>
-                  {col.links.map((l) => (
-                    <a key={l.label} href={l.href} className={styles.colLink}>{l.label}</a>
-                  ))}
-                </div>
-              ))}
+              {COLUMN_ORDER.map((key) => {
+                const col = columns[key];
+                if (!col) return null;
+                const hrefs = COLUMN_HREFS[key] || [];
+                return (
+                  <div key={key} className="stack stack--sm">
+                    <p className={styles.colTitle}>{col.title}</p>
+                    {(col.links || []).map((label, i) => (
+                      <Link key={label} href={getHref(hrefs[i] || '#')} className={styles.colLink}>
+                        {label}
+                      </Link>
+                    ))}
+                  </div>
+                );
+              })}
             </div>
           </div>
 
           <div className={styles.bottom}>
-            {/* FIXED: Optional chaining protection */}
             <p className={styles.copy}>© {new Date().getFullYear()} Critics Solutions. {t?.rights || ""}</p>
-            <p className={styles.copy}>Engineered in Lahore. Delivered worldwide.</p>
+            <p className={styles.copy}>{t?.bottomLeft || ""}</p>
           </div>
         </div>
       </div>

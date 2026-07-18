@@ -1,16 +1,112 @@
-.em { font-style: italic; color: var(--accent-blue); }
+.em { 
+  font-style: italic; 
+  color: var(--accent-blue); 
+}
 
-.pillar { padding: 20px 24px; }
+/* Local grid alignment to control responsive splits */
+.layout {
+  gap: 48px;
+  align-items: center;
+}
 
-.pillarHead { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.ctaBtn {
+  align-self: flex-start;
+}
 
+.pillar { 
+  padding: 20px 24px; 
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Elegant micro-interaction: card lifts slightly to the right on hover */
+.pillar:hover {
+  border-color: var(--accent-green, #16a34a);
+  transform: translateX(4px);
+  box-shadow: var(--shadow-lifted);
+}
+
+.pillarHead { 
+  display: flex; 
+  align-items: center; 
+  gap: 12px; 
+  margin-bottom: 8px; 
+}
+
+/* Theme-adaptable Green check icon container using color-mix */
 .checkIcon {
-  width: 24px; height: 24px; min-width: 24px;
-  background: #DCFCE7;
+  width: 24px; 
+  height: 24px; 
+  min-width: 24px;
+  background: color-mix(in srgb, var(--accent-green, #16a34a) 15%, transparent);
+  color: var(--accent-green, #16a34a);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background 0.25s ease, color 0.25s ease;
 }
 
-.pillarTitle { font-size: 0.9375rem; font-weight: 700; }
+/* Invert colors smoothly on hover for high fidelity feel */
+.pillar:hover .checkIcon {
+  background: var(--accent-green, #16a34a);
+  color: var(--bg-card, #ffffff);
+}
+
+.checkSvg {
+  width: 12px;
+  height: 12px;
+}
+
+.pillarTitle { 
+  font-size: 1rem; 
+  font-weight: 700; 
+  color: var(--text-primary);
+}
+
+.pillarDesc {
+  margin-left: 36px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* ─── RESPONSIVE BREAKPOINTS ─── */
+
+/* 1. Tablets and Smaller Laptops */
+@media (max-width: 992px) {
+  .layout {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  /* Resetting split column widths to span fully stacked */
+  .layout > div {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* 2. Mobile Screens */
+@media (max-width: 640px) {
+  .layout {
+    gap: 32px;
+  }
+  
+  .pillar {
+    padding: 16px 20px;
+  }
+  
+  /* Shift description to align better with header elements in squeezed views */
+  .pillarDesc {
+    margin-left: 0;
+    margin-top: 6px;
+    padding-left: 4px;
+  }
+  
+  /* Make button full screen width on phones for friendly thumb-action reachability */
+  .ctaBtn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}

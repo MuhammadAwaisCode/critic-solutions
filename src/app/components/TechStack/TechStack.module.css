@@ -1,63 +1,153 @@
+.headline {
+  margin-top: 16px;
+  margin-bottom: 14px;
+}
+
+/* Scrollable container specifically for mobile touch compatibility */
+.tabsWrapper {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  padding: 4px 10px;
+  margin-bottom: 40px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Hide standard Firefox scroll bar */
+}
+
+.tabsWrapper::-webkit-scrollbar {
+  display: none; /* Hide Chrome/Safari scroll bar */
+}
+
 .tabs {
   display: flex;
   gap: 8px;
-  justify-content: center;
-  margin-bottom: 40px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-pill);
   padding: 6px;
   width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  flex-shrink: 0; /* Guard against tab collapsing on small views */
 }
 
 .tab {
-  padding: 9px 24px;
+  padding: 10px 24px;
+  border: none;
+  background: transparent;
   border-radius: var(--radius-pill);
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--text-muted);
-  transition: all 0.18s;
+  color: var(--text-secondary);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.2s ease, background-color 0.2s ease;
 }
 
-.tab:hover { color: var(--text-primary); }
+.tab:hover { 
+  color: var(--text-primary); 
+}
 
 .tabActive {
   background: var(--bg-dark);
   color: var(--text-invert);
 }
 
+/* ── Grid Settings ── */
 .badgeGrid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 14px;
+  gap: 16px;
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .techBadge {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 12px;
   padding: 24px 16px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-card);
-  transition: box-shadow 0.18s, transform 0.18s;
+  transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
 }
 
-.techBadge:hover { box-shadow: var(--shadow-lifted); transform: translateY(-2px); }
+/* Beautiful lifting hover states */
+.techBadge:hover { 
+  box-shadow: var(--shadow-lifted); 
+  transform: translateY(-4px); 
+  border-color: var(--text-muted);
+}
 
 .techIcon {
-  font-size: 1.5rem;
-  width: 44px; height: 44px;
-  display: flex; align-items: center; justify-content: center;
+  width: 48px; 
+  height: 48px;
+  min-width: 48px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
   background: var(--bg-muted);
   border-radius: var(--radius-sm);
+  padding: 8px; /* Safe bounds spacing for vectors */
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
-.techName { font-size: 0.8125rem; font-weight: 600; text-align: center; }
+.techBadge:hover .techIcon {
+  transform: scale(1.05);
+  background: color-mix(in srgb, var(--text-primary) 5%, var(--bg-muted));
+}
 
-@media (max-width: 900px) { .badgeGrid { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 560px) { .badgeGrid { grid-template-columns: repeat(2, 1fr); } }
+.techName { 
+  font-size: 0.8125rem; 
+  font-weight: 700; 
+  text-align: center; 
+  color: var(--text-primary);
+}
+
+/* Smooth tab switcher content micro-animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── RESPONSIVE BREAKPOINTS ─── */
+
+@media (max-width: 1024px) {
+  .badgeGrid { 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Aligns scrollbars left on phones so users know they can swipe */
+  .tabsWrapper {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 560px) { 
+  .badgeGrid { 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 12px;
+  }
+  
+  .techBadge {
+    padding: 18px 12px;
+  }
+  
+  .techIcon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    padding: 6px;
+  }
+}

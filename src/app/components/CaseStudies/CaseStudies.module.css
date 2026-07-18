@@ -7,27 +7,33 @@
   box-shadow: var(--shadow-card);
   transition: box-shadow 0.2s, border-color 0.25s;
 }
-.caseCard:hover { box-shadow: var(--shadow-lifted); }
 
-/*
-  THE FIX:
-  .caseLeft previously had `background: c.color` (inline pastel like #EEF2FF)
-  hardcoded via JSX style prop. In dark mode the pastel bg stayed but text
-  (which should be dark on pastel) became light — invisible.
+.caseCard:hover { 
+  box-shadow: var(--shadow-lifted); 
+}
 
-  Solution: remove the inline style from JSX and use a CSS variable instead.
-  We set a --case-accent custom property per card via inline style on the
-  parent, then fall back to var(--bg-muted) in dark mode.
-*/
+.mainHeading {
+  margin-top: 16px; 
+  margin-bottom: 14px;
+}
+
+.caseDesc {
+  font-size: 0.9rem; 
+  margin-top: 8px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
 .caseLeft {
   padding: 36px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  /* Use the per-card accent in light mode; fall back to a muted bg in dark */
   background: var(--case-bg, var(--bg-muted));
-  /* Force text to always be readable against the background */
   color: var(--text-primary);
+  justify-content: center;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 /* In dark mode, override the pastel accent with the muted dark surface */
@@ -36,10 +42,11 @@
 }
 
 .client {
-  font-size: 1.375rem;
+  font-size: 1.6rem;
   font-weight: 700;
   font-family: var(--font-serif);
-  color: var(--text-primary);  /* explicit — inherits anyway, but belt+suspenders */
+  color: var(--text-primary);
+  margin-top: 4px;
 }
 
 .caseRight {
@@ -62,28 +69,99 @@
   border-bottom: 1px solid var(--border);
   transition: border-color 0.25s;
 }
-.metricBox:last-child { border-bottom: none; }
+.metricBox:last-child { 
+  border-bottom: none; 
+}
 
 .metricVal {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 700;
   font-family: var(--font-serif);
   letter-spacing: -0.02em;
-  color: var(--text-primary);  /* was inheriting body — now explicit */
+  color: var(--text-primary);
 }
 
-@media (max-width: 900px) {
-  .caseCard { grid-template-columns: 1fr; }
-  .caseRight { border-left: none; border-top: 1px solid var(--border); flex-direction: row; }
-  .metricBox { border-bottom: none; border-right: 1px solid var(--border); }
-  .metricBox:last-child { border-right: none; }
+.metricLabel {
+  color: var(--text-secondary);
 }
 
-@media (max-width: 480px) {
-  .caseLeft { padding: 24px; }
-  /* Three metrics side-by-side get too tight once labels start wrapping
-     on small phones — go back to a stacked column here. */
-  .caseRight { flex-direction: column; }
-  .metricBox { border-right: none; border-bottom: 1px solid var(--border); padding: 18px 24px; }
-  .metricBox:last-child { border-bottom: none; }
+/* ─── RESPONSIVE BREAKPOINTS ─── */
+
+/* 1. Large Tablets & Small Laptops (Stacking layout early to avoid squeeze) */
+@media (max-width: 960px) {
+  .caseCard { 
+    grid-template-columns: 1fr; 
+  }
+  .caseRight { 
+    border-left: none; 
+    border-top: 1px solid var(--border); 
+    flex-direction: row; 
+    flex-wrap: wrap; /* Safety for varying content sizes */
+  }
+  .metricBox { 
+    border-bottom: none; 
+    border-right: 1px solid var(--border); 
+    padding: 24px 20px;
+    text-align: center;
+    align-items: center;
+  }
+  .metricBox:last-child { 
+    border-right: none; 
+  }
+}
+
+/* 2. Medium Tablets & Landscape Phones (Fixing the dead-zone overlap) */
+@media (max-width: 768px) {
+  .caseLeft {
+    padding: 30px;
+  }
+  .client {
+    font-size: 1.4rem;
+  }
+  /* Stacking metrics into a cleaner grid representation or columns before text chokes */
+  .caseRight {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .metricBox {
+    border-right: 1px solid var(--border);
+    border-bottom: none;
+    padding: 20px 12px;
+  }
+  .metricBox:last-child {
+    border-right: none;
+  }
+  .metricVal {
+    font-size: 1.5rem;
+  }
+}
+
+/* 3. Small Mobile Devices (Flawless stacked layout) */
+@media (max-width: 576px) {
+  .caseLeft { 
+    padding: 24px; 
+    gap: 8px;
+  }
+  .client {
+    font-size: 1.25rem;
+  }
+  .mainHeading {
+    font-size: 2rem; /* Scaling down massive section header font dynamically */
+  }
+  .caseRight { 
+    grid-template-columns: 1fr; /* Reset grid to vertical stack */
+  }
+  .metricBox { 
+    border-right: none; 
+    border-bottom: 1px solid var(--border); 
+    padding: 16px 20px;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .metricBox:last-child { 
+    border-bottom: none; 
+  }
+  .metricVal {
+    font-size: 1.35rem;
+  }
 }

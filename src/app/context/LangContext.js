@@ -30,11 +30,41 @@ export const translations = {
       headline: 'A full-stack digital partner — not just a vendor',
       body: 'We combine engineering depth with marketing intelligence to deliver systems that scale. From architecture to acquisition, we own the outcomes.',
       stat1Label: 'Projects delivered', stat2Label: 'Client retention', stat3Label: 'Countries served',
+      cta: "See What We Build",
+      features: [
+        { title: "Cutting-Edge Technologies", desc: "We adopt modern stacks — Next.js, Node.js, PostgreSQL — chosen for durability and speed, not trends." },
+        { title: "Responsive Design", desc: "Every interface is pixel-perfect across devices, built mobile-first with accessibility as standard." },
+        { title: "Performance Optimization", desc: "Sub-second load times, Core Web Vitals in the green, and continuous Lighthouse monitoring post-launch." },
+        { title: "Web Security", desc: "SSL, rate limiting, OWASP practices, and penetration-tested endpoints on every production release." },
+      ],
     },
     services: {
       badge: 'What We Build',
       headline: 'End-to-end services for digital-first businesses',
       sub: 'Every service is designed to compound — better software leads to better data leads to better decisions.',
+    },
+    industries: {
+      badge: "INDUSTRIES WE SERVE",
+      headline: "Built for every vertical that moves fast",
+      sub: "Deep domain knowledge lets us ship with context — no hand-holding on what your business actually does.",
+      list: [
+        { title: "Healthcare", desc: "Appointment scheduling, patient portals, and HIPAA-conscious data handling." },
+        { title: "Retail & E-Commerce", desc: "Omnichannel storefronts with smart inventory, loyalty, and analytics layers." },
+        { title: "Education", desc: "LMS platforms, student portals, and admissions systems for modern institutions." },
+        { title: "Real Estate", desc: "Property listing engines, CRM integrations, and virtual tour experiences." },
+        { title: "Finance", desc: "Fintech dashboards, payment platforms, and compliance-ready reporting tools." },
+        { title: "Logistics", desc: "Real-time fleet tracking, dispatch automation, and route optimisation dashboards." },
+      ],
+    },
+    techStack: {
+      badge: "TECH STACK",
+      title: "Built for every vertical that moves fast",
+      subTitle: "We use modern, scalable technologies to power your products.",
+      tabs: {
+        frontend: "Frontend",
+        backend: "Backend & Database",
+        devops: "DevOps & Cloud",
+      },
     },
     caseStudies: {
       badge: 'Results',
@@ -363,9 +393,91 @@ export const translations = {
       ],
     },
     footer: {
+      exploreServices: "EXPLORE MORE SERVICES",
+      tags: ["Mobile App Development", "DevOps & CI/CD", "Cloud Infrastructure", "Social Media Management", "SEO & Content Strategy", "Brand Identity Design", "Analytics & BI Dashboards", "Email Marketing Automation"],
       tagline: 'Building seamless digital experiences for ambitious brands.',
+      bottomLeft: "Engineered in Lahore. Delivered worldwide.",
       rights: 'All rights reserved.',
+      columns: {
+        legal: { title: "LEGAL", links: ["Privacy Policy", "Terms of Service", "Cookie Policy"] },
+        company: { title: "COMPANY", links: ["About Criticpick", "Case Studies", "Careers", "Blog", "Contact Us"] },
+        products: { title: "PRODUCTS", links: ["Criticpick ERP Suite", "Lead Gen Engine", "Automation Suite", "Business OS"] },
+        services: { title: "SERVICES", links: ["Custom Web Development", "E-Commerce Solutions", "Web App Development", "UI/UX Design", "API Integration"] },
+      },
     },
+    legal: {
+      backLink: "Back to Home",
+      lastUpdated: "Last Updated: July 17, 2026",
+      privacy: {
+        title: "Privacy Policy",
+        intro: "At Critics Solutions, accessible from criticpickindustries@gmail.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Critics Solutions and how we use it.",
+        sections: [
+          {
+            title: "1. Information We Collect",
+            content: "We collect information to provide better services to our clients. This includes:",
+            bullets: [
+              "Personal Data: Name, email address, WhatsApp number, and country when you fill out our contact form.",
+              "Usage Data: Pages visited, duration of stay, device type, and browser specs."
+            ]
+          },
+          {
+            title: "2. How We Use Your Information",
+            content: "We use the information we collect in various ways, including to:",
+            bullets: [
+              "Provide, operate, and maintain our website.",
+              "Improve, personalize, and expand our website performance.",
+              "Understand and analyze how you use our website.",
+              "Communicate with you regarding project proposals, updates, and customer service."
+            ]
+          },
+          {
+            title: "3. Cookies and Web Beacons",
+            content: "Like any other website, Critics Solutions uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited."
+          },
+          {
+            title: "4. Security of Data",
+            content: "The security of your personal data is highly important to us. We employ state-of-the-art encryption and security measures to guard your details against unauthorized access."
+          }
+        ]
+      },
+      terms: {
+        title: "Terms of Service",
+        intro: "Welcome to Critics Solutions. These Terms of Service govern your use of our website and services. By accessing or using our website, you agree to be bound by these terms.",
+        sections: [
+          {
+            title: "1. Service Agreement",
+            content: "Critics Solutions provides high-quality software development, UI/UX design, and digital marketing services. The scope of work is agreed upon individually via formal signed Service Agreements."
+          },
+          {
+            title: "2. Intellectual Property",
+            content: "All source code, software architecture, website designs, layouts, graphics, and branding produced by Critics Solutions remain our intellectual property until full payment has been received."
+          },
+          {
+            title: "3. User Responsibilities",
+            content: "By utilizing our contact forms or services, you agree not to provide false contact details or attempt to disrupt our web infrastructure."
+          }
+        ]
+      },
+      cookie: {
+        title: "Cookie Policy",
+        intro: "This Cookie Policy explains how Critics Solutions uses cookies and similar tracking technologies to recognize you when you visit our website.",
+        sections: [
+          {
+            title: "1. What Are Cookies?",
+            content: "Cookies are small data files placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently."
+          },
+          {
+            title: "2. Why Do We Use Cookies?",
+            content: "We use first-party and third-party cookies for several reasons:",
+            bullets: [
+              "Essential Cookies: Critical for the basic operations of the site.",
+              "Performance & Analytics: Help us monitor site traffic and optimize performance.",
+              "Functionality: Allow us to remember choices you make like language selection."
+            ]
+          }
+        ]
+      }
+    }
   },
 
   ar: {
@@ -385,11 +497,41 @@ export const translations = {
       headline: 'شريك رقمي متكامل — لا مجرد مزود خدمة',
       body: 'نجمع بين العمق الهندسي والذكاء التسويقي لتقديم أنظمة قابلة للتوسع. من الهيكلة إلى الاستحواذ، نمتلك النتائج.',
       stat1Label: 'مشروع منجز', stat2Label: 'نسبة استبقاء العملاء', stat3Label: 'دول نخدمها',
+      cta: "شاهد ما نبنيه",
+      features: [
+        { title: "تقنيات متطورة", desc: "نعتمد أحدث الأطر — Next.js وNode.js وPostgreSQL — نختارها لمتانتها وسرعتها، لا لكونها رائجة." },
+        { title: "تصميم متجاوب", desc: "كل واجهة مصممة بدقة عبر جميع الأجهزة، ببنية 'الجوال أولاً' وإتاحة الاستخدام كمعيار أساسي." },
+        { title: "تحسين الأداء", desc: "أوقات تحميل أقل من ثانية، ومؤشرات Core Web Vitals ضمن النطاق الأخضر، ومراقبة مستمرة عبر Lighthouse بعد الإطلاق." },
+        { title: "أمان الويب", desc: "شهادات SSL، تحديد معدل الطلبات، ممارسات OWASP، واختبارات اختراق لكل نقطة نهاية في كل إصدار إنتاجي." },
+      ],
     },
     services: {
       badge: 'ما نبنيه',
       headline: 'خدمات شاملة للشركات الرقمية',
       sub: 'كل خدمة مصممة لتتراكم — برمجيات أفضل تعني بيانات أفضل وقرارات أفضل.',
+    },
+    industries: {
+      badge: "القطاعات التي نخدمها",
+      headline: "مصمم لكل قطاع يتحرك بسرعة",
+      sub: "معرفتنا العميقة بالمجالات تتيح لنا التنفيذ بفهم دقيق للسياق — دون الحاجة لشرح ما يفعله عملك.",
+      list: [
+        { title: "الرعاية الصحية", desc: "جدولة المواعيد، بوابات المرضى، ومعالجة البيانات بما يتوافق مع معايير HIPAA." },
+        { title: "التجزئة والتجارة الإلكترونية", desc: "متاجر متعددة القنوات مع إدارة مخزون ذكية وبرامج ولاء وطبقات تحليلات." },
+        { title: "التعليم", desc: "منصات إدارة تعلم، بوابات طلاب، وأنظمة قبول للمؤسسات الحديثة." },
+        { title: "العقارات", desc: "محركات عرض العقارات، تكامل مع أنظمة CRM، وتجارب جولات افتراضية." },
+        { title: "التمويل", desc: "لوحات تحكم فينتك، منصات دفع، وأدوات تقارير متوافقة مع الامتثال." },
+        { title: "الخدمات اللوجستية", desc: "تتبع الأسطول في الوقت الفعلي، أتمتة الشحن، ولوحات تحسين المسارات." },
+      ],
+    },
+    techStack: {
+      badge: "التقنيات",
+      title: "مبنيّ لكل قطاع يتحرك بسرعة",
+      subTitle: "نستخدم تقنيات حديثة وقابلة للتوسع لتشغيل منتجاتك.",
+      tabs: {
+        frontend: "الواجهة الأمامية",
+        backend: "الخلفية وقواعد البيانات",
+        devops: "DevOps والبنية السحابية",
+      },
     },
     caseStudies: {
       badge: 'النتائج',
@@ -717,8 +859,78 @@ export const translations = {
       ],
     },
     footer: {
+      exploreServices: "استكشف المزيد من الخدمات",
+      tags: ["تطوير تطبيقات الجوال", "DevOps وCI/CD", "البنية التحتية السحابية", "إدارة وسائل التواصل الاجتماعي", "استراتيجية السيو والمحتوى", "تصميم الهوية التجارية", "لوحات التحليلات وذكاء الأعمال", "أتمتة التسويق عبر البريد الإلكتروني"],
       tagline: 'نبني تجارب رقمية سلسة للعلامات التجارية الطموحة.',
+      bottomLeft: "صُمم في لاهور. يُسلَّم للعالم.",
       rights: 'جميع الحقوق محفوظة.',
+      columns: {
+        legal: { title: "قانوني", links: ["سياسة الخصوصية", "شروط الخدمة", "سياسة ملفات تعريف الارتباط"] },
+        company: { title: "الشركة", links: ["عن Criticpick", "دراسات حالة", "وظائف", "المدونة", "تواصل معنا"] },
+        products: { title: "المنتجات", links: ["مجموعة Criticpick ERP", "محرك توليد العملاء", "حزمة الأتمتة", "نظام الأعمال"] },
+        services: { title: "الخدمات", links: ["تطوير الويب المخصص", "حلول التجارة الإلكترونية", "تطوير تطبيقات الويب", "تصميم UI/UX", "تكامل واجهات البرمجة"] },
+      },
+    },
+    legal: {
+      backLink: "العودة إلى الصفحة الرئيسية",
+      lastUpdated: "آخر تحديث: 17 يوليو 2026",
+      privacy: {
+        title: "سياسة الخصوصية",
+        intro: "في Critics Solutions، التي يمكن الوصول إليها عبر criticpickindustries@gmail.com، تُعد خصوصية زوارنا من أهم أولوياتنا. توضح وثيقة سياسة الخصوصية هذه أنواع المعلومات التي تجمعها وتسجلها Critics Solutions وكيفية استخدامها.",
+        sections: [
+          {
+            title: "1. المعلومات التي نجمعها",
+            content: "نقوم بجمع المعلومات لتقديم خدمات أفضل لعملائنا. ويشمل ذلك:",
+            bullets: ["البيانات الشخصية: الاسم، البريد الإلكتروني، رقم واتساب، والدولة عند تعبئة نموذج الاتصال.", "بيانات الاستخدام: الصفحات التي تمت زيارتها، مدة البقاء، نوع الجهاز، ومواصفات المتصفح."],
+          },
+          {
+            title: "2. كيفية استخدامنا لمعلوماتك",
+            content: "نستخدم المعلومات التي نجمعها بطرق متعددة، منها:",
+            bullets: ["توفير موقعنا الإلكتروني وتشغيله وصيانته.", "تحسين أداء موقعنا وتخصيصه وتوسيعه.", "فهم وتحليل كيفية استخدامك لموقعنا.", "التواصل معك بخصوص عروض المشاريع والتحديثات وخدمة العملاء."],
+          },
+          {
+            title: "3. ملفات تعريف الارتباط وإشارات الويب",
+            content: "مثل أي موقع آخر، تستخدم Critics Solutions 'ملفات تعريف الارتباط'. تُستخدم هذه الملفات لتخزين معلومات تشمل تفضيلات الزوار، والصفحات التي وصل إليها الزائر أو زارها.",
+          },
+          {
+            title: "4. أمان البيانات",
+            content: "يحظى أمان بياناتك الشخصية بأهمية كبيرة لدينا. نستخدم تقنيات تشفير وإجراءات أمنية متطورة لحماية بياناتك من الوصول غير المصرح به.",
+          },
+        ],
+      },
+      terms: {
+        title: "شروط الخدمة",
+        intro: "مرحبًا بك في Critics Solutions. تحكم شروط الخدمة هذه استخدامك لموقعنا الإلكتروني وخدماتنا. باستخدامك أو دخولك إلى موقعنا، فإنك توافق على الالتزام بهذه الشروط.",
+        sections: [
+          {
+            title: "1. اتفاقية الخدمة",
+            content: "تقدم Critics Solutions خدمات عالية الجودة في تطوير البرمجيات وتصميم UI/UX والتسويق الرقمي. يتم الاتفاق على نطاق العمل بشكل فردي عبر اتفاقيات خدمة رسمية موقعة.",
+          },
+          {
+            title: "2. الملكية الفكرية",
+            content: "تظل جميع الأكواد المصدرية وهياكل البرمجيات وتصاميم المواقع والتخطيطات والرسومات والهوية التجارية التي تنتجها Critics Solutions ملكية فكرية لنا حتى استلام كامل المبلغ المستحق.",
+          },
+          {
+            title: "3. مسؤوليات المستخدم",
+            content: "باستخدامك نماذج الاتصال أو خدماتنا، فإنك توافق على عدم تقديم بيانات اتصال غير صحيحة أو محاولة الإخلال ببنيتنا التحتية الإلكترونية.",
+          },
+        ],
+      },
+      cookie: {
+        title: "سياسة ملفات تعريف الارتباط",
+        intro: "توضح سياسة ملفات تعريف الارتباط هذه كيف تستخدم Critics Solutions ملفات تعريف الارتباط وتقنيات التتبع المماثلة للتعرف عليك عند زيارتك لموقعنا.",
+        sections: [
+          {
+            title: "1. ما هي ملفات تعريف الارتباط؟",
+            content: "ملفات تعريف الارتباط هي ملفات بيانات صغيرة تُوضع على جهاز الكمبيوتر أو الجهاز المحمول الخاص بك عند زيارة موقع إلكتروني. وهي تُستخدم على نطاق واسع لجعل المواقع تعمل بكفاءة أكبر.",
+          },
+          {
+            title: "2. لماذا نستخدم ملفات تعريف الارتباط؟",
+            content: "نستخدم ملفات تعريف ارتباط من الطرف الأول والطرف الثالث لعدة أسباب:",
+            bullets: ["ملفات تعريف ارتباط أساسية: ضرورية للعمليات الأساسية للموقع.", "الأداء والتحليلات: تساعدنا على مراقبة حركة الموقع وتحسين الأداء.", "الوظائف: تتيح لنا تذكر اختياراتك مثل اختيار اللغة."],
+          },
+        ],
+      },
     },
   },
 
@@ -739,11 +951,41 @@ export const translations = {
       headline: 'Полноценный цифровой партнёр — не просто подрядчик',
       body: 'Мы сочетаем инженерную глубину с маркетинговой аналитикой для создания масштабируемых систем.',
       stat1Label: 'Проектов выполнено', stat2Label: 'Удержание клиентов', stat3Label: 'Стран охвачено',
+      cta: "Посмотреть, что мы создаём",
+      features: [
+        { title: "Передовые технологии", desc: "Мы используем современные стеки — Next.js, Node.js, PostgreSQL — выбранные за надёжность и скорость, а не ради моды." },
+        { title: "Адаптивный дизайн", desc: "Каждый интерфейс безупречен на всех устройствах, создан по принципу mobile-first с доступностью как стандартом." },
+        { title: "Оптимизация производительности", desc: "Загрузка меньше секунды, показатели Core Web Vitals в зелёной зоне и постоянный мониторинг через Lighthouse после запуска." },
+        { title: "Веб-безопасность", desc: "SSL, ограничение частоты запросов, практики OWASP и тестирование на проникновение для каждой конечной точки в продакшене." },
+      ],
     },
     services: {
       badge: 'Что мы строим',
       headline: 'Комплексные услуги для цифрового бизнеса',
       sub: 'Каждая услуга создана для накопительного эффекта — лучший код даёт лучшие данные и лучшие решения.',
+    },
+    industries: {
+      badge: "ОТРАСЛИ, С КОТОРЫМИ МЫ РАБОТАЕМ",
+      headline: "Создано для любой быстрорастущей отрасли",
+      sub: "Глубокое знание отрасли позволяет нам работать с полным пониманием контекста — без лишних объяснений, чем занимается ваш бизнес.",
+      list: [
+        { title: "Здравоохранение", desc: "Запись на приём, порталы пациентов и обработка данных с учётом требований HIPAA." },
+        { title: "Розница и электронная коммерция", desc: "Омниканальные витрины с умным управлением запасами, программами лояльности и аналитикой." },
+        { title: "Образование", desc: "Платформы LMS, порталы студентов и системы приёма для современных учебных заведений." },
+        { title: "Недвижимость", desc: "Системы листинга объектов, интеграции с CRM и виртуальные туры." },
+        { title: "Финансы", desc: "Финтех-дашборды, платёжные платформы и инструменты отчётности, готовые к комплаенсу." },
+        { title: "Логистика", desc: "Отслеживание автопарка в реальном времени, автоматизация диспетчеризации и панели оптимизации маршрутов." },
+      ],
+    },
+    techStack: {
+      badge: "ТЕХНОЛОГИИ",
+      title: "Создано для любой быстрорастущей отрасли",
+      subTitle: "Мы используем современные, масштабируемые технологии для ваших продуктов.",
+      tabs: {
+        frontend: "Фронтенд",
+        backend: "Бэкенд и базы данных",
+        devops: "DevOps и облако",
+      },
     },
     caseStudies: {
       badge: 'Результаты',
@@ -1071,8 +1313,78 @@ export const translations = {
       ],
     },
     footer: {
+      exploreServices: "ИЗУЧИТЕ ДРУГИЕ УСЛУГИ",
+      tags: ["Разработка мобильных приложений", "DevOps и CI/CD", "Облачная инфраструктура", "Управление соцсетями", "SEO и контент-стратегия", "Дизайн бренд-айдентики", "Аналитика и BI-дашборды", "Автоматизация email-маркетинга"],
       tagline: 'Создаём цифровые решения для амбициозных брендов.',
+      bottomLeft: "Разработано в Лахоре. Доставляется по всему миру.",
       rights: 'Все права защищены.',
+      columns: {
+        legal: { title: "ПРАВОВАЯ ИНФОРМАЦИЯ", links: ["Политика конфиденциальности", "Условия использования", "Политика cookie"] },
+        company: { title: "КОМПАНИЯ", links: ["О Criticpick", "Кейсы", "Карьера", "Блог", "Связаться с нами"] },
+        products: { title: "ПРОДУКТЫ", links: ["Criticpick ERP Suite", "Lead Gen Engine", "Automation Suite", "Business OS"] },
+        services: { title: "УСЛУГИ", links: ["Индивидуальная веб-разработка", "Решения для электронной коммерции", "Разработка веб-приложений", "UI/UX дизайн", "Интеграция API"] },
+      },
+    },
+    legal: {
+      backLink: "Вернуться на главную",
+      lastUpdated: "Последнее обновление: 17 июля 2026 г.",
+      privacy: {
+        title: "Политика конфиденциальности",
+        intro: "В компании Critics Solutions, доступной по адресу criticpickindustries@gmail.com, одним из главных приоритетов является конфиденциальность наших посетителей. Этот документ описывает типы информации, которую собирает и записывает Critics Solutions, а также то, как мы её используем.",
+        sections: [
+          {
+            title: "1. Какую информацию мы собираем",
+            content: "Мы собираем информацию, чтобы предоставлять клиентам более качественные услуги. Это включает:",
+            bullets: ["Персональные данные: имя, адрес электронной почты, номер WhatsApp и страну при заполнении контактной формы.", "Данные об использовании: посещённые страницы, продолжительность визита, тип устройства и характеристики браузера."],
+          },
+          {
+            title: "2. Как мы используем вашу информацию",
+            content: "Мы используем собранную информацию различными способами, в том числе для того, чтобы:",
+            bullets: ["Предоставлять, обслуживать и поддерживать работу нашего сайта.", "Улучшать, персонализировать и расширять производительность сайта.", "Понимать и анализировать, как вы используете наш сайт.", "Связываться с вами по поводу предложений проектов, обновлений и обслуживания клиентов."],
+          },
+          {
+            title: "3. Cookie и веб-маяки",
+            content: "Как и любой другой сайт, Critics Solutions использует «cookie». Эти файлы cookie используются для хранения информации, включая предпочтения посетителей и страницы сайта, которые посетитель посещал или к которым обращался.",
+          },
+          {
+            title: "4. Безопасность данных",
+            content: "Безопасность ваших персональных данных крайне важна для нас. Мы применяем современные методы шифрования и меры безопасности для защиты ваших данных от несанкционированного доступа.",
+          },
+        ],
+      },
+      terms: {
+        title: "Условия использования",
+        intro: "Добро пожаловать в Critics Solutions. Настоящие Условия использования регулируют использование вами нашего сайта и услуг. Заходя на наш сайт или используя его, вы соглашаетесь соблюдать эти условия.",
+        sections: [
+          {
+            title: "1. Соглашение об оказании услуг",
+            content: "Critics Solutions предоставляет высококачественные услуги по разработке программного обеспечения, UI/UX дизайну и цифровому маркетингу. Объём работ согласовывается индивидуально посредством официально подписанных соглашений об оказании услуг.",
+          },
+          {
+            title: "2. Интеллектуальная собственность",
+            content: "Весь исходный код, архитектура ПО, дизайн сайтов, макеты, графика и брендинг, созданные Critics Solutions, остаются нашей интеллектуальной собственностью до получения полной оплаты.",
+          },
+          {
+            title: "3. Обязанности пользователя",
+            content: "Используя наши контактные формы или услуги, вы соглашаетесь не предоставлять ложные контактные данные и не пытаться нарушить работу нашей веб-инфраструктуры.",
+          },
+        ],
+      },
+      cookie: {
+        title: "Политика использования файлов cookie",
+        intro: "Данная Политика использования файлов cookie объясняет, как Critics Solutions использует файлы cookie и аналогичные технологии отслеживания для распознавания вас при посещении нашего сайта.",
+        sections: [
+          {
+            title: "1. Что такое файлы cookie?",
+            content: "Файлы cookie — это небольшие файлы данных, размещаемые на вашем компьютере или мобильном устройстве при посещении сайта. Они широко используются, чтобы сайты работали более эффективно.",
+          },
+          {
+            title: "2. Почему мы используем файлы cookie?",
+            content: "Мы используем собственные и сторонние файлы cookie по нескольким причинам:",
+            bullets: ["Обязательные cookie: необходимы для базовой работы сайта.", "Производительность и аналитика: помогают отслеживать трафик сайта и оптимизировать производительность.", "Функциональность: позволяют запоминать ваш выбор, например языка."],
+          },
+        ],
+      },
     },
   },
 
@@ -1093,11 +1405,41 @@ export const translations = {
       headline: 'Un socio digital integral — no solo un proveedor',
       body: 'Combinamos profundidad técnica con inteligencia de marketing para entregar sistemas escalables.',
       stat1Label: 'Proyectos entregados', stat2Label: 'Retención de clientes', stat3Label: 'Países atendidos',
+      cta: "Ver lo que construimos",
+      features: [
+        { title: "Tecnología de vanguardia", desc: "Adoptamos stacks modernos — Next.js, Node.js, PostgreSQL — elegidos por su durabilidad y velocidad, no por moda." },
+        { title: "Diseño responsivo", desc: "Cada interfaz es perfecta en todos los dispositivos, construida mobile-first con accesibilidad como estándar." },
+        { title: "Optimización de rendimiento", desc: "Tiempos de carga inferiores a un segundo, Core Web Vitals en verde y monitoreo continuo con Lighthouse tras el lanzamiento." },
+        { title: "Seguridad web", desc: "SSL, limitación de tasa, prácticas OWASP y endpoints probados con pruebas de penetración en cada versión de producción." },
+      ],
     },
     services: {
       badge: 'Qué construimos',
       headline: 'Servicios integrales para negocios digitales',
       sub: 'Cada servicio está diseñado para crecer — mejor software genera mejores datos y mejores decisiones.',
+    },
+    industries: {
+      badge: "SECTORES A LOS QUE SERVIMOS",
+      headline: "Creado para cada sector que se mueve rápido",
+      sub: "Nuestro conocimiento profundo del sector nos permite entregar con contexto — sin necesidad de explicaciones sobre lo que hace tu negocio.",
+      list: [
+        { title: "Salud", desc: "Programación de citas, portales de pacientes y manejo de datos con enfoque en HIPAA." },
+        { title: "Retail y comercio electrónico", desc: "Tiendas omnicanal con inventario inteligente, fidelización y capas de analítica." },
+        { title: "Educación", desc: "Plataformas LMS, portales de estudiantes y sistemas de admisión para instituciones modernas." },
+        { title: "Bienes raíces", desc: "Motores de listado de propiedades, integraciones con CRM y experiencias de recorridos virtuales." },
+        { title: "Finanzas", desc: "Dashboards fintech, plataformas de pago y herramientas de reportes listas para cumplimiento normativo." },
+        { title: "Logística", desc: "Seguimiento de flotas en tiempo real, automatización de despachos y paneles de optimización de rutas." },
+      ],
+    },
+    techStack: {
+      badge: "TECNOLOGÍA",
+      title: "Diseñado para cada sector que se mueve rápido",
+      subTitle: "Usamos tecnologías modernas y escalables para impulsar tus productos.",
+      tabs: {
+        frontend: "Frontend",
+        backend: "Backend y bases de datos",
+        devops: "DevOps y nube",
+      },
     },
     caseStudies: {
       badge: 'Resultados',
@@ -1425,8 +1767,78 @@ export const translations = {
       ],
     },
     footer: {
+      exploreServices: "EXPLORA MÁS SERVICIOS",
+      tags: ["Desarrollo de apps móviles", "DevOps y CI/CD", "Infraestructura en la nube", "Gestión de redes sociales", "Estrategia de SEO y contenido", "Diseño de identidad de marca", "Dashboards de analítica y BI", "Automatización de email marketing"],
       tagline: 'Construyendo experiencias digitales para marcas ambiciosas.',
+      bottomLeft: "Diseñado en Lahore. Entregado en todo el mundo.",
       rights: 'Todos los derechos reservados.',
+      columns: {
+        legal: { title: "LEGAL", links: ["Política de privacidad", "Términos de servicio", "Política de cookies"] },
+        company: { title: "EMPRESA", links: ["Sobre Criticpick", "Casos de éxito", "Empleo", "Blog", "Contáctanos"] },
+        products: { title: "PRODUCTOS", links: ["Criticpick ERP Suite", "Lead Gen Engine", "Automation Suite", "Business OS"] },
+        services: { title: "SERVICIOS", links: ["Desarrollo web a medida", "Soluciones de e-commerce", "Desarrollo de aplicaciones web", "Diseño UI/UX", "Integración de API"] },
+      },
+    },
+    legal: {
+      backLink: "Volver al inicio",
+      lastUpdated: "Última actualización: 17 de julio de 2026",
+      privacy: {
+        title: "Política de privacidad",
+        intro: "En Critics Solutions, accesible desde criticpickindustries@gmail.com, una de nuestras principales prioridades es la privacidad de nuestros visitantes. Este documento de Política de privacidad describe los tipos de información que Critics Solutions recopila y registra, y cómo la utilizamos.",
+        sections: [
+          {
+            title: "1. Información que recopilamos",
+            content: "Recopilamos información para ofrecer mejores servicios a nuestros clientes. Esto incluye:",
+            bullets: ["Datos personales: nombre, correo electrónico, número de WhatsApp y país al completar nuestro formulario de contacto.", "Datos de uso: páginas visitadas, duración de la visita, tipo de dispositivo y especificaciones del navegador."],
+          },
+          {
+            title: "2. Cómo usamos tu información",
+            content: "Utilizamos la información que recopilamos de varias maneras, entre ellas:",
+            bullets: ["Proporcionar, operar y mantener nuestro sitio web.", "Mejorar, personalizar y ampliar el rendimiento de nuestro sitio web.", "Comprender y analizar cómo utilizas nuestro sitio web.", "Comunicarnos contigo sobre propuestas de proyectos, actualizaciones y atención al cliente."],
+          },
+          {
+            title: "3. Cookies y balizas web",
+            content: "Como cualquier otro sitio web, Critics Solutions utiliza 'cookies'. Estas cookies se usan para almacenar información, incluidas las preferencias de los visitantes y las páginas del sitio a las que accedió o visitó el visitante.",
+          },
+          {
+            title: "4. Seguridad de los datos",
+            content: "La seguridad de tus datos personales es muy importante para nosotros. Empleamos cifrado de vanguardia y medidas de seguridad para proteger tus datos frente a accesos no autorizados.",
+          },
+        ],
+      },
+      terms: {
+        title: "Términos de servicio",
+        intro: "Bienvenido a Critics Solutions. Estos Términos de servicio rigen el uso de nuestro sitio web y servicios. Al acceder o utilizar nuestro sitio web, aceptas quedar vinculado por estos términos.",
+        sections: [
+          {
+            title: "1. Acuerdo de servicio",
+            content: "Critics Solutions ofrece servicios de alta calidad en desarrollo de software, diseño UI/UX y marketing digital. El alcance del trabajo se acuerda individualmente mediante Acuerdos de servicio formales y firmados.",
+          },
+          {
+            title: "2. Propiedad intelectual",
+            content: "Todo el código fuente, la arquitectura de software, los diseños web, los diseños gráficos y la marca producidos por Critics Solutions siguen siendo de nuestra propiedad intelectual hasta que se haya recibido el pago completo.",
+          },
+          {
+            title: "3. Responsabilidades del usuario",
+            content: "Al utilizar nuestros formularios de contacto o servicios, aceptas no proporcionar datos de contacto falsos ni intentar alterar nuestra infraestructura web.",
+          },
+        ],
+      },
+      cookie: {
+        title: "Política de cookies",
+        intro: "Esta Política de cookies explica cómo Critics Solutions utiliza cookies y tecnologías de seguimiento similares para reconocerte cuando visitas nuestro sitio web.",
+        sections: [
+          {
+            title: "1. ¿Qué son las cookies?",
+            content: "Las cookies son pequeños archivos de datos que se colocan en tu computadora o dispositivo móvil cuando visitas un sitio web. Se utilizan ampliamente para que los sitios web funcionen de manera más eficiente.",
+          },
+          {
+            title: "2. ¿Por qué usamos cookies?",
+            content: "Utilizamos cookies propias y de terceros por varias razones:",
+            bullets: ["Cookies esenciales: fundamentales para el funcionamiento básico del sitio.", "Rendimiento y análisis: nos ayudan a monitorear el tráfico del sitio y optimizar el rendimiento.", "Funcionalidad: nos permiten recordar tus elecciones, como la selección de idioma."],
+          },
+        ],
+      },
     },
   },
 
@@ -1447,11 +1859,41 @@ export const translations = {
       headline: 'Un partenaire digital complet — pas seulement un prestataire',
       body: 'Nous combinons la profondeur technique avec l\'intelligence marketing pour livrer des systèmes évolutifs.',
       stat1Label: 'Projets livrés', stat2Label: 'Fidélisation clients', stat3Label: 'Pays desservis',
+      cta: "Voir ce que nous construisons",
+      features: [
+        { title: "Technologies de pointe", desc: "Nous adoptons des stacks modernes — Next.js, Node.js, PostgreSQL — choisis pour leur robustesse et leur rapidité, pas pour la tendance." },
+        { title: "Design responsive", desc: "Chaque interface est parfaite sur tous les appareils, conçue mobile-first avec l'accessibilité en standard." },
+        { title: "Optimisation des performances", desc: "Temps de chargement inférieurs à la seconde, Core Web Vitals au vert et surveillance continue via Lighthouse après le lancement." },
+        { title: "Sécurité web", desc: "SSL, limitation de débit, pratiques OWASP et endpoints testés par pentest à chaque mise en production." },
+      ],
     },
     services: {
       badge: 'Ce que nous construisons',
       headline: 'Services complets pour les entreprises numériques',
       sub: 'Chaque service est conçu pour se cumuler — un meilleur code produit de meilleures données.',
+    },
+    industries: {
+      badge: "SECTEURS QUE NOUS SERVONS",
+      headline: "Conçu pour chaque secteur qui avance vite",
+      sub: "Notre connaissance approfondie des secteurs nous permet de livrer avec contexte — sans avoir à expliquer ce que fait votre entreprise.",
+      list: [
+        { title: "Santé", desc: "Prise de rendez-vous, portails patients et gestion des données conforme HIPAA." },
+        { title: "Commerce & e-commerce", desc: "Vitrines omnicanales avec gestion intelligente des stocks, fidélité et couches d'analytique." },
+        { title: "Éducation", desc: "Plateformes LMS, portails étudiants et systèmes d'admission pour les établissements modernes." },
+        { title: "Immobilier", desc: "Moteurs d'annonces immobilières, intégrations CRM et visites virtuelles." },
+        { title: "Finance", desc: "Tableaux de bord fintech, plateformes de paiement et outils de reporting conformes." },
+        { title: "Logistique", desc: "Suivi de flotte en temps réel, automatisation de la répartition et tableaux d'optimisation des itinéraires." },
+      ],
+    },
+    techStack: {
+      badge: "TECHNOLOGIE",
+      title: "Conçu pour chaque secteur qui avance vite",
+      subTitle: "Nous utilisons des technologies modernes et évolutives pour faire tourner vos produits.",
+      tabs: {
+        frontend: "Frontend",
+        backend: "Backend & bases de données",
+        devops: "DevOps & Cloud",
+      },
     },
     caseStudies: {
       badge: 'Résultats',
@@ -1779,8 +2221,78 @@ export const translations = {
       ],
     },
     footer: {
+      exploreServices: "EXPLOREZ NOS AUTRES SERVICES",
+      tags: ["Développement d'applications mobiles", "DevOps & CI/CD", "Infrastructure cloud", "Gestion des réseaux sociaux", "Stratégie SEO & contenu", "Design d'identité de marque", "Tableaux de bord analytiques & BI", "Automatisation de l'email marketing"],
       tagline: 'Créer des expériences numériques pour des marques ambitieuses.',
+      bottomLeft: "Conçu à Lahore. Livré dans le monde entier.",
       rights: 'Tous droits réservés.',
+      columns: {
+        legal: { title: "MENTIONS LÉGALES", links: ["Politique de confidentialité", "Conditions d'utilisation", "Politique de cookies"] },
+        company: { title: "ENTREPRISE", links: ["À propos de Criticpick", "Études de cas", "Carrières", "Blog", "Contactez-nous"] },
+        products: { title: "PRODUITS", links: ["Criticpick ERP Suite", "Lead Gen Engine", "Automation Suite", "Business OS"] },
+        services: { title: "SERVICES", links: ["Développement web sur mesure", "Solutions e-commerce", "Développement d'applications web", "Design UI/UX", "Intégration API"] },
+      },
+    },
+    legal: {
+      backLink: "Retour à l'accueil",
+      lastUpdated: "Dernière mise à jour : 17 juillet 2026",
+      privacy: {
+        title: "Politique de confidentialité",
+        intro: "Chez Critics Solutions, accessible depuis criticpickindustries@gmail.com, l'une de nos principales priorités est la confidentialité de nos visiteurs. Ce document de politique de confidentialité décrit les types d'informations collectées et enregistrées par Critics Solutions, ainsi que la manière dont nous les utilisons.",
+        sections: [
+          {
+            title: "1. Informations que nous collectons",
+            content: "Nous collectons des informations afin de fournir de meilleurs services à nos clients. Cela inclut :",
+            bullets: ["Données personnelles : nom, adresse e-mail, numéro WhatsApp et pays lorsque vous remplissez notre formulaire de contact.", "Données d'utilisation : pages visitées, durée de la visite, type d'appareil et caractéristiques du navigateur."],
+          },
+          {
+            title: "2. Comment nous utilisons vos informations",
+            content: "Nous utilisons les informations que nous collectons de différentes manières, notamment pour :",
+            bullets: ["Fournir, exploiter et maintenir notre site web.", "Améliorer, personnaliser et développer les performances de notre site.", "Comprendre et analyser la façon dont vous utilisez notre site.", "Communiquer avec vous concernant les propositions de projets, les mises à jour et le service client."],
+          },
+          {
+            title: "3. Cookies et balises web",
+            content: "Comme tout autre site web, Critics Solutions utilise des « cookies ». Ces cookies servent à stocker des informations, notamment les préférences des visiteurs et les pages du site auxquelles le visiteur a accédé ou qu'il a visitées.",
+          },
+          {
+            title: "4. Sécurité des données",
+            content: "La sécurité de vos données personnelles est très importante pour nous. Nous utilisons des mesures de chiffrement et de sécurité de pointe pour protéger vos données contre tout accès non autorisé.",
+          },
+        ],
+      },
+      terms: {
+        title: "Conditions d'utilisation",
+        intro: "Bienvenue chez Critics Solutions. Ces Conditions d'utilisation régissent votre utilisation de notre site web et de nos services. En accédant à notre site ou en l'utilisant, vous acceptez d'être lié par ces conditions.",
+        sections: [
+          {
+            title: "1. Accord de service",
+            content: "Critics Solutions fournit des services de haute qualité en développement logiciel, design UI/UX et marketing digital. La portée des travaux est convenue individuellement via des accords de service formels et signés.",
+          },
+          {
+            title: "2. Propriété intellectuelle",
+            content: "Tout le code source, l'architecture logicielle, les designs de sites web, les mises en page, les graphismes et l'image de marque produits par Critics Solutions restent notre propriété intellectuelle jusqu'à réception du paiement intégral.",
+          },
+          {
+            title: "3. Responsabilités de l'utilisateur",
+            content: "En utilisant nos formulaires de contact ou nos services, vous acceptez de ne pas fournir de fausses coordonnées ni de tenter de perturber notre infrastructure web.",
+          },
+        ],
+      },
+      cookie: {
+        title: "Politique de cookies",
+        intro: "Cette politique de cookies explique comment Critics Solutions utilise des cookies et des technologies de suivi similaires pour vous reconnaître lorsque vous visitez notre site web.",
+        sections: [
+          {
+            title: "1. Que sont les cookies ?",
+            content: "Les cookies sont de petits fichiers de données placés sur votre ordinateur ou appareil mobile lorsque vous visitez un site web. Ils sont largement utilisés pour permettre aux sites web de fonctionner plus efficacement.",
+          },
+          {
+            title: "2. Pourquoi utilisons-nous des cookies ?",
+            content: "Nous utilisons des cookies propriétaires et tiers pour plusieurs raisons :",
+            bullets: ["Cookies essentiels : indispensables au fonctionnement de base du site.", "Performance et analyse : nous aident à surveiller le trafic du site et à optimiser les performances.", "Fonctionnalité : nous permettent de mémoriser vos choix, comme la sélection de la langue."],
+          },
+        ],
+      },
     },
   },
 
@@ -1801,11 +2313,41 @@ export const translations = {
       headline: 'Un partner digitale completo — non solo un fornitore',
       body: 'Combiniamo profondità tecnica e intelligenza marketing per consegnare sistemi scalabili.',
       stat1Label: 'Progetti consegnati', stat2Label: 'Fidelizzazione clienti', stat3Label: 'Paesi serviti',
+      cta: "Scopri cosa costruiamo",
+      features: [
+        { title: "Tecnologie all'avanguardia", desc: "Adottiamo stack moderni — Next.js, Node.js, PostgreSQL — scelti per durata e velocità, non per moda." },
+        { title: "Design responsivo", desc: "Ogni interfaccia è perfetta su ogni dispositivo, costruita mobile-first con l'accessibilità come standard." },
+        { title: "Ottimizzazione delle prestazioni", desc: "Tempi di caricamento inferiori al secondo, Core Web Vitals in verde e monitoraggio continuo con Lighthouse dopo il lancio." },
+        { title: "Sicurezza web", desc: "SSL, rate limiting, pratiche OWASP ed endpoint testati con penetration test ad ogni rilascio in produzione." },
+      ],
     },
     services: {
       badge: 'Cosa costruiamo',
       headline: 'Servizi completi per le aziende digitali',
       sub: 'Ogni servizio è pensato per accumularsi — software migliore porta a dati migliori.',
+    },
+    industries: {
+      badge: "SETTORI CHE SERVIAMO",
+      headline: "Progettato per ogni settore in rapido movimento",
+      sub: "La conoscenza approfondita del settore ci permette di lavorare con contesto — senza bisogno di spiegazioni su cosa fa la tua azienda.",
+      list: [
+        { title: "Sanità", desc: "Pianificazione appuntamenti, portali pazienti e gestione dati conforme HIPAA." },
+        { title: "Retail ed e-commerce", desc: "Negozi omnicanale con gestione intelligente dell'inventario, fidelizzazione e livelli di analisi." },
+        { title: "Istruzione", desc: "Piattaforme LMS, portali studenti e sistemi di ammissione per istituzioni moderne." },
+        { title: "Immobiliare", desc: "Motori di annunci immobiliari, integrazioni CRM ed esperienze di tour virtuali." },
+        { title: "Finanza", desc: "Dashboard fintech, piattaforme di pagamento e strumenti di reportistica pronti per la conformità." },
+        { title: "Logistica", desc: "Tracciamento flotte in tempo reale, automazione delle spedizioni e dashboard di ottimizzazione dei percorsi." },
+      ],
+    },
+    techStack: {
+      badge: "TECNOLOGIA",
+      title: "Costruito per ogni settore in rapido movimento",
+      subTitle: "Utilizziamo tecnologie moderne e scalabili per far funzionare i tuoi prodotti.",
+      tabs: {
+        frontend: "Frontend",
+        backend: "Backend e database",
+        devops: "DevOps e Cloud",
+      },
     },
     caseStudies: {
       badge: 'Risultati',
@@ -2133,8 +2675,78 @@ export const translations = {
       ],
     },
     footer: {
+      exploreServices: "ESPLORA ALTRI SERVIZI",
+      tags: ["Sviluppo di app mobili", "DevOps e CI/CD", "Infrastruttura cloud", "Gestione dei social media", "Strategia SEO e contenuti", "Design dell'identità di marca", "Dashboard di analisi e BI", "Automazione dell'email marketing"],
       tagline: 'Costruendo esperienze digitali per brand ambiziosi.',
+      bottomLeft: "Progettato a Lahore. Consegnato in tutto il mondo.",
       rights: 'Tutti i diritti riservati.',
+      columns: {
+        legal: { title: "LEGALE", links: ["Informativa sulla privacy", "Termini di servizio", "Cookie policy"] },
+        company: { title: "AZIENDA", links: ["Chi è Criticpick", "Case study", "Carriere", "Blog", "Contattaci"] },
+        products: { title: "PRODOTTI", links: ["Criticpick ERP Suite", "Lead Gen Engine", "Automation Suite", "Business OS"] },
+        services: { title: "SERVIZI", links: ["Sviluppo web personalizzato", "Soluzioni e-commerce", "Sviluppo di applicazioni web", "Design UI/UX", "Integrazione API"] },
+      },
+    },
+    legal: {
+      backLink: "Torna alla home",
+      lastUpdated: "Ultimo aggiornamento: 17 luglio 2026",
+      privacy: {
+        title: "Informativa sulla privacy",
+        intro: "In Critics Solutions, raggiungibile all'indirizzo criticpickindustries@gmail.com, una delle nostre principali priorità è la privacy dei nostri visitatori. Questo documento descrive i tipi di informazioni raccolte e registrate da Critics Solutions e come le utilizziamo.",
+        sections: [
+          {
+            title: "1. Informazioni che raccogliamo",
+            content: "Raccogliamo informazioni per offrire servizi migliori ai nostri clienti. Questo include:",
+            bullets: ["Dati personali: nome, indirizzo email, numero WhatsApp e paese quando compili il nostro modulo di contatto.", "Dati di utilizzo: pagine visitate, durata della visita, tipo di dispositivo e specifiche del browser."],
+          },
+          {
+            title: "2. Come utilizziamo le tue informazioni",
+            content: "Utilizziamo le informazioni raccolte in vari modi, tra cui:",
+            bullets: ["Fornire, gestire e mantenere il nostro sito web.", "Migliorare, personalizzare ed espandere le prestazioni del sito.", "Comprendere e analizzare come utilizzi il nostro sito.", "Comunicare con te riguardo proposte di progetto, aggiornamenti e assistenza clienti."],
+          },
+          {
+            title: "3. Cookie e web beacon",
+            content: "Come qualsiasi altro sito web, Critics Solutions utilizza i 'cookie'. Questi cookie vengono utilizzati per memorizzare informazioni, incluse le preferenze dei visitatori e le pagine del sito a cui il visitatore ha avuto accesso o che ha visitato.",
+          },
+          {
+            title: "4. Sicurezza dei dati",
+            content: "La sicurezza dei tuoi dati personali è per noi molto importante. Utilizziamo misure di crittografia e sicurezza all'avanguardia per proteggere i tuoi dati da accessi non autorizzati.",
+          },
+        ],
+      },
+      terms: {
+        title: "Termini di servizio",
+        intro: "Benvenuto in Critics Solutions. Questi Termini di servizio regolano l'utilizzo del nostro sito web e dei nostri servizi. Accedendo o utilizzando il nostro sito, accetti di essere vincolato da questi termini.",
+        sections: [
+          {
+            title: "1. Accordo di servizio",
+            content: "Critics Solutions offre servizi di alta qualità in sviluppo software, design UI/UX e marketing digitale. L'ambito del lavoro viene concordato individualmente tramite accordi di servizio formali e firmati.",
+          },
+          {
+            title: "2. Proprietà intellettuale",
+            content: "Tutto il codice sorgente, l'architettura software, i design dei siti web, i layout, la grafica e il branding prodotti da Critics Solutions rimangono di nostra proprietà intellettuale fino al ricevimento del pagamento completo.",
+          },
+          {
+            title: "3. Responsabilità dell'utente",
+            content: "Utilizzando i nostri moduli di contatto o servizi, accetti di non fornire dati di contatto falsi o tentare di interrompere la nostra infrastruttura web.",
+          },
+        ],
+      },
+      cookie: {
+        title: "Cookie policy",
+        intro: "Questa Cookie Policy spiega come Critics Solutions utilizza i cookie e tecnologie di tracciamento simili per riconoscerti quando visiti il nostro sito web.",
+        sections: [
+          {
+            title: "1. Cosa sono i cookie?",
+            content: "I cookie sono piccoli file di dati posizionati sul tuo computer o dispositivo mobile quando visiti un sito web. Sono ampiamente utilizzati per far funzionare i siti web in modo più efficiente.",
+          },
+          {
+            title: "2. Perché utilizziamo i cookie?",
+            content: "Utilizziamo cookie proprietari e di terze parti per diversi motivi:",
+            bullets: ["Cookie essenziali: fondamentali per il funzionamento di base del sito.", "Prestazioni e analisi: ci aiutano a monitorare il traffico del sito e ottimizzare le prestazioni.", "Funzionalità: ci permettono di ricordare le tue scelte, come la selezione della lingua."],
+          },
+        ],
+      },
     },
   },
 
@@ -2155,11 +2767,41 @@ export const translations = {
       headline: 'Een volledige digitale partner — niet zomaar een leverancier',
       body: 'We combineren technische diepgang met marketingintelligentie om schaalbare systemen te leveren.',
       stat1Label: 'Projecten opgeleverd', stat2Label: 'Klantbehoud', stat3Label: 'Landen bediend',
+      cta: "Bekijk wat we bouwen",
+      features: [
+        { title: "Geavanceerde technologie", desc: "We gebruiken moderne stacks — Next.js, Node.js, PostgreSQL — gekozen om duurzaamheid en snelheid, niet om trends." },
+        { title: "Responsive design", desc: "Elke interface is pixel-perfect op alle apparaten, mobile-first gebouwd met toegankelijkheid als standaard." },
+        { title: "Prestatie-optimalisatie", desc: "Laadtijden onder de seconde, Core Web Vitals in het groen en continue Lighthouse-monitoring na livegang." },
+        { title: "Webbeveiliging", desc: "SSL, rate limiting, OWASP-praktijken en pentest-geteste endpoints bij elke productierelease." },
+      ],
     },
     services: {
       badge: 'Wat we bouwen',
       headline: 'Complete diensten voor digitale bedrijven',
       sub: 'Elke dienst is ontworpen om te stapelen — betere software leidt tot betere data.',
+    },
+    industries: {
+      badge: "SECTOREN DIE WE BEDIENEN",
+      headline: "Gebouwd voor elke snel bewegende sector",
+      sub: "Diepgaande sectorkennis stelt ons in staat om met context te leveren — zonder uitleg nodig over wat jouw bedrijf doet.",
+      list: [
+        { title: "Gezondheidszorg", desc: "Afsprakenplanning, patiëntenportalen en HIPAA-bewuste gegevensverwerking." },
+        { title: "Retail & e-commerce", desc: "Omnichannel winkels met slim voorraadbeheer, loyaliteit en analyselagen." },
+        { title: "Onderwijs", desc: "LMS-platforms, studentenportalen en toelatingssystemen voor moderne instellingen." },
+        { title: "Vastgoed", desc: "Vastgoedvermeldingsmachines, CRM-integraties en virtuele tour-ervaringen." },
+        { title: "Financiën", desc: "Fintech-dashboards, betaalplatforms en compliance-klare rapportagetools." },
+        { title: "Logistiek", desc: "Real-time wagenparktracking, verzendautomatisering en route-optimalisatiedashboards." },
+      ],
+    },
+    techStack: {
+      badge: "TECHNOLOGIE",
+      title: "Gebouwd voor elke sector die snel beweegt",
+      subTitle: "We gebruiken moderne, schaalbare technologieën om jouw producten aan te drijven.",
+      tabs: {
+        frontend: "Frontend",
+        backend: "Backend & database",
+        devops: "DevOps & Cloud",
+      },
     },
     caseStudies: {
       badge: 'Resultaten',
@@ -2487,8 +3129,78 @@ export const translations = {
       ],
     },
     footer: {
+      exploreServices: "ONTDEK MEER DIENSTEN",
+      tags: ["Mobiele app-ontwikkeling", "DevOps & CI/CD", "Cloudinfrastructuur", "Social media management", "SEO & contentstrategie", "Merkidentiteitontwerp", "Analytics & BI-dashboards", "E-mailmarketingautomatisering"],
       tagline: 'Naadloze digitale ervaringen bouwen voor ambitieuze merken.',
+      bottomLeft: "Ontworpen in Lahore. Wereldwijd geleverd.",
       rights: 'Alle rechten voorbehouden.',
+      columns: {
+        legal: { title: "JURIDISCH", links: ["Privacybeleid", "Servicevoorwaarden", "Cookiebeleid"] },
+        company: { title: "BEDRIJF", links: ["Over Criticpick", "Case studies", "Vacatures", "Blog", "Neem contact op"] },
+        products: { title: "PRODUCTEN", links: ["Criticpick ERP Suite", "Lead Gen Engine", "Automation Suite", "Business OS"] },
+        services: { title: "DIENSTEN", links: ["Op maat gemaakte webontwikkeling", "E-commerce oplossingen", "Webapp-ontwikkeling", "UI/UX-ontwerp", "API-integratie"] },
+      },
+    },
+    legal: {
+      backLink: "Terug naar home",
+      lastUpdated: "Laatst bijgewerkt: 17 juli 2026",
+      privacy: {
+        title: "Privacybeleid",
+        intro: "Bij Critics Solutions, bereikbaar via criticpickindustries@gmail.com, is de privacy van onze bezoekers een van onze belangrijkste prioriteiten. Dit privacybeleid beschrijft welke soorten informatie Critics Solutions verzamelt en registreert, en hoe we deze gebruiken.",
+        sections: [
+          {
+            title: "1. Informatie die we verzamelen",
+            content: "We verzamelen informatie om onze klanten beter van dienst te kunnen zijn. Dit omvat:",
+            bullets: ["Persoonsgegevens: naam, e-mailadres, WhatsApp-nummer en land bij het invullen van ons contactformulier.", "Gebruiksgegevens: bezochte pagina's, duur van het bezoek, apparaattype en browserspecificaties."],
+          },
+          {
+            title: "2. Hoe we jouw informatie gebruiken",
+            content: "We gebruiken de verzamelde informatie op verschillende manieren, waaronder om:",
+            bullets: ["Onze website te leveren, te beheren en te onderhouden.", "De prestaties van onze website te verbeteren, personaliseren en uit te breiden.", "Te begrijpen en analyseren hoe je onze website gebruikt.", "Met je te communiceren over projectvoorstellen, updates en klantenservice."],
+          },
+          {
+            title: "3. Cookies en webbakens",
+            content: "Zoals elke andere website gebruikt Critics Solutions 'cookies'. Deze cookies worden gebruikt om informatie op te slaan, waaronder voorkeuren van bezoekers en de pagina's van de website die de bezoeker heeft bezocht.",
+          },
+          {
+            title: "4. Beveiliging van gegevens",
+            content: "De beveiliging van je persoonsgegevens is voor ons van groot belang. We gebruiken geavanceerde encryptie- en beveiligingsmaatregelen om je gegevens te beschermen tegen ongeautoriseerde toegang.",
+          },
+        ],
+      },
+      terms: {
+        title: "Servicevoorwaarden",
+        intro: "Welkom bij Critics Solutions. Deze servicevoorwaarden regelen je gebruik van onze website en diensten. Door onze website te bezoeken of te gebruiken, ga je akkoord met deze voorwaarden.",
+        sections: [
+          {
+            title: "1. Serviceovereenkomst",
+            content: "Critics Solutions biedt hoogwaardige softwareontwikkeling, UI/UX-design en digitale marketingdiensten. De omvang van het werk wordt afzonderlijk overeengekomen via formele, ondertekende serviceovereenkomsten.",
+          },
+          {
+            title: "2. Intellectueel eigendom",
+            content: "Alle broncode, softwarearchitectuur, websiteontwerpen, lay-outs, graphics en branding die door Critics Solutions worden geproduceerd, blijven ons intellectueel eigendom totdat de volledige betaling is ontvangen.",
+          },
+          {
+            title: "3. Verantwoordelijkheden van de gebruiker",
+            content: "Door gebruik te maken van onze contactformulieren of diensten, ga je ermee akkoord geen valse contactgegevens te verstrekken of te proberen onze webinfrastructuur te verstoren.",
+          },
+        ],
+      },
+      cookie: {
+        title: "Cookiebeleid",
+        intro: "Dit cookiebeleid legt uit hoe Critics Solutions cookies en vergelijkbare trackingtechnologieën gebruikt om je te herkennen wanneer je onze website bezoekt.",
+        sections: [
+          {
+            title: "1. Wat zijn cookies?",
+            content: "Cookies zijn kleine gegevensbestanden die op je computer of mobiele apparaat worden geplaatst wanneer je een website bezoekt. Ze worden veel gebruikt om websites efficiënter te laten werken.",
+          },
+          {
+            title: "2. Waarom gebruiken we cookies?",
+            content: "We gebruiken first-party en third-party cookies om verschillende redenen:",
+            bullets: ["Essentiële cookies: cruciaal voor de basiswerking van de site.", "Prestaties en analyse: helpen ons het sitebezoek te monitoren en de prestaties te optimaliseren.", "Functionaliteit: stellen ons in staat om jouw keuzes te onthouden, zoals taalselectie."],
+          },
+        ],
+      },
     },
   },
 };

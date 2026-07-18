@@ -23,7 +23,7 @@ export default function Home() {
         <Hero       t={t.hero}         tOverview={t.overview} />
         <Overview   t={t.overview} />
         <Services   t={t.services} />
-        <Industries />
+        <Industries t={t.industries} />
         <AIFeatures />
         <TechStack  />
         <CaseStudies  t={t.caseStudies} />

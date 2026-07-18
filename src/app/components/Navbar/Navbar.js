@@ -1,5 +1,7 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
+import Link from 'next/link'; // Next.js fast navigation ke liye
+import { usePathname } from 'next/navigation'; // Current page track karne ke liye
 import styles from './Navbar.module.css';
 import { useTheme } from '../../context/ThemeContext';
 import { useLang, LANGUAGES } from '../../context/LangContext';
@@ -11,6 +13,10 @@ export default function Navbar() {
   const { lang, changeLang, t } = useLang();
   const langRef = useRef(null);
 
+  // Path check karne ke liye logic
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
+
   const NAV_LINKS = [
     { label: t.nav.home,      href: '#' },
     { label: t.nav.about,     href: '#overview' },
@@ -19,6 +25,24 @@ export default function Navbar() {
     { label: t.nav.resources, href: '#case-studies' },
     { label: t.nav.company,   href: '#footer' },
   ];
+
+  // Smart URL generator
+  const getHref = (href) => {
+    if (isHomePage) return href; // Agar home page par hain toh normal anchor link '#' kaam karega
+    return href === '#' ? '/' : `/${href}`; // Agar contact page par hain toh '/#section' ban jayega
+  };
+
+  // Prevent background scrolling when mobile menu is open (Premium UX)
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [open]);
 
   // Close language dropdown on outside click
   useEffect(() => {
@@ -37,35 +61,36 @@ export default function Navbar() {
     <header className={styles.header}>
       <div className="container">
         <nav className={styles.nav}>
-          <a href="#" className={styles.logo}>
+          {/* Logo link: Logo click karne par home page par transfer karega */}
+          <Link href={isHomePage ? '#' : '/'} className={styles.logo}>
             <span className={styles.logoMark}>
-            <img
-              src="/logo.png" 
-              alt="Criticpick Logo"
-              className={styles.logoImg}
-            />
+              <img
+                src="/logo.png" 
+                alt="Criticpick Logo"
+                className={styles.logoImg}
+              />
             </span>
             <span>Critics Solutions</span>
-          </a>
+          </Link>
 
           <ul className={`${styles.links} ${open ? styles.linksOpen : ''}`}>
             {NAV_LINKS.map((link) => (
-              <li key={link.label}>
-                <a href={link.href} className={styles.link} onClick={() => setOpen(false)}>
+              <li key={link.label} className={styles.navItem}>
+                {/* <a> ki jagah <Link> component use kiya taake fast page change ho */}
+                <Link href={getHref(link.href)} className={styles.link} onClick={() => setOpen(false)}>
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
-            {/* Only visible on the smallest screens, where the top-bar CTA
-                is hidden to save space — see .ctaMobile in Navbar.module.css */}
+            
             <li className={styles.ctaMobileItem}>
-              <a
-                href="#pricing"
+              <Link
+                href={isHomePage ? '#pricing' : '/#pricing'}
                 className={`btn btn-dark ${styles.ctaMobile}`}
                 onClick={() => setOpen(false)}
               >
                 {t.nav.getStarted}
-              </a>
+              </Link>
             </li>
           </ul>
 
@@ -100,24 +125,21 @@ export default function Navbar() {
 
             {/* ── Language Dropdown ── */}
             <div className={styles.langWrap} ref={langRef}>
-            {/* ── Naya Code (Isko wahan paste kar dein) ── */}
-<button
-  className={styles.langBtn}
-  onClick={() => setLangOpen(v => !v)}
-  aria-label="Select language"
-  aria-expanded={langOpen}
->
-
-  <span className={styles.langCode}>{currentLang.label}</span>
-
-  <svg
-    className={`${styles.langChevron} ${langOpen ? styles.langChevronOpen : ''}`}
-    width="12" height="12" viewBox="0 0 24 24" fill="none"
-    stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
-  >
-    <polyline points="6 9 12 15 18 9" />
-  </svg>
-</button>
+              <button
+                className={styles.langBtn}
+                onClick={() => setLangOpen(v => !v)}
+                aria-label="Select language"
+                aria-expanded={langOpen}
+              >
+                <span className={styles.langCode}>{currentLang.label}</span>
+                <svg
+                  className={`${styles.langChevron} ${langOpen ? styles.langChevronOpen : ''}`}
+                  width="12" height="12" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
 
               {langOpen && (
                 <ul className={styles.langMenu} role="listbox">
@@ -129,7 +151,7 @@ export default function Navbar() {
                         role="option"
                         aria-selected={l.code === lang}
                       >
-                        <span>{l.flag}</span>
+                        <span className={styles.langFlag}>{l.flag}</span>
                         <span>{l.label}</span>
                         {l.code === lang && (
                           <svg className={styles.langCheck} width="14" height="14" viewBox="0 0 24 24"
@@ -144,8 +166,10 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* ── Get Started ── */}
-            <a href="#pricing" className={`btn btn-dark ${styles.ctaDesktop}`}>{t.nav.getStarted}</a>
+            {/* ── Get Started Desktop CTA ── */}
+            <Link href={isHomePage ? '#pricing' : '/#pricing'} className={`btn btn-dark ${styles.ctaDesktop}`}>
+              {t.nav.getStarted}
+            </Link>
 
             {/* ── Burger ── */}
             <button

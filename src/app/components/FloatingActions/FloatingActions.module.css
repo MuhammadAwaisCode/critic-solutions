@@ -26,27 +26,44 @@
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
-
 .mailBtn {
   background-color: #1a73e8;
 }
 
-
 .whatsappBtn {
   background-color: #25d366;
 }
-@media (max-width: 480px) {
+
+/* Tablet view up to wide mobile sizes */
+@media (max-width: 768px) {
   .floatingContainer {
-    bottom: 16px;
-    right: 16px;
-    gap: 12px;
+    bottom: 20px;
+    right: 20px;
+    gap: 10px;
   }
   .floatingButton {
-    width: 46px;
-    height: 46px;
+    width: 48px;
+    height: 48px;
   }
   .floatingButton svg {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .floatingContainer {
+    bottom: 12px;
+    right: 12px;
+    gap: 8px;
+  }
+  .floatingButton {
+    width: 44px;
+    height: 44px;
+  }
+  .floatingButton svg {
+    width: 18px;
+    height: 18px;
   }
 }

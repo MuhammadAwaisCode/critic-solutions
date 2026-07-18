@@ -1,38 +1,57 @@
 import styles from './Industries.module.css';
+import {
+  LuHeartPulse,
+  LuShoppingBag,
+  LuGraduationCap,
+  LuHouse,
+  LuCreditCard,
+  LuTruck,
+} from "react-icons/lu";
 
-const INDUSTRIES = [
-  { emoji: '🎓', name: 'Education', desc: 'LMS platforms, student portals, and admissions systems for modern institutions.' },
-  { emoji: '🛍️', name: 'Retail & E-Commerce', desc: 'Omnichannel storefronts with smart inventory, loyalty, and analytics layers.' },
-  { emoji: '🏥', name: 'Healthcare', desc: 'Appointment scheduling, patient portals, and HIPAA-conscious data handling.' },
-  { emoji: '🚚', name: 'Logistics', desc: 'Real-time fleet tracking, dispatch automation, and route optimisation dashboards.' },
-  { emoji: '💳', name: 'Finance', desc: 'Fintech dashboards, payment platforms, and compliance-ready reporting tools.' },
-  { emoji: '🏢', name: 'Real Estate', desc: 'Property listing engines, CRM integrations, and virtual tour experiences.' },
+// Icons are matched by position — t.industries.list is always authored in this
+// fixed order (Healthcare, Retail & E-Commerce, Education, Real Estate,
+// Finance, Logistics) across every language in LangContext.js, so index-based
+// mapping keeps the right icon on the right (translated) card.
+const INDUSTRY_ICONS = [
+  LuHeartPulse,    // Healthcare
+  LuShoppingBag,   // Retail & E-Commerce
+  LuGraduationCap, // Education
+  LuHouse,         // Real Estate
+  LuCreditCard,    // Finance
+  LuTruck,         // Logistics
 ];
 
-export default function Industries() {
+export default function Industries({ t }) {
+  const list = t?.list || [];
+
   return (
-    <section className={`section section--muted`} id="industries">
+    <section className="section section--muted" id="industries">
       <div className="container">
         <div className="section-header--center">
-          <span className="tag-badge">Industries We Serve</span>
-          <h2 className="display-lg" style={{ marginTop: '16px', marginBottom: '14px' }}>
-            Built for every vertical that moves fast
+          <span className="tag-badge">{t?.badge}</span>
+          <h2 className={`display-lg ${styles.headline}`}>
+            {t?.headline}
           </h2>
-          <p className="body-lg">
-            Deep domain knowledge lets us ship with context — no hand-holding on what your business actually does.
+          <p className="body-lg" style={{ maxWidth: '640px', margin: '0 auto' }}>
+            {t?.sub}
           </p>
         </div>
 
-        <div className="grid-3">
-          {INDUSTRIES.map((ind) => (
-            <article key={ind.name} className={`${styles.card}`}>
-              <div className={styles.emojiWrap}>{ind.emoji}</div>
-              <div className="stack stack--sm">
-                <h3 className={styles.name}>{ind.name}</h3>
-                <p className="body-sm" style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>{ind.desc}</p>
-              </div>
-            </article>
-          ))}
+        <div className={styles.grid}>
+          {list.map((ind, i) => {
+            const IconComponent = INDUSTRY_ICONS[i] || LuHeartPulse;
+            return (
+              <article key={i} className={styles.card}>
+                <div className={styles.iconWrap}>
+                  <IconComponent className={styles.icon} />
+                </div>
+                <div className="stack stack--sm">
+                  <h3 className={styles.name}>{ind.title}</h3>
+                  <p className={`body-sm ${styles.desc}`}>{ind.desc}</p>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

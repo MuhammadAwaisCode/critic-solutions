@@ -1,0 +1,200 @@
+/* ────────────────────────────────────────────────────────────
+   Legal pages — theme tokens
+   .light / .dark are applied to the top-level wrapper (.page) so
+   every child element can reference these custom properties and
+   transition smoothly whenever the theme toggles.
+──────────────────────────────────────────────────────────── */
+.light {
+  --legal-bg: #f7f8fa;
+  --legal-bg-grad: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.06) 0%, #f7f8fa 55%);
+  --legal-text-primary: #0f172a;
+  --legal-text-secondary: rgba(15, 23, 42, 0.72);
+  --legal-text-muted: rgba(15, 23, 42, 0.55);
+  --legal-card-bg: rgba(255, 255, 255, 0.75);
+  --legal-card-border: rgba(15, 23, 42, 0.08);
+  --legal-card-shadow: 0 30px 80px -30px rgba(15, 23, 42, 0.18);
+  --legal-divider: rgba(15, 23, 42, 0.1);
+  --legal-accent: #2563eb;
+  --legal-title-grad: linear-gradient(135deg, #0f172a 0%, #475569 100%);
+  --legal-back-bg: rgba(15, 23, 42, 0.04);
+  --legal-back-border: rgba(15, 23, 42, 0.08);
+  --legal-back-hover-bg: rgba(15, 23, 42, 0.08);
+  --legal-back-hover-text: #0f172a;
+}
+
+.dark {
+  --legal-bg: #05070d;
+  --legal-bg-grad: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.05) 0%, #05070d 50%);
+  --legal-text-primary: #ffffff;
+  --legal-text-secondary: rgba(255, 255, 255, 0.75);
+  --legal-text-muted: rgba(255, 255, 255, 0.55);
+  --legal-card-bg: rgba(255, 255, 255, 0.015);
+  --legal-card-border: rgba(255, 255, 255, 0.06);
+  --legal-card-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.7);
+  --legal-divider: rgba(255, 255, 255, 0.08);
+  --legal-accent: #3b82f6;
+  --legal-title-grad: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+  --legal-back-bg: rgba(255, 255, 255, 0.03);
+  --legal-back-border: rgba(255, 255, 255, 0.05);
+  --legal-back-hover-bg: rgba(255, 255, 255, 0.07);
+  --legal-back-hover-text: #ffffff;
+}
+
+/* ────────────────────────────────────────────────────────────
+   Layout
+──────────────────────────────────────────────────────────── */
+.page {
+  padding-top: clamp(96px, 14vw, 160px);
+  padding-bottom: clamp(64px, 10vw, 120px);
+  background: var(--legal-bg-grad);
+  background-color: var(--legal-bg);
+  min-height: 100vh;
+  color: var(--legal-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 4.5vw, 24px);
+}
+
+/* Premium wrapper card */
+.legalCard {
+  background: var(--legal-card-bg);
+  border: 1px solid var(--legal-card-border);
+  backdrop-filter: blur(16px);
+  border-radius: clamp(14px, 2vw, 24px);
+  padding: clamp(24px, 5vw, 56px);
+  box-shadow: var(--legal-card-shadow);
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Back button badge */
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--legal-text-secondary);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.875rem;
+  margin-bottom: clamp(20px, 4vw, 32px);
+  padding: 8px 16px;
+  border-radius: 100px;
+  background: var(--legal-back-bg);
+  border: 1px solid var(--legal-back-border);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backLink:hover {
+  color: var(--legal-back-hover-text);
+  background: var(--legal-back-hover-bg);
+  border-color: var(--legal-card-border);
+  transform: translateX(-4px);
+}
+
+.header {
+  border-bottom: 1px solid var(--legal-divider);
+  padding-bottom: clamp(20px, 4vw, 32px);
+  margin-bottom: clamp(24px, 5vw, 40px);
+}
+
+.title {
+  font-size: clamp(1.75rem, 5.5vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  background: var(--legal-title-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+  line-height: 1.15;
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: var(--legal-accent);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ────────────────────────────────────────────────────────────
+   Content typography
+──────────────────────────────────────────────────────────── */
+.content {
+  line-height: 1.85;
+  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+  color: var(--legal-text-secondary);
+}
+
+.content h2 {
+  font-size: clamp(1.15rem, 2.6vw, 1.6rem);
+  font-weight: 700;
+  margin-top: clamp(28px, 5vw, 48px);
+  margin-bottom: 16px;
+  color: var(--legal-text-primary);
+  letter-spacing: -0.02em;
+}
+
+.content p {
+  margin-bottom: 20px;
+  overflow-wrap: break-word;
+}
+
+.content ul {
+  margin-bottom: 28px;
+  padding-left: 4px;
+  list-style: none;
+}
+
+.content li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 14px;
+  color: var(--legal-text-secondary);
+}
+
+.content li::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--legal-accent);
+  box-shadow: 0 0 8px var(--legal-accent);
+}
+
+.content strong {
+  color: var(--legal-text-primary);
+  font-weight: 600;
+}
+
+/* ────────────────────────────────────────────────────────────
+   Responsive — fluid down to 320px
+──────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .legalCard {
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+  .legalCard {
+    padding: 20px 16px;
+    border-radius: 14px;
+  }
+  .backLink {
+    padding: 7px 14px;
+    font-size: 0.8rem;
+  }
+  .content li {
+    padding-left: 22px;
+  }
+}
