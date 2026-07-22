@@ -43,7 +43,7 @@ export async function POST(request) {
     const { error } = await resend.emails.send({
       from: 'Critics Solution Contact Form <onboarding@resend.dev>',
        to: ['criticpickindustries@gmail.com'],
-      to: ['70153920@student.uol.edu.pk'],
+     
       replyTo: email, 
       subject: `🔥 New enquiry from ${firstName} ${lastName}`,
       html: buildEmailHtml({ firstName, lastName, email, message, logoUrl }), // Passed logoUrl here

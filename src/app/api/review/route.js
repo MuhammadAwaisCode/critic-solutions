@@ -35,7 +35,7 @@ export async function POST(request) {
     const { error } = await resend.emails.send({
       from: 'Critics Solution Reviews <onboarding@resend.dev>',
       to: ['criticpickindustries@gmail.com'],
-      to: ['70153920@student.uol.edu.pk'],
+      
        // Aapka receiver email
       subject: `⭐ New Web Review from ${name} (${starsCount}/5 Stars)`,
       html: buildReviewEmailHtml({ name, designation, rating: starsCount, message, logoUrl }),
