@@ -3,8 +3,9 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import styles from './AIFeatures.module.css';
 import { useLang } from '../../context/LangContext';
 
-/* ─── Markdown-lite renderer (unchanged) ─────────────────────── */
+/* ─── Markdown-lite renderer ─────────────────────── */
 function renderText(text) {
+  if (!text) return null;
   return text.split('\n').map((line, i, arr) => {
     const parts = line.split(/\*\*(.*?)\*\*/g);
     return (
@@ -18,7 +19,7 @@ function renderText(text) {
   });
 }
 
-/* ─── Typing Indicator (unchanged) ───────────────────────────── */
+/* ─── Typing Indicator ───────────────────────────── */
 function TypingIndicator() {
   return (
     <div className={`${styles.chatBubble} ${styles.chatAI}`}>
@@ -32,11 +33,11 @@ function TypingIndicator() {
 /* ─── Main Component ─────────────────────────────────────────── */
 export default function AIFeatures() {
   const { t } = useLang();
-  const cb = t.chatbot; // shorthand
+  // Safe fallback agar t.chatbot load na hua ho
+  const cb = t?.chatbot || {};
 
   const makeInitial = useCallback(
-    () => [{ id: 1, role: 'ai', text: cb.initialMessage }],
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    () => [{ id: 1, role: 'ai', text: cb.initialMessage || 'Hello! How can I help you today?' }],
     [cb.initialMessage]
   );
 
@@ -52,21 +53,20 @@ export default function AIFeatures() {
     setIsTyping(false);
   }, [makeInitial]);
 
-
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages, isTyping]);
 
-
   const getResponse = useCallback(
     (input) => {
       const lower = input.toLowerCase().trim();
-      for (const entry of cb.faqs) {
-        if (entry.keywords.some((kw) => lower.includes(kw))) {
-          return `${entry.response}\n\n---\n${cb.furtherInfo}`;
+      const faqs = cb.faqs || [];
+      for (const entry of faqs) {
+        if (entry.keywords?.some((kw) => lower.includes(kw))) {
+          return `${entry.response}\n\n---\n${cb.furtherInfo || ''}`;
         }
       }
-      return `${cb.fallback}\n\n---\n${cb.furtherInfo}`;
+      return `${cb.fallback || 'I am sorry, I did not understand that.'}\n\n---\n${cb.furtherInfo || ''}`;
     },
     [cb.faqs, cb.fallback, cb.furtherInfo]
   );
@@ -108,16 +108,19 @@ export default function AIFeatures() {
             <div>
               <span className="tag-badge tag-badge--dark">{cb.badge}</span>
             </div>
-            <h2 className="display-lg" style={{ color: 'var(--text-invert)' }}>
+
+            {/* --- FIX: Text Color ko `#ffffff` par lock kar diya gaya hai --- */}
+            <h2 className="display-lg" style={{ color: '#ffffff', fontWeight: '700' }}>
               {cb.headline1}<br />
               <em className={styles.em}>{cb.headlineEm}</em>
             </h2>
-            <p className="body-lg" style={{ color: 'rgba(247,246,243,0.65)' }}>
+
+            <p className="body-lg" style={{ color: 'rgba(247,246,243,0.75)' }}>
               {cb.body}
             </p>
 
             <ul className="stack stack--sm">
-              {cb.features.map((f) => (
+              {cb.features?.map((f) => (
                 <li key={f} className={styles.featureItem}>
                   <span className={styles.tick}>✓</span>
                   <span>{f}</span>
@@ -140,7 +143,7 @@ export default function AIFeatures() {
             <div className={styles.mockupHeader}>
               <div className={styles.mockupTitle}>
                 <div className={styles.aiDot} />
-                <span className="label" style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.7rem' }}>
+                <span className="label" style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.75rem', fontWeight: '600' }}>
                   {cb.assistantTitle}
                 </span>
               </div>
@@ -164,7 +167,7 @@ export default function AIFeatures() {
 
               {/* Metrics row */}
               <div className={styles.metricRow}>
-                {cb.metrics.map(([k, v]) => (
+                {cb.metrics?.map(([k, v]) => (
                   <div key={k} className={styles.metricCell}>
                     <span className={styles.metricV}>{v}</span>
                     <span className={styles.metricK}>{k}</span>

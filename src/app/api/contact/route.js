@@ -33,13 +33,20 @@ export async function POST(request) {
       );
     }
 
+    // ── 🌍 AUTOMATIC DOMAIN DETECTOR FOR LOGO ──────────────────
+    // Yeh line aapki website ka domain (localhost ya live url) khud nikal legi
+    const host = request.headers.get('host'); 
+    const protocol = request.headers.get('x-forwarded-proto') || 'http';
+    const logoUrl = `${protocol}://${host}/logo.png`; // Automatic full URL path
+
     // ── Send email via Resend ─────────────────────────────────
     const { error } = await resend.emails.send({
-      from: 'YAE Solutions Contact Form <onboarding@resend.dev>',
+      from: 'Critics Solution Contact Form <onboarding@resend.dev>',
+       to: ['criticpickindustries@gmail.com'],
       to: ['70153920@student.uol.edu.pk'],
       replyTo: email, 
-      subject: `New enquiry from ${firstName} ${lastName}`,
-      html: buildEmailHtml({ firstName, lastName, email, message }),
+      subject: `🔥 New enquiry from ${firstName} ${lastName}`,
+      html: buildEmailHtml({ firstName, lastName, email, message, logoUrl }), // Passed logoUrl here
       text: buildEmailText({ firstName, lastName, email, message }),
     });
 
@@ -61,9 +68,7 @@ export async function POST(request) {
     );
   }
 }
-
-// ── HTML email template ───────────────────────────────────────
-function buildEmailHtml({ firstName, lastName, email, message }) {
+function buildEmailHtml({ firstName, lastName, email, message, logoUrl }) {
   const esc = (str) =>
     String(str)
       .replace(/&/g, '&amp;')
@@ -77,58 +82,76 @@ function buildEmailHtml({ firstName, lastName, email, message }) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>New Contact Form Submission</title>
+  <title>New Contact Submission</title>
 </head>
-<body style="margin:0;padding:0;background:#F7F6F3;font-family:'Segoe UI',system-ui,sans-serif;">
-  <table width="100%" cellpadding="0" cellspacing="0" style="padding:40px 20px;">
+<body style="margin:0;padding:0;background-color:#F8FAFC;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#F8FAFC;padding:40px 16px;">
     <tr>
       <td align="center">
-        <table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);max-width:600px;width:100%;">
+        <table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.04);border:1px solid #E2E8F0;max-width:600px;width:100%;">
           <tr>
-            <td style="background:#111110;padding:32px 40px;">
-              <p style="margin:0;color:#F7F6F3;font-size:1.25rem;font-weight:700;letter-spacing:-0.01em;">YAE Solutions</p>
-              <p style="margin:6px 0 0;color:#8A8A85;font-size:0.875rem;">New contact form submission</p>
+            <td style="background:linear-gradient(135deg, #0F172A 0%, #1E293B 100%);padding:36px 40px;text-align:center;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td align="center" style="padding-bottom:12px;">
+                    <img src="${logoUrl}" alt="Critics Solution Logo" style="height:48px; max-width:220px; display:block; outline:none; border:none; object-fit:contain;" />
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center">
+                    <h1 style="margin:0;color:#FFFFFF;font-size:1.5rem;font-weight:700;letter-spacing:-0.02em;">Critics Solution</h1>
+                    <p style="margin:6px 0 0;color:#94A3B8;font-size:0.875rem;letter-spacing:0.05em;text-transform:uppercase;">Inbound Client Inquiry</p>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
           <tr>
-            <td style="padding:36px 40px;">
-              <p style="margin:0 0 24px;font-size:1rem;color:#4A4A47;line-height:1.6;">You have received a new message through the YAE Solutions contact form.</p>
-              <table width="100%" cellpadding="0" cellspacing="0" style="background:#F7F6F3;border-radius:10px;overflow:hidden;margin-bottom:24px;">
+            <td style="padding:40px 40px 32px 40px;">
+              <p style="margin:0 0 28px;font-size:1.05rem;color:#334155;line-height:1.6;">
+                Hello Team, <br/>You have received a professional message through the official <strong>Critics Solution</strong> portal. Details are provided below:
+              </p>
+              <table width="100%" cellpadding="0" cellspacing="0" style="background:#F8FAFC;border-radius:12px;border:1px solid #E2E8F0;margin-bottom:28px;">
                 <tr>
-                  <td style="padding:20px 24px;">
+                  <td style="padding:24px;">
                     <table width="100%" cellpadding="0" cellspacing="0">
                       <tr>
-                        <td style="padding:6px 0;">
-                          <span style="font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#8A8A85;">Full Name</span><br/>
-                          <span style="font-size:0.9375rem;color:#111110;font-weight:600;">${esc(firstName)} ${esc(lastName)}</span>
+                        <td style="padding-bottom:16px;">
+                          <span style="font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748B;display:block;margin-bottom:4px;">Full Name</span>
+                          <span style="font-size:1rem;color:#0F172A;font-weight:600;">${esc(firstName)} ${esc(lastName)}</span>
                         </td>
                       </tr>
                       <tr>
-                        <td style="padding:10px 0 6px;border-top:1px solid #E0DFD9;">
-                          <span style="font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#8A8A85;">Email Address</span><br/>
-                          <a href="mailto:${esc(email)}" style="font-size:0.9375rem;color:#2563EB;font-weight:500;text-decoration:none;">${esc(email)}</a>
+                        <td style="padding-top:16px;border-top:1px solid #E2E8F0;">
+                          <span style="font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748B;display:block;margin-bottom:4px;">Email Address</span>
+                          <a href="mailto:${esc(email)}" style="font-size:1rem;color:#2563EB;font-weight:600;text-decoration:none;">${esc(email)}</a>
                         </td>
                       </tr>
                     </table>
                   </td>
                 </tr>
               </table>
-              <p style="margin:0 0 10px;font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#8A8A85;">Message</p>
-              <div style="background:#F7F6F3;border-left:3px solid #2563EB;border-radius:0 8px 8px 0;padding:20px 24px;margin-bottom:32px;">
-                <p style="margin:0;font-size:0.9375rem;color:#111110;line-height:1.75;white-space:pre-wrap;">${esc(message)}</p>
+              <span style="font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748B;display:block;margin-bottom:8px;padding-left:4px;">Client Message</span>
+              <div style="background:#FFFFFF;border-left:4px solid #0F172A;border-radius:0 12px 12px 0;padding:20px 24px;margin-bottom:36px;box-shadow:inset 0 0 0 1px #E2E8F0;">
+                <p style="margin:0;font-size:1rem;color:#1E293B;line-height:1.8;white-space:pre-wrap;font-style:italic;">"${esc(message)}"</p>
               </div>
-              <table cellpadding="0" cellspacing="0">
+              
+              <!-- Quick Action Button -->
+              <table cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                  <td style="border-radius:999px;background:#111110;">
-                    <a href="mailto:${esc(email)}" style="display:inline-block;padding:13px 28px;color:#F7F6F3;font-size:0.9375rem;font-weight:600;text-decoration:none;border-radius:999px;">Reply to ${esc(firstName)} →</a>
+                  <td align="center">
+                    <a href="mailto:${esc(email)}" style="display:inline-block;padding:14px 32px;background:#0F172A;color:#FFFFFF;font-size:0.9375rem;font-weight:600;text-decoration:none;border-radius:10px;box-shadow:0 4px 12px rgba(15,23,42,0.15);transition:background 0.2s;">Reply to Lead →</a>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
           <tr>
-            <td style="padding:20px 40px;border-top:1px solid #E0DFD9;">
-              <p style="margin:0;font-size:0.8125rem;color:#8A8A85;">© ${new Date().getFullYear()} YAE Solutions · Lahore, Pakistan</p>
+            <td style="padding:24px 40px;background-color:#F8FAFC;border-top:1px solid #E2E8F0;text-align:center;">
+              <p style="margin:0;font-size:0.8125rem;color:#64748B;line-height:1.5;">
+                © ${new Date().getFullYear()} <strong>Critics Solution</strong> · Lahore, Pakistan <br/>
+                <span style="font-size:0.75rem;color:#94A3B8;display:block;margin-top:4px;">This is an automated operational node notification.</span>
+              </p>
             </td>
           </tr>
         </table>
@@ -141,7 +164,7 @@ function buildEmailHtml({ firstName, lastName, email, message }) {
 
 function buildEmailText({ firstName, lastName, email, message }) {
   return [
-    'New contact form submission — YAE Solutions',
+    'New Contact Inquiry — Critics Solution',
     '=============================================',
     '',
     `Name:    ${firstName} ${lastName}`,
