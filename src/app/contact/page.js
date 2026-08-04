@@ -6,7 +6,7 @@ import { useLang } from '../context/LangContext';
 
 const INITIAL = { firstName: '', lastName: '', email: '', message: '' };
 
-// Clean Vector Icons for High-End Contact Details
+
 const EmailIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <rect width="20" height="16" x="2" y="4" rx="2" />
@@ -29,7 +29,7 @@ const LocationIcon = () => (
 
 export default function ContactPage() {
   const { t } = useLang();
-  const c = t.contact; // shorthand
+  const c = t.contact; 
 
   const [form, setForm]       = useState(INITIAL);
   const [status, setStatus]   = useState('idle'); // 'idle' | 'loading' | 'success' | 'error'
@@ -92,7 +92,7 @@ export default function ContactPage() {
                   </span>
                   <div>
                     <p className="label" style={{ color: 'var(--text-muted)', marginBottom: '4px' }}>{c.emailLabel}</p>
-                    <a href="mailto:criticpickindustries@gmail.com" className={styles.infoLink}>criticpickindustries@gmail.com</a>
+                    <a href="mailto:criticsolutions9@gmail.com" className={styles.infoLink}>criticsolutions9@gmail.com</a>
                   </div>
                 </div>
 
