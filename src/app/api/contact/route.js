@@ -33,19 +33,17 @@ export async function POST(request) {
       );
     }
 
-    // ── 🌍 AUTOMATIC DOMAIN DETECTOR FOR LOGO ──────────────────
-    // Yeh line aapki website ka domain (localhost ya live url) khud nikal legi
     const host = request.headers.get('host'); 
     const protocol = request.headers.get('x-forwarded-proto') || 'http';
-    const logoUrl = `${protocol}://${host}/logo.png`; // Automatic full URL path
+    const logoUrl = `${protocol}://${host}/logo.png`;
 
     // ── Send email via Resend ─────────────────────────────────
     const { error } = await resend.emails.send({
-      from: 'Critics Solution Contact Form <onboarding@resend.dev>',
-       to: ['criticpickindustries@gmail.com'],
+      from: 'Critic Solutions Contact Form <onboarding@resend.dev>',
+       to: ['criticsolutions9@gmail.com'],
      
       replyTo: email, 
-      subject: `🔥 New enquiry from ${firstName} ${lastName}`,
+      subject: ` New enquiry from ${firstName} ${lastName}`,
       html: buildEmailHtml({ firstName, lastName, email, message, logoUrl }), // Passed logoUrl here
       text: buildEmailText({ firstName, lastName, email, message }),
     });
@@ -94,12 +92,12 @@ function buildEmailHtml({ firstName, lastName, email, message, logoUrl }) {
               <table width="100%" cellpadding="0" cellspacing="0">
                 <tr>
                   <td align="center" style="padding-bottom:12px;">
-                    <img src="${logoUrl}" alt="Critics Solution Logo" style="height:48px; max-width:220px; display:block; outline:none; border:none; object-fit:contain;" />
+                    <img src="${logoUrl}" alt="Critic Solutions Logo" style="height:48px; max-width:220px; display:block; outline:none; border:none; object-fit:contain;" />
                   </td>
                 </tr>
                 <tr>
                   <td align="center">
-                    <h1 style="margin:0;color:#FFFFFF;font-size:1.5rem;font-weight:700;letter-spacing:-0.02em;">Critics Solution</h1>
+                    <h1 style="margin:0;color:#FFFFFF;font-size:1.5rem;font-weight:700;letter-spacing:-0.02em;">Critic Solutions</h1>
                     <p style="margin:6px 0 0;color:#94A3B8;font-size:0.875rem;letter-spacing:0.05em;text-transform:uppercase;">Inbound Client Inquiry</p>
                   </td>
                 </tr>
@@ -109,7 +107,7 @@ function buildEmailHtml({ firstName, lastName, email, message, logoUrl }) {
           <tr>
             <td style="padding:40px 40px 32px 40px;">
               <p style="margin:0 0 28px;font-size:1.05rem;color:#334155;line-height:1.6;">
-                Hello Team, <br/>You have received a professional message through the official <strong>Critics Solution</strong> portal. Details are provided below:
+                Hello Team, <br/>You have received a professional message through the official <strong>Critic Solutions</strong> portal. Details are provided below:
               </p>
               <table width="100%" cellpadding="0" cellspacing="0" style="background:#F8FAFC;border-radius:12px;border:1px solid #E2E8F0;margin-bottom:28px;">
                 <tr>
@@ -149,7 +147,7 @@ function buildEmailHtml({ firstName, lastName, email, message, logoUrl }) {
           <tr>
             <td style="padding:24px 40px;background-color:#F8FAFC;border-top:1px solid #E2E8F0;text-align:center;">
               <p style="margin:0;font-size:0.8125rem;color:#64748B;line-height:1.5;">
-                © ${new Date().getFullYear()} <strong>Critics Solution</strong> · Lahore, Pakistan <br/>
+                © ${new Date().getFullYear()} <strong>Critic Solutions</strong> · Lahore, Pakistan <br/>
                 <span style="font-size:0.75rem;color:#94A3B8;display:block;margin-top:4px;">This is an automated operational node notification.</span>
               </p>
             </td>
@@ -164,7 +162,7 @@ function buildEmailHtml({ firstName, lastName, email, message, logoUrl }) {
 
 function buildEmailText({ firstName, lastName, email, message }) {
   return [
-    'New Contact Inquiry — Critics Solution',
+    'New Contact Inquiry — Critic Solutions',
     '=============================================',
     '',
     `Name:    ${firstName} ${lastName}`,

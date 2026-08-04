@@ -23,8 +23,7 @@ export async function POST(request) {
       );
     }
 
-    // ── 🌍 AUTOMATIC DOMAIN DETECTOR FOR LOGO ──────────────────
-    // Public folder se logo.png auto pick kar lega
+  
     const host = request.headers.get('host'); 
     const protocol = request.headers.get('x-forwarded-proto') || 'http';
     const logoUrl = `${protocol}://${host}/logo.png`; 
@@ -33,10 +32,10 @@ export async function POST(request) {
 
     // ── Send email via Resend ─────────────────────────────────
     const { error } = await resend.emails.send({
-      from: 'Critics Solution Reviews <onboarding@resend.dev>',
-      to: ['criticpickindustries@gmail.com'],
+      from: 'Critic Solutions Reviews <onboarding@resend.dev>',
+      to: ['criticsolutions9@gmail.com'],
       
-       // Aapka receiver email
+  
       subject: `⭐ New Web Review from ${name} (${starsCount}/5 Stars)`,
       html: buildReviewEmailHtml({ name, designation, rating: starsCount, message, logoUrl }),
       text: buildReviewEmailText({ name, designation, rating: starsCount, message }),
@@ -92,12 +91,12 @@ function buildReviewEmailHtml({ name, designation, rating, message, logoUrl }) {
               <table width="100%" cellpadding="0" cellspacing="0">
                 <tr>
                   <td align="center" style="padding-bottom:12px;">
-                    <img src="${logoUrl}" alt="Critics Solution Logo" style="height:48px; max-width:220px; display:block; outline:none; border:none; object-fit:contain;" />
+                    <img src="${logoUrl}" alt="Critic Solutions Logo" style="height:48px; max-width:220px; display:block; outline:none; border:none; object-fit:contain;" />
                   </td>
                 </tr>
                 <tr>
                   <td align="center">
-                    <h1 style="margin:0;color:#FFFFFF;font-size:1.5rem;font-weight:700;letter-spacing:-0.02em;">Critics Solution</h1>
+                    <h1 style="margin:0;color:#FFFFFF;font-size:1.5rem;font-weight:700;letter-spacing:-0.02em;">Critic Solutions</h1>
                     <p style="margin:6px 0 0;color:#94A3B8;font-size:0.875rem;letter-spacing:0.05em;text-transform:uppercase;">Inbound Client Review / Testimonial</p>
                   </td>
                 </tr>
@@ -109,7 +108,7 @@ function buildReviewEmailHtml({ name, designation, rating, message, logoUrl }) {
           <tr>
             <td style="padding:40px 40px 32px 40px;">
               <p style="margin:0 0 28px;font-size:1.05rem;color:#334155;line-height:1.6;">
-                Hello Team, <br/>You have received a new client review through the official <strong>Critics Solution</strong> testimonial submission form.
+                Hello Team, <br/>You have received a new client review through the official <strong>Critic Solutions</strong> testimonial submission form.
               </p>
 
               <!-- DETAILS TABLE -->
@@ -160,7 +159,7 @@ function buildReviewEmailHtml({ name, designation, rating, message, logoUrl }) {
           <tr>
             <td style="padding:24px 40px;background-color:#F8FAFC;border-top:1px solid #E2E8F0;text-align:center;">
               <p style="margin:0;font-size:0.8125rem;color:#64748B;line-height:1.5;">
-                © ${new Date().getFullYear()} <strong>Critics Solution</strong> · Lahore, Pakistan <br/>
+                © ${new Date().getFullYear()} <strong>Critic Solutions</strong> · Lahore, Pakistan <br/>
                 <span style="font-size:0.75rem;color:#94A3B8;display:block;margin-top:4px;">This is an automated testimonial operational notification.</span>
               </p>
             </td>
@@ -177,7 +176,7 @@ function buildReviewEmailHtml({ name, designation, rating, message, logoUrl }) {
 // ── Plain Text Fallback ────────────────────────────────────────
 function buildReviewEmailText({ name, designation, rating, message }) {
   return [
-    'New Review Submission — Critics Solution',
+    'New Review Submission — Critic Solutions',
     '=============================================',
     '',
     `Name:        ${name}`,
