@@ -22,7 +22,7 @@ en: {
     hero: {
       badge: 'Now serving 50+ enterprise clients',
       headline: 'Digital Solutions That Drive Real Growth',
-      sub: 'Critics Solutions builds high-performance web apps, enterprise software, and marketing systems for ambitious businesses.',
+      sub: 'Critic Solutionss builds high-performance web apps, enterprise software, and marketing systems for ambitious businesses.',
       cta1: 'Explore Our Work', 
       cta2: 'Book a Free Call',
     },
@@ -111,7 +111,7 @@ en: {
       headline: 'Trusted by teams building the future',
       list: [
         {
-          quote: 'Critics Solutions delivered our ERP in 8 weeks when others quoted 6 months. The team understood our logistics pain points from day one — not after 10 discovery calls.',
+          quote: 'Critic Solutionss delivered our ERP in 8 weeks when others quoted 6 months. The team understood our logistics pain points from day one — not after 10 discovery calls.',
           name: 'Asim Raza',
           role: 'CEO, FreightIQ Logistics',
           initials: 'AR',
@@ -132,7 +132,7 @@ en: {
           color: '#FDE68A',
         },
         {
-          quote: "We've worked with four agencies before Critics Solution. None of them understood the difference between a website and a business system. Critics Solution did from the first conversation.",
+          quote: "We've worked with four agencies before Critic Solutions. None of them understood the difference between a website and a business system. Critic Solutions did from the first conversation.",
           name: 'Hira Chaudhry',
           role: 'CTO, Finvault Pakistan',
           initials: 'HC',
@@ -359,7 +359,8 @@ en: {
       emailLabel: 'Email',
       whatsappLabel: 'WhatsApp',
       locationLabel: 'Location',
-      locationValue: 'Lahore, Punjab, Pakistan',
+      locationValue: 'Branch Office: Lahore, Punjab, Pakistan',
+      locationValue1: 'Headquarter: 312 W 2nd St ste 5465, Casper, WY 82601',
       responseTimeLabel: 'Response time',
       responseTimeValue: 'Working dayss:(Mon–Fri)',
       firstNameLabel: 'First Name',
@@ -391,13 +392,13 @@ en: {
         'Custom AI workflows without code changes',
       ],
       
-      assistantTitle: 'Critics Solution AI Assistant',
+      assistantTitle: 'Critic Solutions AI Assistant',
       liveStatus: '● Live',
       inputPlaceholder: 'Ask about our services…',
       metrics: [['Orders', '1,240'], ['Open POs', '2'], ['Alerts', '3']],
-      initialMessage: "Good morning! I'm your **Critics Solution AI Assistant**.\n\nI can help you explore our services — from Power BI dashboards and cybersecurity to web development and our Invoice App.\n\nWhat would you like to know today?",
-      furtherInfo: 'For further information, please reach us at criticpickindustries@gmail.com',
-      fallback: "I'm not sure I have a specific answer for that, but I'm here to help!\n\nI specialize in Critics Solutions services:\n\n• **PBI Consultant** — Power BI dashboards & analytics\n• **Social Media Marketing** — Growth & campaign strategy\n• **Cyber Security** — Penetration testing & audits\n• **Web & App Development** — Full-stack & mobile apps\n• **UI/UX Design** — Figma prototypes & design systems\n• **Invoice App** — Automated billing & financial tracking\n\nFor further details, please contact us.\n\n📧 **Email:** criticpickindusteries@gmail.com\n📞 **Phone:** +1255995712010",
+      initialMessage: "Good morning! I'm your **Critic Solutions AI Assistant**.\n\nI can help you explore our services — from Power BI dashboards and cybersecurity to web development and our Invoice App.\n\nWhat would you like to know today?",
+      furtherInfo: 'For further information, please reach us at criticsolutions9@gmail.com',
+      fallback: "I'm not sure I have a specific answer for that, but I'm here to help!\n\nI specialize in Critic Solutionss services:\n\n• **PBI Consultant** — Power BI dashboards & analytics\n• **Social Media Marketing** — Growth & campaign strategy\n• **Cyber Security** — Penetration testing & audits\n• **Web & App Development** — Full-stack & mobile apps\n• **UI/UX Design** — Figma prototypes & design systems\n• **Invoice App** — Automated billing & financial tracking\n\nFor further details, please contact us.\n\n📧 **Email:** criticpickindusteries@gmail.com\n📞 **Phone:** +1 (252) 424-0511",
       faqs: [
         {
           keywords: ['power bi', 'pbi', 'dashboard', 'analytics', 'business intelligence', 'data', 'report', 'bi'],
@@ -427,7 +428,7 @@ en: {
         {
           keywords: ['invoice', 'billing', 'payment', 'financial', 'tracking', 'receipt', 'accounting', 'invoicing'],
           service: 'Invoice App',
-          response: "Meet our flagship product — the **Critics Solution Invoice App**. It's a complete billing and financial management system built for modern businesses.\n\nKey features:\n• Automated invoice generation & delivery\n• Real-time payment tracking & reminders\n• Multi-currency & tax configuration\n• Client portal for invoice approval\n• Financial reports & export to PDF/Excel\n\nSay goodbye to manual billing chaos. Would you like a live demo of the Invoice App?",
+          response: "Meet our flagship product — the **Critic Solutions Invoice App**. It's a complete billing and financial management system built for modern businesses.\n\nKey features:\n• Automated invoice generation & delivery\n• Real-time payment tracking & reminders\n• Multi-currency & tax configuration\n• Client portal for invoice approval\n• Financial reports & export to PDF/Excel\n\nSay goodbye to manual billing chaos. Would you like a live demo of the Invoice App?",
         },
         {
           keywords: ['price', 'pricing', 'cost', 'how much', 'package', 'plan', 'rate', 'fee', 'quote', 'budget'],
@@ -437,12 +438,12 @@ en: {
         {
           keywords: ['contact', 'email', 'call', 'talk', 'reach', 'meet', 'consultation', 'discuss', 'speak', 'human', 'team'],
           service: 'Contact',
-          response: "We'd love to connect! Here's how to reach the Critics Solutions team:\n\n📧 **Email:** criticpickindustries@gmail.com\n📞 **Phone:** +1255995712010\n📍 **Office:** Lahore, Punjab, Pakistan\n\nWe typically respond within 2 business hours. You can also scroll up to our **Pricing** section and click \"Deploy Now\" to kick off an engagement directly.",
+          response: "We'd love to connect! Here's how to reach the Critic Solutionss team:\n\n📧 **Email:** criticsolutions9@gmail.com\n📞 **Phone:** +1 (252) 424-0511\n📍 **Office:** Lahore, Punjab, Pakistan\n\nWe typically respond within 2 business hours. You can also scroll up to our **Pricing** section and click \"Deploy Now\" to kick off an engagement directly.",
         },
         {
           keywords: ['hello', 'hi', 'hey', 'good morning', 'good afternoon', 'good evening', 'greetings', 'howdy', 'sup'],
           service: 'Greeting',
-          response: "Hello! 👋 Great to have you here.\n\nI'm the **Critics Solution AI Assistant** — here to help you explore everything Critics Solutions offers. I can answer questions about:\n\n• PBI Consultant & Data Analytics\n• Social Media Marketing\n• Cyber Security\n• Web & App Development\n• UI/UX Design\n• Our Invoice App product\n\nWhat would you like to know more about?",
+          response: "Hello! 👋 Great to have you here.\n\nI'm the **Critic Solutions AI Assistant** — here to help you explore everything Critic Solutionss offers. I can answer questions about:\n\n• PBI Consultant & Data Analytics\n• Social Media Marketing\n• Cyber Security\n• Web & App Development\n• UI/UX Design\n• Our Invoice App product\n\nWhat would you like to know more about?",
         },
       ],
     },
@@ -464,7 +465,7 @@ en: {
       lastUpdated: "Last Updated: July 17, 2026",
       privacy: {
         title: "Privacy Policy",
-        intro: "At Critics Solutions, accessible from criticpickindustries@gmail.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Critics Solutions and how we use it.",
+        intro: "At Critic Solutions, accessible from criticsolutions9@gmail.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Critic Solutionss and how we use it.",
         sections: [
           {
             title: "1. Information We Collect",
@@ -486,7 +487,7 @@ en: {
           },
           {
             title: "3. Cookies and Web Beacons",
-            content: "Like any other website, Critics Solutions uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited."
+            content: "Like any other website, Critic Solutionss uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited."
           },
           {
             title: "4. Security of Data",
@@ -496,15 +497,15 @@ en: {
       },
       terms: {
         title: "Terms of Service",
-        intro: "Welcome to Critics Solutions. These Terms of Service govern your use of our website and services. By accessing or using our website, you agree to be bound by these terms.",
+        intro: "Welcome to Critic Solutionss. These Terms of Service govern your use of our website and services. By accessing or using our website, you agree to be bound by these terms.",
         sections: [
           {
             title: "1. Service Agreement",
-            content: "Critics Solutions provides high-quality software development, UI/UX design, and digital marketing services. The scope of work is agreed upon individually via formal signed Service Agreements."
+            content: "Critic Solutionss provides high-quality software development, UI/UX design, and digital marketing services. The scope of work is agreed upon individually via formal signed Service Agreements."
           },
           {
             title: "2. Intellectual Property",
-            content: "All source code, software architecture, website designs, layouts, graphics, and branding produced by Critics Solutions remain our intellectual property until full payment has been received."
+            content: "All source code, software architecture, website designs, layouts, graphics, and branding produced by Critic Solutionss remain our intellectual property until full payment has been received."
           },
           {
             title: "3. User Responsibilities",
@@ -514,7 +515,7 @@ en: {
       },
       cookie: {
         title: "Cookie Policy",
-        intro: "This Cookie Policy explains how Critics Solutions uses cookies and similar tracking technologies to recognize you when you visit our website.",
+        intro: "This Cookie Policy explains how Critic Solutionss uses cookies and similar tracking technologies to recognize you when you visit our website.",
         sections: [
           {
             title: "1. What Are Cookies?",
@@ -549,7 +550,7 @@ ar: {
   hero: {
     badge: 'نخدم الآن أكثر من 50 عميلاً مؤسسياً',
     headline: 'حلول رقمية تقود النمو الحقيقي',
-    sub: 'تبني Critics Solutions تطبيقات ويب عالية الأداء وبرمجيات مؤسسية وأنظمة تسويق للشركات الطموحة.',
+    sub: 'تبني Critic Solutionss تطبيقات ويب عالية الأداء وبرمجيات مؤسسية وأنظمة تسويق للشركات الطموحة.',
     cta1: 'استكشف أعمالنا',
     cta2: 'احجز مكالمة مجانية',
   },
@@ -697,7 +698,7 @@ ar: {
     headline: 'موثوق به من فرق تبني المستقبل',
     list: [
       {
-        quote: 'سلّمت Critics Solutions نظام ERP الخاص بنا خلال 8 أسابيع بينما عرضت شركات أخرى 6 أشهر. فهم الفريق نقاط الألم اللوجستية لدينا منذ اليوم الأول — وليس بعد 10 مكالمات استكشافية.',
+        quote: 'سلّمت Critic Solutionss نظام ERP الخاص بنا خلال 8 أسابيع بينما عرضت شركات أخرى 6 أشهر. فهم الفريق نقاط الألم اللوجستية لدينا منذ اليوم الأول — وليس بعد 10 مكالمات استكشافية.',
         name: 'Asim Raza',
         role: 'الرئيس التنفيذي، FreightIQ Logistics',
         initials: 'AR',
@@ -718,7 +719,7 @@ ar: {
         color: '#FDE68A',
       },
       {
-        quote: 'عملنا مع أربع وكالات قبل Critics Solution. لم تفهم أي منها الفرق بين موقع إلكتروني ونظام أعمال. فهمت Critics Solution ذلك منذ المحادثة الأولى.',
+        quote: 'عملنا مع أربع وكالات قبل Critic Solutions. لم تفهم أي منها الفرق بين موقع إلكتروني ونظام أعمال. فهمت Critic Solutions ذلك منذ المحادثة الأولى.',
         name: 'Hira Chaudhry',
         role: 'المديرة التقنية، Finvault Pakistan',
         initials: 'HC',
@@ -920,13 +921,13 @@ ar: {
       'مراقبة أداء متعددة الفروع لحظياً',
       'سير عمل ذكاء اصطناعي مخصص دون الحاجة لتعديل الشيفرة البرمجية',
     ],
-    assistantTitle: 'مساعد Critics Solution الذكي',
+    assistantTitle: 'مساعد Critic Solutions الذكي',
     liveStatus: '● مباشر',
     inputPlaceholder: 'اسأل عن خدماتنا…',
     metrics: [['الطلبات', '1,240'], ['أوامر شراء مفتوحة', '2'], ['تنبيهات', '3']],
-    initialMessage: 'صباح الخير! أنا **مساعد Critics Solution الذكي**.\n\nيمكنني مساعدتك في استكشاف خدماتنا — من لوحات معلومات Power BI والأمن السيبراني إلى تطوير الويب وتطبيق الفواتير لدينا.\n\nماذا تود أن تعرف اليوم؟',
-    furtherInfo: 'لمزيد من المعلومات، يرجى التواصل معنا عبر criticpickindustries@gmail.com',
-    fallback: 'لست متأكداً من إجابتي على هذا السؤال تحديداً، ولكنني هنا للمساعدة!\n\nأنا متخصص في خدمات Critics Solutions:\n\n• **استشاري PBI** — لوحات تحكم وتحليلات Power BI\n• **التسويق عبر وسائل التواصل الاجتماعي** — استراتيجية النمو والحملات\n• **الأمن السيبراني** — اختبار الاختراق والتدقيق الأمنية\n• **تطوير الويب والتطبيقات** — التطبيقات المتكاملة وتطبيقات الجوال\n• **تصميم UI/UX** — نماذج Figma الأنظمة التصميمية\n• **تطبيق الفواتير** — الفوترة الآلية والتتبع المالي\n\nلمزيد من التفاصيل، يرجى التواصل معنا.\n\n📧 **البريد الإلكتروني:** criticpickindusteries@gmail.com\n📞 **الهاتف:** +1255995712010',
+    initialMessage: 'صباح الخير! أنا **مساعد Critic Solutions الذكي**.\n\nيمكنني مساعدتك في استكشاف خدماتنا — من لوحات معلومات Power BI والأمن السيبراني إلى تطوير الويب وتطبيق الفواتير لدينا.\n\nماذا تود أن تعرف اليوم؟',
+    furtherInfo: 'لمزيد من المعلومات، يرجى التواصل معنا عبر criticsolutions9@gmail.com',
+    fallback: 'لست متأكداً من إجابتي على هذا السؤال تحديداً، ولكنني هنا للمساعدة!\n\nأنا متخصص في خدمات Critic Solutionss:\n\n• **استشاري PBI** — لوحات تحكم وتحليلات Power BI\n• **التسويق عبر وسائل التواصل الاجتماعي** — استراتيجية النمو والحملات\n• **الأمن السيبراني** — اختبار الاختراق والتدقيق الأمنية\n• **تطوير الويب والتطبيقات** — التطبيقات المتكاملة وتطبيقات الجوال\n• **تصميم UI/UX** — نماذج Figma الأنظمة التصميمية\n• **تطبيق الفواتير** — الفوترة الآلية والتتبع المالي\n\nلمزيد من التفاصيل، يرجى التواصل معنا.\n\n📧 **البريد الإلكتروني:** criticpickindusteries@gmail.com\n📞 **الهاتف:** +1 (252) 424-0511',
     faqs: [
       {
         keywords: ['power bi', 'pbi', 'لوحة معلومات', 'تحليلات', 'ذكاء الأعمال', 'بيانات', 'تقرير', 'bi'],
@@ -956,7 +957,7 @@ ar: {
       {
         keywords: ['فاتورة', 'فوترة', 'دفع', 'مالي', 'تتبع', 'إيصال', 'محاسبة'],
         service: 'تطبيق الفواتير',
-        response: 'تعرّف على منتجنا الرائد — **تطبيق Critics Solution للفواتير**. إنه نظام كامل للفوترة والإدارة المالية مصمم للشركات الحديثة.\n\nالميزات الرئيسية:\n• إنشاء الفواتير وإرسالها آلياً\n• تتبع الدفع والتذكيرات اللحظية\n• دعم متعدد العملات والإعدادات الضريبية\n• بوابة للعملاء للموافقة على الفواتير\n• تقارير مالية وإمكانية التصدير إلى PDF/Excel\n\nقل وداعاً لفوضى الفواتير اليدوية. هل ترغب في مشاهدة عرض توضيحي مباشر للبرنامج؟',
+        response: 'تعرّف على منتجنا الرائد — **تطبيق Critic Solutions للفواتير**. إنه نظام كامل للفوترة والإدارة المالية مصمم للشركات الحديثة.\n\nالميزات الرئيسية:\n• إنشاء الفواتير وإرسالها آلياً\n• تتبع الدفع والتذكيرات اللحظية\n• دعم متعدد العملات والإعدادات الضريبية\n• بوابة للعملاء للموافقة على الفواتير\n• تقارير مالية وإمكانية التصدير إلى PDF/Excel\n\nقل وداعاً لفوضى الفواتير اليدوية. هل ترغب في مشاهدة عرض توضيحي مباشر للبرنامج؟',
       },
       {
         keywords: ['سعر', 'أسعار', 'تكلفة', 'كم السعر', 'باقة', 'خطة', 'رسوم', 'عرض سعر', 'ميزانية'],
@@ -966,12 +967,12 @@ ar: {
       {
         keywords: ['تواصل', 'بريد', 'اتصال', 'تحدث', 'الوصول', 'اجتماع', 'استشارة', 'مناقشة', 'فريق'],
         service: 'تواصل معنا',
-        response: 'يسعدنا التواصل معك! إليك كيفية الوصول إلى فريق Critics Solutions:\n\n📧 **البريد الإلكتروني:** criticpickindusteries@gmail.com\n📞 **الهاتف:** +1255995712010\n📍 **المكتب:** لاهور، البنجاب، باكستان\n\nنرد عادةً خلال ساعتي عمل. يمكنك أيضاً التمرير لأعلى إلى قسم **الأسعار** والنقر على "ابدأ الآن" لبدء التعاون مباشرة.',
+        response: 'يسعدنا التواصل معك! إليك كيفية الوصول إلى فريق Critic Solutionss:\n\n📧 **البريد الإلكتروني:** criticpickindusteries@gmail.com\n📞 **الهاتف:** +1 (252) 424-0511\n📍 **المكتب:** لاهور، البنجاب، باكستان\n\nنرد عادةً خلال ساعتي عمل. يمكنك أيضاً التمرير لأعلى إلى قسم **الأسعار** والنقر على "ابدأ الآن" لبدء التعاون مباشرة.',
       },
       {
         keywords: ['مرحبا', 'أهلا', 'السلام عليكم', 'صباح الخير', 'مساء الخير', 'تحية'],
         service: 'تحية',
-        response: 'أهلاً بك! 👋 يسعدنا وجودك معنا.\n\nأنا **مساعد Critics Solution الذكي** — موجود لمساعدتك في استكشاف كل ما تقدمه Critics Solutions. يمكنني الإجابة عن أسئلتك حول:\n\n• استشاري PBI وتحليلات البيانات\n• التسويق عبر وسائل التواصل الاجتماعي\n• الأمن السيبراني\n• تطوير الويب والتطبيقات\n• تصميم UI/UX\n• منتج تطبيق الفواتير الخاص بنا\n\nعن ماذا تود أن تعرف أكثر؟',
+        response: 'أهلاً بك! 👋 يسعدنا وجودك معنا.\n\nأنا **مساعد Critic Solutions الذكي** — موجود لمساعدتك في استكشاف كل ما تقدمه Critic Solutionss. يمكنني الإجابة عن أسئلتك حول:\n\n• استشاري PBI وتحليلات البيانات\n• التسويق عبر وسائل التواصل الاجتماعي\n• الأمن السيبراني\n• تطوير الويب والتطبيقات\n• تصميم UI/UX\n• منتج تطبيق الفواتير الخاص بنا\n\nعن ماذا تود أن تعرف أكثر؟',
       },
     ],
   },
@@ -1002,7 +1003,7 @@ ar: {
     lastUpdated: 'آخر تحديث: 17 يوليو 2026',
     privacy: {
       title: 'سياسة الخصوصية',
-      intro: 'في Critics Solutions، المتاحة عبر criticpickindustries@gmail.com، نضع خصوصية زوارنا على رأس أولوياتنا. توضح وثيقة سياسة الخصوصية هذه أنواع المعلومات التي نجمعها ونسجلها وكيفية استخدامها.',
+      intro: 'في Critic Solutionss، المتاحة عبر criticsolutions9@gmail.com، نضع خصوصية زوارنا على رأس أولوياتنا. توضح وثيقة سياسة الخصوصية هذه أنواع المعلومات التي نجمعها ونسجلها وكيفية استخدامها.',
       sections: [
         {
           title: '1. المعلومات التي نجمعها',
@@ -1016,7 +1017,7 @@ ar: {
         },
         {
           title: '3. ملفات تعريف الارتباط وإشارات الويب',
-          content: "مثل أي موقع آخر، تستخدم Critics Solutions 'ملفات تعريف الارتباط'. تُستخدم هذه الملفات لتخزين المعلومات بما في ذلك تفضيلات الزوار والصفحات التي تم الوصول إليها أو زيارتها على الموقع.",
+          content: "مثل أي موقع آخر، تستخدم Critic Solutionss 'ملفات تعريف الارتباط'. تُستخدم هذه الملفات لتخزين المعلومات بما في ذلك تفضيلات الزوار والصفحات التي تم الوصول إليها أو زيارتها على الموقع.",
         },
         {
           title: '4. أمان البيانات',
@@ -1026,15 +1027,15 @@ ar: {
     },
     terms: {
       title: 'شروط الخدمة',
-      intro: 'مرحبًا بك في Critics Solutions. تحكم شروط الخدمة هذه استخدامك لموقعنا الإلكتروني وخدماتنا. من خلال الوصول إلى موقعنا أو استخدامه، فإنك توافق على الالتزام بهذه الشروط.',
+      intro: 'مرحبًا بك في Critic Solutionss. تحكم شروط الخدمة هذه استخدامك لموقعنا الإلكتروني وخدماتنا. من خلال الوصول إلى موقعنا أو استخدامه، فإنك توافق على الالتزام بهذه الشروط.',
       sections: [
         {
           title: '1. اتفاقية الخدمة',
-          content: 'تقدم Critics Solutions خدمات عالية الجودة في تطوير البرمجيات، تصميم UI/UX، والتسويق الرقمي. يتم الاتفاق على نطاق العمل بشكل فردي عبر اتفاقيات خدمة رسمية موقعة.',
+          content: 'تقدم Critic Solutionss خدمات عالية الجودة في تطوير البرمجيات، تصميم UI/UX، والتسويق الرقمي. يتم الاتفاق على نطاق العمل بشكل فردي عبر اتفاقيات خدمة رسمية موقعة.',
         },
         {
           title: '2. الملكية الفكرية',
-          content: 'تظل جميع الأكواد المصدرية، وهندسة البرمجيات، وتصاميم المواقع، والتخطيطات، والرسومات، والعلامة التجارية التي تنتجها Critics Solutions ملكًا فكريًا لنا حتى يتم استلام المبلغ المستحق بالكامل.',
+          content: 'تظل جميع الأكواد المصدرية، وهندسة البرمجيات، وتصاميم المواقع، والتخطيطات، والرسومات، والعلامة التجارية التي تنتجها Critic Solutionss ملكًا فكريًا لنا حتى يتم استلام المبلغ المستحق بالكامل.',
         },
         {
           title: '3. مسؤوليات المستخدم',
@@ -1044,7 +1045,7 @@ ar: {
     },
     cookie: {
       title: 'سياسة ملفات تعريف الارتباط',
-      intro: 'توضح سياسة ملفات تعريف الارتباط هذه كيف تستخدم Critics Solutions ملفات تعريف الارتباط وتقنيات التتبع المماثلة للتعرف عليك عند زيارة موقعنا.',
+      intro: 'توضح سياسة ملفات تعريف الارتباط هذه كيف تستخدم Critic Solutionss ملفات تعريف الارتباط وتقنيات التتبع المماثلة للتعرف عليك عند زيارة موقعنا.',
       sections: [
         {
           title: '1. ما هي ملفات تعريف الارتباط؟',
@@ -1071,7 +1072,7 @@ ru: {
   hero: {
     badge: 'Сейчас обслуживаем 50+ корпоративных клиентов',
     headline: 'Цифровые решения для реального роста',
-    sub: 'Critics Solutions создаёт высокопроизводительные веб-приложения, корпоративное ПО и маркетинговые системы для амбициозного бизнеса.',
+    sub: 'Critic Solutionss создаёт высокопроизводительные веб-приложения, корпоративное ПО и маркетинговые системы для амбициозного бизнеса.',
     cta1: 'Смотреть работы', cta2: 'Бесплатная консультация',
   },
   overview: {
@@ -1218,7 +1219,7 @@ reviewModal: {
     headline: 'Нам доверяют команды, строящие будущее',
     list: [
       {
-        quote: 'Critics Solutions внедрила нашу ERP-систему за 8 недель, тогда как другие предлагали 6 месяцев. Команда поняла наши логистические проблемы с первого дня — а не после 10 ознакомительных звонков.',
+        quote: 'Critic Solutionss внедрила нашу ERP-систему за 8 недель, тогда как другие предлагали 6 месяцев. Команда поняла наши логистические проблемы с первого дня — а не после 10 ознакомительных звонков.',
         name: 'Asim Raza',
         role: 'Генеральный директор, FreightIQ Logistics',
         initials: 'AR',
@@ -1239,7 +1240,7 @@ reviewModal: {
         color: '#FDE68A',
       },
       {
-        quote: 'До Critics Solution мы работали с четырьмя агентствами. Ни одно из них не понимало разницы между сайтом и бизнес-системой. Critics Solution поняла это с первого разговора.',
+        quote: 'До Critic Solutions мы работали с четырьмя агентствами. Ни одно из них не понимало разницы между сайтом и бизнес-системой. Critic Solutions поняла это с первого разговора.',
         name: 'Hira Chaudhry',
         role: 'Технический директор, Finvault Pakistan',
         initials: 'HC',
@@ -1445,13 +1446,13 @@ reviewModal: {
       'Мониторинг производительности нескольких филиалов в реальном времени',
       'Кастомные ИИ-процессы без изменения кода',
     ],
-    assistantTitle: 'AI-ассистент Critics Solution',
+    assistantTitle: 'AI-ассистент Critic Solutions',
     liveStatus: '● В сети',
     inputPlaceholder: 'Спросите о наших услугах…',
     metrics: [['Заказы', '1,240'], ['Открытые заказы на закупку', '2'], ['Уведомления', '3']],
-    initialMessage: 'Доброе утро! Я ваш **AI-ассистент Critics Solution**.\n\nЯ могу помочь вам изучить наши услуги — от дашбордов Power BI и кибербезопасности до веб-разработки, брендовой упаковки и налогового консалтинга.\n\nЧто бы вы хотели узнать сегодня?',
-    furtherInfo: 'Для получения дополнительной информации, пожалуйста, свяжитесь с нами по адресу criticpickindustries@gmail.com',
-    fallback: 'Я не совсем уверен, что у меня есть конкретный ответ на это, но я здесь, чтобы помочь!\n\nЯ специализируюсь на услугах Critics Solutions:\n\n• **Консультант по PBI** — дашборды Power BI и аналитика\n• **SMM-маркетинг** — стратегия роста и кампаний\n• **Кибербезопасность** — пентестинг и аудиты\n• **Веб- и разработка приложений** — full-stack и мобильные приложения\n• **UI/UX-дизайн** — прототипы Figma и дизайн-системы\n• **Invoice App** — автоматический биллинг и финансовое отслеживание\n• **Упаковка и печать** — дизайн брендовой упаковки и премиальная полиграфия\n• **Налоговый консалтинг** — финансовый аудит, отчётность и комплаенс\n\nДля получения дополнительной информации, пожалуйста, свяжитесь с нами.\n\n📧 **Email:** criticpickindustries@gmail.com\n📞 **Телефон:** +1255995712010',
+    initialMessage: 'Доброе утро! Я ваш **AI-ассистент Critic Solutions**.\n\nЯ могу помочь вам изучить наши услуги — от дашбордов Power BI и кибербезопасности до веб-разработки, брендовой упаковки и налогового консалтинга.\n\nЧто бы вы хотели узнать сегодня?',
+    furtherInfo: 'Для получения дополнительной информации, пожалуйста, свяжитесь с нами по адресу criticsolutions9@gmail.com',
+    fallback: 'Я не совсем уверен, что у меня есть конкретный ответ на это, но я здесь, чтобы помочь!\n\nЯ специализируюсь на услугах Critic Solutionss:\n\n• **Консультант по PBI** — дашборды Power BI и аналитика\n• **SMM-маркетинг** — стратегия роста и кампаний\n• **Кибербезопасность** — пентестинг и аудиты\n• **Веб- и разработка приложений** — full-stack и мобильные приложения\n• **UI/UX-дизайн** — прототипы Figma и дизайн-системы\n• **Invoice App** — автоматический биллинг и финансовое отслеживание\n• **Упаковка и печать** — дизайн брендовой упаковки и премиальная полиграфия\n• **Налоговый консалтинг** — финансовый аудит, отчётность и комплаенс\n\nДля получения дополнительной информации, пожалуйста, свяжитесь с нами.\n\n📧 **Email:** criticsolutions9@gmail.com\n📞 **Телефон:** +1 (252) 424-0511',
     faqs: [
       {
         keywords: ['power bi', 'pbi', 'дашборд', 'аналитика', 'бизнес-аналитика', 'данные', 'отчёт', 'bi'],
@@ -1481,7 +1482,7 @@ reviewModal: {
       {
         keywords: ['счёт', 'биллинг', 'оплата', 'финансы', 'отслеживание', 'квитанция', 'бухгалтерия', 'инвойс'],
         service: 'Invoice App',
-        response: 'Познакомьтесь с нашим флагманским продуктом — **Critics Solution Invoice App**. Это полноценная система биллинга и финансового управления для современного бизнеса.\n\nКлючевые функции:\n• Автоматическое создание и доставка счетов\n• Отслеживание платежей и напоминания в реальном времени\n• Настройка мультивалютности и налогов\n• Портал для клиентов для утверждения счетов\n• Финансовые отчёты и экспорт в PDF/Excel\n\nПопрощайтесь с хаосом ручного биллинга. Хотите живую демонстрацию Invoice App?',
+        response: 'Познакомьтесь с нашим флагманским продуктом — **Critic Solutions Invoice App**. Это полноценная система биллинга и финансового управления для современного бизнеса.\n\nКлючевые функции:\n• Автоматическое создание и доставка счетов\n• Отслеживание платежей и напоминания в реальном времени\n• Настройка мультивалютности и налогов\n• Портал для клиентов для утверждения счетов\n• Финансовые отчёты и экспорт в PDF/Excel\n\nПопрощайтесь с хаосом ручного биллинга. Хотите живую демонстрацию Invoice App?',
       },
       {
         keywords: ['упаковка', 'печать', 'полиграфия', 'коробка', 'коробки', 'дизайн упаковки', 'принт'],
@@ -1501,12 +1502,12 @@ reviewModal: {
       {
         keywords: ['связаться', 'почта', 'звонок', 'поговорить', 'контакт', 'встреча', 'консультация', 'обсудить', 'человек', 'команда'],
         service: 'Контакт',
-        response: 'Будем рады связаться! Вот как обратиться к команде Critics Solutions:\n\n📧 **Email:** criticpickindustries@gmail.com\n📞 **Телефон:** +1255995712010\n📍 **Офис:** Лахор, Пенджаб, Пакистан\n\nОбычно мы отвечаем в течение 2 рабочих часов. Вы также можете прокрутить вверх к разделу **Тарифы** и нажать «Запустить», чтобы сразу начать сотрудничество.',
+        response: 'Будем рады связаться! Вот как обратиться к команде Critic Solutionss:\n\n📧 **Email:** criticsolutions9@gmail.com\n📞 **Телефон:** +1 (252) 424-0511\n📍 **Офис:** Лахор, Пенджаб, Пакистан\n\nОбычно мы отвечаем в течение 2 рабочих часов. Вы также можете прокрутить вверх к разделу **Тарифы** и нажать «Запустить», чтобы сразу начать сотрудничество.',
       },
       {
         keywords: ['привет', 'здравствуйте', 'добрый день', 'доброе утро', 'добрый вечер', 'приветствую'],
         service: 'Приветствие',
-        response: 'Здравствуйте! 👋 Рады видеть вас здесь.\n\nЯ — **AI-ассистент Critics Solution** — здесь, чтобы помочь вам изучить всё, что предлагает Critics Solutions. Я могу ответить на вопросы о:\n\n• Консультанте по PBI и аналитике данных\n• SMM-маркетинге\n• Кибербезопасности\n• Веб- и разработке приложений\n• UI/UX-дизайне\n• Нашем продукте Invoice App\n• Упаковке, печати и Налоговом консалтинге\n\nЧто бы вы хотели узнать подробнее?',
+        response: 'Здравствуйте! 👋 Рады видеть вас здесь.\n\nЯ — **AI-ассистент Critic Solutions** — здесь, чтобы помочь вам изучить всё, что предлагает Critic Solutionss. Я могу ответить на вопросы о:\n\n• Консультанте по PBI и аналитике данных\n• SMM-маркетинге\n• Кибербезопасности\n• Веб- и разработке приложений\n• UI/UX-дизайне\n• Нашем продукте Invoice App\n• Упаковке, печати и Налоговом консалтинге\n\nЧто бы вы хотели узнать подробнее?',
       },
     ],
   },
@@ -1528,7 +1529,7 @@ reviewModal: {
     lastUpdated: "Последнее обновление: 17 июля 2026 г.",
     privacy: {
       title: "Политика конфиденциальности",
-      intro: "В компании Critics Solutions, доступной по адресу criticpickindustries@gmail.com, одним из главных приоритетов является конфиденциальность наших посетителей. Этот документ описывает типы информации, которую собирает и записывает Critics Solutions, а также то, как мы её используем.",
+      intro: "В компании Critic Solutionss, доступной по адресу criticsolutions9@gmail.com, одним из главных приоритетов является конфиденциальность наших посетителей. Этот документ описывает типы информации, которую собирает и записывает Critic Solutionss, а также то, как мы её используем.",
       sections: [
         {
           title: "1. Какую информацию мы собираем",
@@ -1550,7 +1551,7 @@ reviewModal: {
         },
         {
           title: "3. Cookie и веб-маяки",
-          content: "Как и любой другой сайт, Critics Solutions использует «cookie». Эти файлы cookie используются для хранения информации, включая предпочтения посетителей и страницы сайта, которые посетитель посещал или к которым обращался."
+          content: "Как и любой другой сайт, Critic Solutionss использует «cookie». Эти файлы cookie используются для хранения информации, включая предпочтения посетителей и страницы сайта, которые посетитель посещал или к которым обращался."
         },
         {
           title: "4. Безопасность данных",
@@ -1560,15 +1561,15 @@ reviewModal: {
     },
     terms: {
       title: "Условия использования",
-      intro: "Добро пожаловать в Critics Solutions. Настоящие Условия использования регулируют использование вами нашего сайта и услуг. Заходя на наш сайт или используя его, вы соглашаетесь соблюдать эти условия.",
+      intro: "Добро пожаловать в Critic Solutionss. Настоящие Условия использования регулируют использование вами нашего сайта и услуг. Заходя на наш сайт или используя его, вы соглашаетесь соблюдать эти условия.",
       sections: [
         {
           title: "1. Соглашение об оказании услуг",
-          content: "Critics Solutions предоставляет высококачественные услуги по разработке программного обеспечения, UI/UX дизайну и цифровому маркетингу. Объём работ согласовывается индивидуально посредством официально подписанных соглашений об оказании услуг."
+          content: "Critic Solutionss предоставляет высококачественные услуги по разработке программного обеспечения, UI/UX дизайну и цифровому маркетингу. Объём работ согласовывается индивидуально посредством официально подписанных соглашений об оказании услуг."
         },
         {
           title: "2. Интеллектуальная собственность",
-          content: "Весь исходный код, архитектура ПО, дизайн сайтов, макеты, графика и брендинг, созданные Critics Solutions, остаются нашей интеллектуальной собственностью до получения полной оплаты."
+          content: "Весь исходный код, архитектура ПО, дизайн сайтов, макеты, графика и брендинг, созданные Critic Solutionss, остаются нашей интеллектуальной собственностью до получения полной оплаты."
         },
         {
           title: "3. Обязанности пользователя",
@@ -1578,7 +1579,7 @@ reviewModal: {
     },
     cookie: {
       title: "Политика использования файлов cookie",
-      intro: "Данная Политика использования файлов cookie объясняет, как Critics Solutions использует файлы cookie и аналогичные технологии отслеживания для распознавания вас при посещении нашего сайта.",
+      intro: "Данная Политика использования файлов cookie объясняет, как Critic Solutionss использует файлы cookie и аналогичные технологии отслеживания для распознавания вас при посещении нашего сайта.",
       sections: [
         {
           title: "1. Что такое файлы cookie?",
@@ -1607,7 +1608,7 @@ es: {
     hero: {
       badge: 'Atendiendo a más de 50 clientes empresariales',
       headline: 'Soluciones digitales que impulsan el crecimiento real',
-      sub: 'Critics Solutions desarrolla aplicaciones web de alto rendimiento, software empresarial y sistemas de marketing para negocios ambiciosos.',
+      sub: 'Critic Solutionss desarrolla aplicaciones web de alto rendimiento, software empresarial y sistemas de marketing para negocios ambiciosos.',
       cta1: 'Ver nuestro trabajo', cta2: 'Reservar llamada gratuita',
     },
     overview: {
@@ -1754,7 +1755,7 @@ es: {
       headline: 'Confiado por equipos que construyen el futuro',
       list: [
         {
-          quote: 'Critics Solutions entregó nuestro ERP en 8 semanas cuando otros cotizaban 6 meses. El equipo entendió nuestros problemas logísticos desde el primer día, no después de 10 llamadas de descubrimiento.',
+          quote: 'Critic Solutionss entregó nuestro ERP en 8 semanas cuando otros cotizaban 6 meses. El equipo entendió nuestros problemas logísticos desde el primer día, no después de 10 llamadas de descubrimiento.',
           name: 'Asim Raza',
           role: 'CEO, FreightIQ Logistics',
           initials: 'AR',
@@ -1775,7 +1776,7 @@ es: {
           color: '#FDE68A',
         },
         {
-          quote: 'Trabajamos con cuatro agencias antes de Critics Solution. Ninguna entendió la diferencia entre un sitio web y un sistema de negocio. Critics Solution lo entendió desde la primera conversación.',
+          quote: 'Trabajamos con cuatro agencias antes de Critic Solutions. Ninguna entendió la diferencia entre un sitio web y un sistema de negocio. Critic Solutions lo entendió desde la primera conversación.',
           name: 'Hira Chaudhry',
           role: 'CTO, Finvault Pakistan',
           initials: 'HC',
@@ -1981,13 +1982,13 @@ es: {
         'Monitoreo de rendimiento multi-sucursal en tiempo real',
         'Flujos de trabajo de IA personalizados sin cambios de código',
       ],
-      assistantTitle: 'Asistente IA de Critics Solution',
+      assistantTitle: 'Asistente IA de Critic Solutions',
       liveStatus: '● En vivo',
       inputPlaceholder: 'Pregunta sobre nuestros servicios…',
       metrics: [['Pedidos', '1,240'], ['Órdenes de Compra Abiertas', '2'], ['Alertas', '3']],
-      initialMessage: '¡Buenos días! Soy tu **Asistente IA de Critics Solution**.\n\nPuedo ayudarte a explorar nuestros servicios — desde dashboards de Power BI y ciberseguridad hasta desarrollo web, embalaje de marca y consultoría fiscal.\n\n¿Qué te gustaría saber hoy?',
-      furtherInfo: 'Para más información, contáctanos en criticpickindustries@gmail.com',
-      fallback: 'No estoy seguro de tener una respuesta específica para eso, ¡pero estoy aquí para ayudar!\n\nMe especializo en los servicios de Critics Solutions:\n\n• **Consultor PBI** — Dashboards y analítica de Power BI\n• **Marketing en Redes Sociales** — Estrategia de crecimiento y campañas\n• **Ciberseguridad** — Pruebas de penetración y auditorías\n• **Desarrollo Web y de Aplicaciones** — Sistemas full-stack y apps móviles\n• **Diseño UI/UX** — Prototipos Figma y sistemas de diseño\n• **App de Facturas** — Facturación automática y seguimiento financiero\n• **Embalaje e Impresión** — Diseño de empaques personalizados y poligrafía premium\n• **Consultoría Fiscal** — Auditoría financiera, declaraciones y cumplimiento\n\nPara más detalles, por favor contáctanos.\n\n📧 **Correo:** criticpickindustries@gmail.com\n📞 **Teléfono:** +1255995712010',
+      initialMessage: '¡Buenos días! Soy tu **Asistente IA de Critic Solutions**.\n\nPuedo ayudarte a explorar nuestros servicios — desde dashboards de Power BI y ciberseguridad hasta desarrollo web, embalaje de marca y consultoría fiscal.\n\n¿Qué te gustaría saber hoy?',
+      furtherInfo: 'Para más información, contáctanos en criticsolutions9@gmail.com',
+      fallback: 'No estoy seguro de tener una respuesta específica para eso, ¡pero estoy aquí para ayudar!\n\nMe especializo en los servicios de Critic Solutionss:\n\n• **Consultor PBI** — Dashboards y analítica de Power BI\n• **Marketing en Redes Sociales** — Estrategia de crecimiento y campañas\n• **Ciberseguridad** — Pruebas de penetración y auditorías\n• **Desarrollo Web y de Aplicaciones** — Sistemas full-stack y apps móviles\n• **Diseño UI/UX** — Prototipos Figma y sistemas de diseño\n• **App de Facturas** — Facturación automática y seguimiento financiero\n• **Embalaje e Impresión** — Diseño de empaques personalizados y poligrafía premium\n• **Consultoría Fiscal** — Auditoría financiera, declaraciones y cumplimiento\n\nPara más detalles, por favor contáctanos.\n\n📧 **Correo:** criticsolutions9@gmail.com\n📞 **Teléfono:** +1 (252) 424-0511',
       faqs: [
         {
           keywords: ['power bi', 'pbi', 'panel', 'analítica', 'inteligencia de negocio', 'datos', 'informe', 'bi'],
@@ -2017,7 +2018,7 @@ es: {
         {
           keywords: ['factura', 'facturación', 'pago', 'financiero', 'seguimiento', 'recibo', 'contabilidad'],
           service: 'App de Facturas',
-          response: 'Conoce nuestro producto insignia: la **App de Facturas Critics Solution**. Es un sistema completo de facturación y gestión financiera construido para negocios modernos.\n\nCaracterísticas clave:\n• Generación y entrega automática de facturas profesionales\n• Seguimiento de pagos en tiempo real y recordatorios\n• Configuración multimoneda y de impuestos\n• Portal de cliente para aprobación de facturas\n• Informes financieros y exportación a PDF/Excel\n\nDespídete del caos de la facturación manual. ¿Quieres una demo en vivo de la App de Facturas?',
+          response: 'Conoce nuestro producto insignia: la **App de Facturas Critic Solutions**. Es un sistema completo de facturación y gestión financiera construido para negocios modernos.\n\nCaracterísticas clave:\n• Generación y entrega automática de facturas profesionales\n• Seguimiento de pagos en tiempo real y recordatorios\n• Configuración multimoneda y de impuestos\n• Portal de cliente para aprobación de facturas\n• Informes financieros y exportación a PDF/Excel\n\nDespídete del caos de la facturación manual. ¿Quieres una demo en vivo de la App de Facturas?',
         },
         {
           keywords: ['embalaje', 'empaque', 'impresión', 'caja', 'cajas', 'diseño de empaque', 'poligrafía', 'imprimir'],
@@ -2037,12 +2038,12 @@ es: {
         {
           keywords: ['contacto', 'correo', 'llamar', 'hablar', 'alcanzar', 'reunión', 'consulta', 'discutir', 'humano', 'equipo'],
           service: 'Contacto',
-          response: '¡Nos encantaría conectar! Así puedes contactar al equipo de Critics Solutions:\n\n📧 **Correo:** criticpickindustries@gmail.com\n📞 **Teléfono:** +1255995712010\n📍 **Oficina:** Lahore, Punjab, Pakistán\n\nGeneralmente respondemos en 2 horas hábiles. También puedes desplazarte hacia arriba a nuestra sección de **Precios** y hacer clic en "Personalizar" para iniciar una colaboración directamente.',
+          response: '¡Nos encantaría conectar! Así puedes contactar al equipo de Critic Solutionss:\n\n📧 **Correo:** criticsolutions9@gmail.com\n📞 **Teléfono:** +1 (252) 424-0511\n📍 **Oficina:** Lahore, Punjab, Pakistán\n\nGeneralmente respondemos en 2 horas hábiles. También puedes desplazarte hacia arriba a nuestra sección de **Precios** y hacer clic en "Personalizar" para iniciar una colaboración directamente.',
         },
         {
           keywords: ['hola', 'buenos días', 'buenas tardes', 'buenas noches', 'saludos'],
           service: 'Saludo',
-          response: '¡Hola! 👋 Qué bueno tenerte aquí.\n\nSoy el **Asistente IA de Critics Solution** — aquí para ayudarte a explorar todo lo que ofrece Critics Solutions. Puedo responder preguntas sobre:\n\n• Consultor PBI y Analítica de Datos\n• Marketing en Redes Sociales\n• Ciberseguridad\n• Desarrollo Web y de Aplicaciones\n• Diseño UI/UX\n• Nuestro producto App de Facturas\n• Embalaje, Impresión y Consultoría Fiscal\n\n¿Qué te gustaría saber más?',
+          response: '¡Hola! 👋 Qué bueno tenerte aquí.\n\nSoy el **Asistente IA de Critic Solutions** — aquí para ayudarte a explorar todo lo que ofrece Critic Solutionss. Puedo responder preguntas sobre:\n\n• Consultor PBI y Analítica de Datos\n• Marketing en Redes Sociales\n• Ciberseguridad\n• Desarrollo Web y de Aplicaciones\n• Diseño UI/UX\n• Nuestro producto App de Facturas\n• Embalaje, Impresión y Consultoría Fiscal\n\n¿Qué te gustaría saber más?',
         },
       ],
     },
@@ -2064,7 +2065,7 @@ es: {
       lastUpdated: "Última actualización: 17 de julio de 2026",
       privacy: {
         title: "Política de privacidad",
-        intro: "En Critics Solutions, accesible desde criticpickindustries@gmail.com, una de nuestras principales prioridades es la privacidad de nuestros visitantes. Este documento de Política de privacidad describe los tipos de información que Critics Solutions recopila y registra, y cómo la utilizamos.",
+        intro: "En Critic Solutionss, accesible desde criticsolutions9@gmail.com, una de nuestras principales prioridades es la privacidad de nuestros visitantes. Este documento de Política de privacidad describe los tipos de información que Critic Solutionss recopila y registra, y cómo la utilizamos.",
         sections: [
           {
             title: "1. Información que recopilamos",
@@ -2078,7 +2079,7 @@ es: {
           },
           {
             title: "3. Cookies y balizas web",
-            content: "Como cualquier otro sitio web, Critics Solutions utiliza 'cookies'. Estas cookies se usan para almacenar información, incluidas las preferencias de los visitantes y las páginas del sitio a las que accedió o visitó el visitante.",
+            content: "Como cualquier otro sitio web, Critic Solutionss utiliza 'cookies'. Estas cookies se usan para almacenar información, incluidas las preferencias de los visitantes y las páginas del sitio a las que accedió o visitó el visitante.",
           },
           {
             title: "4. Seguridad de los datos",
@@ -2088,15 +2089,15 @@ es: {
       },
       terms: {
         title: "Términos de servicio",
-        intro: "Bienvenido a Critics Solutions. Estos Términos de servicio rigen el uso de nuestro sitio web y servicios. Al acceder o utilizar nuestro sitio web, aceptas quedar vinculado por estos términos.",
+        intro: "Bienvenido a Critic Solutionss. Estos Términos de servicio rigen el uso de nuestro sitio web y servicios. Al acceder o utilizar nuestro sitio web, aceptas quedar vinculado por estos términos.",
         sections: [
           {
             title: "1. Acuerdo de servicio",
-            content: "Critics Solutions ofrece servicios de alta calidad en desarrollo de software, diseño UI/UX y marketing digital. El alcance del trabajo se acuerda individualmente mediante Acuerdos de servicio formales y firmados.",
+            content: "Critic Solutionss ofrece servicios de alta calidad en desarrollo de software, diseño UI/UX y marketing digital. El alcance del trabajo se acuerda individualmente mediante Acuerdos de servicio formales y firmados.",
           },
           {
             title: "2. Propiedad intelectual",
-            content: "Todo el código fuente, la arquitectura de software, los diseños web, los diseños gráficos y la marca producidos por Critics Solutions siguen siendo de nuestra propiedad intelectual hasta que se haya recibido el pago completo.",
+            content: "Todo el código fuente, la arquitectura de software, los diseños web, los diseños gráficos y la marca producidos por Critic Solutionss siguen siendo de nuestra propiedad intelectual hasta que se haya recibido el pago completo.",
           },
           {
             title: "3. Responsabilidades del usuario",
@@ -2106,7 +2107,7 @@ es: {
       },
       cookie: {
         title: "Política de cookies",
-        intro: "Esta Política de cookies explica cómo Critics Solutions utiliza cookies y tecnologías de seguimiento similares para reconocerte cuando visitas nuestro sitio web.",
+        intro: "Esta Política de cookies explica cómo Critic Solutionss utiliza cookies y tecnologías de seguimiento similares para reconocerte cuando visitas nuestro sitio web.",
         sections: [
           {
             title: "1. ¿Qué son las cookies?",
@@ -2137,7 +2138,7 @@ fr: {
     hero: {
       badge: 'Plus de 50 clients entreprise nous font confiance',
       headline: 'Des solutions digitales qui génèrent une vraie croissance',
-      sub: 'Critics Solutions crée des applications web performantes, des logiciels d\'entreprise et des systèmes marketing pour les entreprises ambitieuses.',
+      sub: 'Critic Solutionss crée des applications web performantes, des logiciels d\'entreprise et des systèmes marketing pour les entreprises ambitieuses.',
       cta1: 'Voir nos réalisations', cta2: 'Réserver un appel gratuit',
     },
     overview: {
@@ -2284,7 +2285,7 @@ fr: {
       headline: "Fait confiance par des équipes qui construisent l'avenir",
       list: [
         {
-          quote: "Critics Solutions a livré notre ERP en 8 semaines alors que d'autres proposaient 6 mois. L'équipe a compris nos problématiques logistiques dès le premier jour — pas après 10 appels de découverte.",
+          quote: "Critic Solutionss a livré notre ERP en 8 semaines alors que d'autres proposaient 6 mois. L'équipe a compris nos problématiques logistiques dès le premier jour — pas après 10 appels de découverte.",
           name: 'Asim Raza',
           role: 'PDG, FreightIQ Logistics',
           initials: 'AR',
@@ -2305,7 +2306,7 @@ fr: {
           color: '#FDE68A',
         },
         {
-          quote: "Nous avions travaillé avec quatre agences avant Critics Solution. Aucune n'avait compris la différence entre un site web et un système métier. Critics Solution l'a compris dès la première conversation.",
+          quote: "Nous avions travaillé avec quatre agences avant Critic Solutions. Aucune n'avait compris la différence entre un site web et un système métier. Critic Solutions l'a compris dès la première conversation.",
           name: 'Hira Chaudhry',
           role: 'CTO, Finvault Pakistan',
           initials: 'HC',
@@ -2511,13 +2512,13 @@ fr: {
         'Suivi des performances multi-sites en temps réel',
         'Flux de travail IA personnalisés sans modification de code',
       ],
-      assistantTitle: 'Assistant IA Critics Solution',
+      assistantTitle: 'Assistant IA Critic Solutions',
       liveStatus: '● En direct',
       inputPlaceholder: 'Posez une question sur nos services…',
       metrics: [['Commandes', '1,240'], ['Bons de Commande Ouverts', '2'], ['Alertes', '3']],
-      initialMessage: "Bonjour ! Je suis votre **Assistant IA Critics Solution**.\n\nJe peux vous aider à explorer nos services — des tableaux de bord Power BI et de la cybersécurité au développement web, à la conception d'emballages de marque et au conseil fiscal.\n\nQue souhaitez-vous savoir aujourd'hui ?",
-      furtherInfo: "Pour plus d'informations, veuillez nous contacter à criticpickindustries@gmail.com",
-      fallback: "Je ne suis pas certain d'avoir une réponse précise à cela, mais je suis là pour vous aider !\n\nJe suis spécialisé dans les services Critics Solutions :\n\n• **Consultant PBI** — Tableaux de bord Power BI et analytique\n• **Marketing Réseaux Sociaux** — Stratégie de croissance et campagnes\n• **Cybersécurité** — Tests de pénétration et audits\n• **Développement Web & Applications** — Systèmes full-stack et apps mobiles\n• **Design UI/UX** — Prototypes Figma et systèmes de design\n• **Application de Facturation** — Facturation automatisée et suivi financier\n• **Emballage & Impression** — Design d'emballages personnalisés et impression premium\n• **Conseil Fiscal** — Audits financiers, déclarations et conformité légale\n\nPour plus de détails, veuillez nous contacter.\n\n📧 **Email :** criticpickindustries@gmail.com\n📞 **Téléphone :** +1255995712010",
+      initialMessage: "Bonjour ! Je suis votre **Assistant IA Critic Solutions**.\n\nJe peux vous aider à explorer nos services — des tableaux de bord Power BI et de la cybersécurité au développement web, à la conception d'emballages de marque et au conseil fiscal.\n\nQue souhaitez-vous savoir aujourd'hui ?",
+      furtherInfo: "Pour plus d'informations, veuillez nous contacter à criticsolutions9@gmail.com",
+      fallback: "Je ne suis pas certain d'avoir une réponse précise à cela, mais je suis là pour vous aider !\n\nJe suis spécialisé dans les services Critic Solutionss :\n\n• **Consultant PBI** — Tableaux de bord Power BI et analytique\n• **Marketing Réseaux Sociaux** — Stratégie de croissance et campagnes\n• **Cybersécurité** — Tests de pénétration et audits\n• **Développement Web & Applications** — Systèmes full-stack et apps mobiles\n• **Design UI/UX** — Prototypes Figma et systèmes de design\n• **Application de Facturation** — Facturation automatisée et suivi financier\n• **Emballage & Impression** — Design d'emballages personnalisés et impression premium\n• **Conseil Fiscal** — Audits financiers, déclarations et conformité légale\n\nPour plus de détails, veuillez nous contacter.\n\n📧 **Email :** criticsolutions9@gmail.com\n📞 **Téléphone :** +1 (252) 424-0511",
       faqs: [
         {
           keywords: ['power bi', 'pbi', 'tableau de bord', 'analytique', "intelligence d'affaires", 'données', 'rapport', 'bi'],
@@ -2547,7 +2548,7 @@ fr: {
         {
           keywords: ['facture', 'facturation', 'paiement', 'financier', 'suivi', 'reçu', 'comptabilité'],
           service: 'Application de Facturation',
-          response: "Découvrez notre produit phare — l'**Application de Facturation Critics Solution**. C'est un système complet de facturation et de gestion financière pour les entreprises modernes.\n\nFonctionnalités clés :\n• Génération et envoi automatiques des factures\n• Suivi des paiements en temps réel et rappels\n• Configuration multidevise et fiscale\n• Portail client pour l'approbation des factures\n• Rapports financiers et export vers PDF/Excel\n\nDites adieu au chaos de la facturation manuelle. Voulez-vous une démo en direct ?",
+          response: "Découvrez notre produit phare — l'**Application de Facturation Critic Solutions**. C'est un système complet de facturation et de gestion financière pour les entreprises modernes.\n\nFonctionnalités clés :\n• Génération et envoi automatiques des factures\n• Suivi des paiements en temps réel et rappels\n• Configuration multidevise et fiscale\n• Portail client pour l'approbation des factures\n• Rapports financiers et export vers PDF/Excel\n\nDites adieu au chaos de la facturation manuelle. Voulez-vous une démo en direct ?",
         },
         {
           keywords: ['emballage', 'impression', 'boîte', 'boîtes', 'design d\'emballage', 'imprimer', 'packaging'],
@@ -2567,12 +2568,12 @@ fr: {
         {
           keywords: ['contact', 'email', 'appeler', 'parler', 'joindre', 'consultation', 'discuter', 'équipe'],
           service: 'Contact',
-          response: "Nous serions ravis d'échanger ! Voici comment joindre l'équipe Critics Solutions :\n\n📧 **Email :** criticpickindustries@gmail.com\n📞 **Téléphone :** +1255995712010\n📍 **Bureau :** Lahore, Punjab, Pakistan\n\nNous répondons généralement sous 2 heures ouvrées. Vous pouvez aussi remplir directement notre formulaire dans la section contact ou cliquer sur 'Personnaliser' dans les tarifs.",
+          response: "Nous serions ravis d'échanger ! Voici comment joindre l'équipe Critic Solutionss :\n\n📧 **Email :** criticsolutions9@gmail.com\n📞 **Téléphone :** +1 (252) 424-0511\n📍 **Bureau :** Lahore, Punjab, Pakistan\n\nNous répondons généralement sous 2 heures ouvrées. Vous pouvez aussi remplir directement notre formulaire dans la section contact ou cliquer sur 'Personnaliser' dans les tarifs.",
         },
         {
           keywords: ['bonjour', 'salut', 'bonsoir', 'bon matin', 'salutations'],
           service: 'Salutation',
-          response: "Bonjour ! 👋 Ravi de vous avoir ici.\n\nJe suis l'**Assistant IA Critics Solution** — là pour vous aider à explorer tout ce que propose Critics Solutions. Je peux répondre à vos questions sur :\n\n• Le Conseil PBI et l'Analytique\n• Le Marketing Réseaux Sociaux\n• La Cybersécurité et le Développement Web\n• Le Design UI/UX et l'Application de Facturation\n• L'Emballage, l'Impression et le Conseil Fiscal\n\nQue souhaitez-vous savoir de plus ?",
+          response: "Bonjour ! 👋 Ravi de vous avoir ici.\n\nJe suis l'**Assistant IA Critic Solutions** — là pour vous aider à explorer tout ce que propose Critic Solutionss. Je peux répondre à vos questions sur :\n\n• Le Conseil PBI et l'Analytique\n• Le Marketing Réseaux Sociaux\n• La Cybersécurité et le Développement Web\n• Le Design UI/UX et l'Application de Facturation\n• L'Emballage, l'Impression et le Conseil Fiscal\n\nQue souhaitez-vous savoir de plus ?",
         },
       ],
     },
@@ -2594,7 +2595,7 @@ fr: {
       lastUpdated: "Dernière mise à jour : 17 juillet 2026",
       privacy: {
         title: "Politique de confidentialité",
-        intro: "Chez Critics Solutions, accessible depuis criticpickindustries@gmail.com, l'une de nos principales priorités est la confidentialité de nos visiteurs. Ce document de politique de confidentialité décrit les types d'informations collectées et enregistrées par Critics Solutions, ainsi que la manière dont nous les utilisons.",
+        intro: "Chez Critic Solutionss, accessible depuis criticsolutions9@gmail.com, l'une de nos principales priorités est la confidentialité de nos visiteurs. Ce document de politique de confidentialité décrit les types d'informations collectées et enregistrées par Critic Solutionss, ainsi que la manière dont nous les utilisons.",
         sections: [
           {
             title: "1. Informations que nous collectons",
@@ -2608,7 +2609,7 @@ fr: {
           },
           {
             title: "3. Cookies et balises web",
-            content: "Comme tout autre site web, Critics Solutions utilise des « cookies ». Ces cookies servent à stocker des informations, notamment les préférences des visiteurs et les pages du site auxquelles le visiteur a accédé ou qu'il a visitées.",
+            content: "Comme tout autre site web, Critic Solutionss utilise des « cookies ». Ces cookies servent à stocker des informations, notamment les préférences des visiteurs et les pages du site auxquelles le visiteur a accédé ou qu'il a visitées.",
           },
           {
             title: "4. Sécurité des données",
@@ -2618,15 +2619,15 @@ fr: {
       },
       terms: {
         title: "Conditions d'utilisation",
-        intro: "Bienvenue chez Critics Solutions. Ces Conditions d'utilisation régissent votre utilisation de notre site web et de nos services. En accédant à notre site ou en l'utilisant, vous acceptez d'être lié par ces conditions.",
+        intro: "Bienvenue chez Critic Solutionss. Ces Conditions d'utilisation régissent votre utilisation de notre site web et de nos services. En accédant à notre site ou en l'utilisant, vous acceptez d'être lié par ces conditions.",
         sections: [
           {
             title: "1. Accord de service",
-            content: "Critics Solutions fournit des services de haute qualité en développement logiciel, design UI/UX et marketing digital. La portée des travaux est convenue individuellement via des accords de service formels et signés.",
+            content: "Critic Solutionss fournit des services de haute qualité en développement logiciel, design UI/UX et marketing digital. La portée des travaux est convenue individuellement via des accords de service formels et signés.",
           },
           {
             title: "2. Propriété intellectuelle",
-            content: "Tout le code source, l'architecture logicielle, les designs de sites web, les mises en page, les graphismes et l'image de marque produits par Critics Solutions restent notre propriété intellectuelle jusqu'à réception du paiement intégral.",
+            content: "Tout le code source, l'architecture logicielle, les designs de sites web, les mises en page, les graphismes et l'image de marque produits par Critic Solutionss restent notre propriété intellectuelle jusqu'à réception du paiement intégral.",
           },
           {
             title: "3. Responsabilités de l'utilisateur",
@@ -2636,7 +2637,7 @@ fr: {
       },
       cookie: {
         title: "Politique de cookies",
-        intro: "Cette Politique de cookies explique comment Critics Solutions utilise des cookies et des technologies de suivi similaires pour vous reconnaître lorsque vous visitez notre site web.",
+        intro: "Cette Politique de cookies explique comment Critic Solutionss utilise des cookies et des technologies de suivi similaires pour vous reconnaître lorsque vous visitez notre site web.",
         sections: [
           {
             title: "1. Que sont les cookies ?",
@@ -2668,7 +2669,7 @@ it: {
     hero: {
       badge: 'Ora serviamo oltre 50 clients enterprise',
       headline: 'Soluzioni digitali che guidano la vera crescita',
-      sub: 'Critics Solutions costruisce app web ad alte prestazioni, software enterprise e sistemi di marketing per aziende ambiziose.',
+      sub: 'Critic Solutionss costruisce app web ad alte prestazioni, software enterprise e sistemi di marketing per aziende ambiziose.',
       cta1: 'Scopri i nostri lavori', cta2: 'Prenota una chiamata gratuita',
     },
     overview: {
@@ -2815,7 +2816,7 @@ reviewModal: {
       headline: 'Affidabile per i team che costruiscono il futuro',
       list: [
         {
-          quote: 'Critics Solutions ha consegnato il nostro ERP in 8 settimane quando altri proponevano 6 mesi. Il team ha capito i nostri problemi logistici dal primo giorno — non dopo 10 chiamate conoscitive.',
+          quote: 'Critic Solutionss ha consegnato il nostro ERP in 8 settimane quando altri proponevano 6 mesi. Il team ha capito i nostri problemi logistici dal primo giorno — non dopo 10 chiamate conoscitive.',
           name: 'Asim Raza',
           role: 'CEO, FreightIQ Logistics',
           initials: 'AR',
@@ -2836,7 +2837,7 @@ reviewModal: {
           color: '#FDE68A',
         },
         {
-          quote: "Abbiamo lavorato con quattro agenzie prima di Critics Solution. Nessuna aveva capito la differenza tra un sito web e un sistema aziendale. Critics Solution l'ha capito fin dalla prima conversazione.",
+          quote: "Abbiamo lavorato con quattro agenzie prima di Critic Solutions. Nessuna aveva capito la differenza tra un sito web e un sistema aziendale. Critic Solutions l'ha capito fin dalla prima conversazione.",
           name: 'Hira Chaudhry',
           role: 'CTO, Finvault Pakistan',
           initials: 'HC',
@@ -3042,13 +3043,13 @@ reviewModal: {
         'Monitoraggio delle performance multi-sede in tempo reale',
         'Workflow IA personalizzati senza modifiche al codice',
       ],
-      assistantTitle: 'Assistente IA Critics Solution',
+      assistantTitle: 'Assistente IA Critic Solutions',
       liveStatus: '● In diretta',
       inputPlaceholder: 'Chiedi dei nostri servizi…',
       metrics: [['Ordini', '1.240'], ['Ordini di Acquisto Aperti', '2'], ['Avvisi', '3']],
-      initialMessage: "Buongiorno! Sono il tuo **Assistente IA Critics Solution**.\n\nPosso aiutarti a esplorare i nostri servizi — dai dashboard Power BI alla cybersecurity, allo sviluppo web, fino all'imballaggio personalizzato di marca e alla consulenza fiscale.\n\nCosa vorresti sapere oggi?",
-      furtherInfo: 'Per ulteriori informazioni, contattaci a criticpickindustries@gmail.com',
-      fallback: "Non sono sicuro di avere una risposta specifica per questo, ma sono qui per aiutarti!\n\nSono specializzato nei servizi Critics Solutions:\n\n• **Consulente PBI** — Dashboard Power BI e analytics\n• **Social Media Marketing** — Strategia di crescita e campagne\n• **Cybersecurity** — Penetration testing e audit\n• **Sviluppo Web & App** — Sistemi full-stack e app mobile\n• **Design UI/UX** — Prototipi Figma e design system\n• **App di Fatturazione** — Fatturazione automatica e tracciamento finanziario\n• **Imballaggio e Stampa** — Design di packaging e stampa premium\n• **Consulenza Fiscale** — Audit finanziari, dichiarazione dei redditi e conformità legali\n\nPer ulteriori dettagli, contattaci.\n\n📧 **Email:** criticpickindustries@gmail.com\n📞 **Telefono:** +1255995712010",
+      initialMessage: "Buongiorno! Sono il tuo **Assistente IA Critic Solutions**.\n\nPosso aiutarti a esplorare i nostri servizi — dai dashboard Power BI alla cybersecurity, allo sviluppo web, fino all'imballaggio personalizzato di marca e alla consulenza fiscale.\n\nCosa vorresti sapere oggi?",
+      furtherInfo: 'Per ulteriori informazioni, contattaci a criticsolutions9@gmail.com',
+      fallback: "Non sono sicuro di avere una risposta specifica per questo, ma sono qui per aiutarti!\n\nSono specializzato nei servizi Critic Solutionss:\n\n• **Consulente PBI** — Dashboard Power BI e analytics\n• **Social Media Marketing** — Strategia di crescita e campagne\n• **Cybersecurity** — Penetration testing e audit\n• **Sviluppo Web & App** — Sistemi full-stack e app mobile\n• **Design UI/UX** — Prototipi Figma e design system\n• **App di Fatturazione** — Fatturazione automatica e tracciamento finanziario\n• **Imballaggio e Stampa** — Design di packaging e stampa premium\n• **Consulenza Fiscale** — Audit finanziari, dichiarazione dei redditi e conformità legali\n\nPer ulteriori dettagli, contattaci.\n\n📧 **Email:** criticsolutions9@gmail.com\n📞 **Telefono:** +1 (252) 424-0511",
       faqs: [
         {
           keywords: ['power bi', 'pbi', 'dashboard', 'analytics', 'business intelligence', 'dati', 'report', 'bi'],
@@ -3078,7 +3079,7 @@ reviewModal: {
         {
           keywords: ['fattura', 'fatturazione', 'pagamento', 'finanziario', 'tracciamento', 'ricevuta', 'contabilità'],
           service: 'App di Fatturazione',
-          response: "Scopri il nostro prodotto di punta — l'**App di Fatturazione Critics Solution**. È un sistema completo di fatturazione e gestione finanziaria per le aziende moderne.\n\nFunzionalità chiave:\n• Generazione e invio automatico delle fatture\n• Tracciamento pagamenti in tempo reale e promemoria\n• Configurazione multi-valuta e fiscale\n• Portale clienti per l'approvazione delle fatture\n• Report finanziari ed esportazione in PDF/Excel\n\nDì addio al caos della fatturazione manuale. Vuoi una demo dal vivo dell'App di Fatturazione?",
+          response: "Scopri il nostro prodotto di punta — l'**App di Fatturazione Critic Solutions**. È un sistema completo di fatturazione e gestione finanziaria per le aziende moderne.\n\nFunzionalità chiave:\n• Generazione e invio automatico delle fatture\n• Tracciamento pagamenti in tempo reale e promemoria\n• Configurazione multi-valuta e fiscale\n• Portale clienti per l'approvazione delle fatture\n• Report finanziari ed esportazione in PDF/Excel\n\nDì addio al caos della fatturazione manuale. Vuoi una demo dal vivo dell'App di Fatturazione?",
         },
         {
           keywords: ['imballaggio', 'stampa', 'scatola', 'scatole', 'design del packaging', 'packaging', 'imprimere'],
@@ -3098,12 +3099,12 @@ reviewModal: {
         {
           keywords: ['contatto', 'email', 'chiamare', 'parlare', 'raggiungere', 'incontro', 'consulenza', 'discutere', 'team'],
           service: 'Contatto',
-          response: "Ci farebbe piacere connetterci! Ecco come raggiungere il team di Critics Solutions:\n\n📧 **Email:** criticpickindustries@gmail.com\n📞 **Telefono:** +1255995712010\n📍 **Ufficio:** Lahore, Punjab, Pakistan\n\nIn genere rispondiamo entro 2 ore lavorative. Puoi anche compilare il form di contatto in questa pagina o selezionare 'Personalizza' sotto i nostri piani tariffari.",
+          response: "Ci farebbe piacere connetterci! Ecco come raggiungere il team di Critic Solutionss:\n\n📧 **Email:** criticsolutions9@gmail.com\n📞 **Telefono:** +1 (252) 424-0511\n📍 **Ufficio:** Lahore, Punjab, Pakistan\n\nIn genere rispondiamo entro 2 ore lavorative. Puoi anche compilare il form di contatto in questa pagina o selezionare 'Personalizza' sotto i nostri piani tariffari.",
         },
         {
           keywords: ['ciao', 'salve', 'buongiorno', 'buonasera', 'saluti'],
           service: 'Saluto',
-          response: "Ciao! 👋 Felice di averti qui.\n\nSono l'**Assistente IA Critics Solution** — qui per aiutarti a esplorare tutto ciò che offre Critics Solutions. Posso rispondere a domande su:\n\n• Consulenza PBI e Analytics\n• Social Media Marketing e Cybersecurity\n• Sviluppo Web & App e Design UI/UX\n• App di Fatturazione, Imballaggio e Stampa o Consulenza Fiscale\n\nCosa vorresti sapere di più?",
+          response: "Ciao! 👋 Felice di averti qui.\n\nSono l'**Assistente IA Critic Solutions** — qui per aiutarti a esplorare tutto ciò che offre Critic Solutionss. Posso rispondere a domande su:\n\n• Consulenza PBI e Analytics\n• Social Media Marketing e Cybersecurity\n• Sviluppo Web & App e Design UI/UX\n• App di Fatturazione, Imballaggio e Stampa o Consulenza Fiscale\n\nCosa vorresti sapere di più?",
         },
       ],
     },
@@ -3125,7 +3126,7 @@ reviewModal: {
       lastUpdated: "Ultimo aggiornamento: 17 luglio 2026",
       privacy: {
         title: "Informativa sulla privacy",
-        intro: "In Critics Solutions, raggiungibile all'indirizzo criticpickindustries@gmail.com, una delle nostre principali priorità è la privacy dei nostri visitatori. Questo documento descrive i tipi di informazioni raccolte e registrate da Critics Solutions e come le utilizziamo.",
+        intro: "In Critic Solutionss, raggiungibile all'indirizzo criticsolutions9@gmail.com, una delle nostre principali priorità è la privacy dei nostri visitatori. Questo documento descrive i tipi di informazioni raccolte e registrate da Critic Solutionss e come le utilizziamo.",
         sections: [
           {
             title: "1. Informazioni che raccogliamo",
@@ -3139,7 +3140,7 @@ reviewModal: {
           },
           {
             title: "3. Cookie e web beacon",
-            content: "Come qualsiasi altro sito web, Critics Solutions utilizza i 'cookie'. Questi cookie vengono utilizzati per memorizzare informazioni, incluse le preferenze dei visitatori e le pagine del sito a cui il visitatore ha avuto accesso o che ha visitato.",
+            content: "Come qualsiasi altro sito web, Critic Solutionss utilizza i 'cookie'. Questi cookie vengono utilizzati per memorizzare informazioni, incluse le preferenze dei visitatori e le pagine del sito a cui il visitatore ha avuto accesso o che ha visitato.",
           },
           {
             title: "4. Sicurezza dei dati",
@@ -3149,15 +3150,15 @@ reviewModal: {
       },
       terms: {
         title: "Termini di servizio",
-        intro: "Benvenuto in Critics Solutions. Questi Termini di servizio regolano l'utilizzo del nostro sito web e dei nostri servizi. Accedendo o utilizzando il nostro sito, accetti di essere vincolato da questi termini.",
+        intro: "Benvenuto in Critic Solutionss. Questi Termini di servizio regolano l'utilizzo del nostro sito web e dei nostri servizi. Accedendo o utilizzando il nostro sito, accetti di essere vincolato da questi termini.",
         sections: [
           {
             title: "1. Accordo di servizio",
-            content: "Critics Solutions offre servizi di alta qualità in sviluppo software, design UI/UX e marketing digitale. L'ambito del lavoro viene concordato individualmente tramite accordi di servizio formali e firmati.",
+            content: "Critic Solutionss offre servizi di alta qualità in sviluppo software, design UI/UX e marketing digitale. L'ambito del lavoro viene concordato individualmente tramite accordi di servizio formali e firmati.",
           },
           {
             title: "2. Proprietà intellettuale",
-            content: "Tutto il codice sorgente, l'architettura software, i design dei siti web, i layout, la grafica e il branding prodotti da Critics Solutions rimangono di nostra proprietà intellettuale fino al ricevimento del pagamento completo.",
+            content: "Tutto il codice sorgente, l'architettura software, i design dei siti web, i layout, la grafica e il branding prodotti da Critic Solutionss rimangono di nostra proprietà intellettuale fino al ricevimento del pagamento completo.",
           },
           {
             title: "3. Responsabilità dell'utente",
@@ -3167,7 +3168,7 @@ reviewModal: {
       },
       cookie: {
         title: "Cookie policy",
-        intro: "Questa Cookie Policy spiega come Critics Solutions utilizza i cookie e tecnologie di tracciamento simili per riconoscerti quando visiti il nostro sito web.",
+        intro: "Questa Cookie Policy spiega come Critic Solutionss utilizza i cookie e tecnologie di tracciamento simili per riconoscerti quando visiti il nostro sito web.",
         sections: [
           {
             title: "1. Cosa sono i cookie?",
@@ -3192,7 +3193,7 @@ nl: {
     hero: {
       badge: 'Nu meer dan 50 zakelijke klanten',
       headline: 'Digitale oplossingen die echte groei stimuleren',
-      sub: 'Critics Solutions bouwt high-performance webapplicaties, bedrijfssoftware en marketingsystemen voor ambitieuze bedrijven.',
+      sub: 'Critic Solutionss bouwt high-performance webapplicaties, bedrijfssoftware en marketingsystemen voor ambitieuze bedrijven.',
       cta1: 'Bekijk ons werk', cta2: 'Plan een gratis gesprek',
     },
     overview: {
@@ -3339,7 +3340,7 @@ reviewModal: {
       headline: 'Vertrouwd door teams die de toekomst bouwen',
       list: [
         {
-          quote: 'Critics Solutions leverde ons ERP-systeem in 8 weken op terwijl anderen 6 maanden offreerden. Het team begreep onze logistieke pijnpunten vanaf dag één — niet na 10 oriëntatiegesprekken.',
+          quote: 'Critic Solutionss leverde ons ERP-systeem in 8 weken op terwijl anderen 6 maanden offreerden. Het team begreep onze logistieke pijnpunten vanaf dag één — niet na 10 oriëntatiegesprekken.',
           name: 'Asim Raza',
           role: 'CEO, FreightIQ Logistics',
           initials: 'AR',
@@ -3360,7 +3361,7 @@ reviewModal: {
           color: '#FDE68A',
         },
         {
-          quote: 'We hebben voor Critics Solution met vier bureaus gewerkt. Geen van hen begreep het verschil tussen een website en een bedrijfssysteem. Critics Solution begreep dat vanaf het eerste gesprek.',
+          quote: 'We hebben voor Critic Solutions met vier bureaus gewerkt. Geen van hen begreep het verschil tussen een website en een bedrijfssysteem. Critic Solutions begreep dat vanaf het eerste gesprek.',
           name: 'Hira Chaudhry',
           role: 'CTO, Finvault Pakistan',
           initials: 'HC',
@@ -3566,13 +3567,13 @@ reviewModal: {
         'Real-time prestatiemonitoring voor meerdere vestigingen',
         'Aangepaste AI-workflows zonder codewijzigingen',
       ],
-      assistantTitle: 'Critics Solution AI-Assistent',
+      assistantTitle: 'Critic Solutions AI-Assistent',
       liveStatus: '● Live',
       inputPlaceholder: 'Stel een vraag over onze diensten…',
       metrics: [['Bestellingen', '1.240'], ['Open inkooporders', '2'], ['Meldingen', '3']],
-      initialMessage: "Goedemorgen! Ik ben jouw **Critics Solution AI-Assistent**.\n\nIk kan je helpen onze diensten te verkennen — van Power BI-dashboards en cybersecurity tot webontwikkeling, op maat gemaakte merkverpakkingen en fiscaal advies.\n\nWat wil je vandaag weten?",
-      furtherInfo: 'Voor meer informatie kun je ons bereiken via criticpickindustries@gmail.com',
-      fallback: "Ik weet niet zeker of ik daar een specifiek antwoord op heb, maar ik help je graag!\n\nIk ben gespecialiseerd in Critics Solutions-diensten:\n\n• **PBI Consultant** — Power BI-dashboards en analytics\n• **Social Media Marketing** — Groeistrategie en campagnes\n• **Cybersecurity** — Penetratietests en audits\n• **Web- en App-ontwikkeling** — Full-stack systemen en mobiele apps\n• **UI/UX Design** — Figma-prototypes en design systems\n• **Factuur-app** — Geautomatiseerde facturering en financieel beheer\n• **Verpakking & Drukwerk** — Verpakkingsontwerp en premium drukwerk\n• **Fiscaal Advies** — Financiële audits, belastingaangiften en wettelijke compliance\n\nNeem contact met ons op voor meer details.\n\n📧 **E-mail:** criticpickindustries@gmail.com\n📞 **Telefoon:** +1255995712010",
+      initialMessage: "Goedemorgen! Ik ben jouw **Critic Solutions AI-Assistent**.\n\nIk kan je helpen onze diensten te verkennen — van Power BI-dashboards en cybersecurity tot webontwikkeling, op maat gemaakte merkverpakkingen en fiscaal advies.\n\nWat wil je vandaag weten?",
+      furtherInfo: 'Voor meer informatie kun je ons bereiken via criticsolutions9@gmail.com',
+      fallback: "Ik weet niet zeker of ik daar een specifiek antwoord op heb, maar ik help je graag!\n\nIk ben gespecialiseerd in Critic Solutionss-diensten:\n\n• **PBI Consultant** — Power BI-dashboards en analytics\n• **Social Media Marketing** — Groeistrategie en campagnes\n• **Cybersecurity** — Penetratietests en audits\n• **Web- en App-ontwikkeling** — Full-stack systemen en mobiele apps\n• **UI/UX Design** — Figma-prototypes en design systems\n• **Factuur-app** — Geautomatiseerde facturering en financieel beheer\n• **Verpakking & Drukwerk** — Verpakkingsontwerp en premium drukwerk\n• **Fiscaal Advies** — Financiële audits, belastingaangiften en wettelijke compliance\n\nNeem contact met ons op voor meer details.\n\n📧 **E-mail:** criticsolutions9@gmail.com\n📞 **Telefoon:** +1 (252) 424-0511",
       faqs: [
         {
           keywords: ['power bi', 'pbi', 'dashboard', 'analytics', 'business intelligence', 'data', 'rapport', 'bi'],
@@ -3602,7 +3603,7 @@ reviewModal: {
         {
           keywords: ['factuur', 'facturering', 'betaling', 'financieel', 'bijhouden', 'ontvangst', 'boekhouding'],
           service: 'Factuur-app',
-          response: "Maak kennis met ons vlaggenschipproduct — de **Critics Solution Factuur-app**. Het is een compleet facturerings- en financieel beheersysteem voor moderne bedrijven.\n\nBelangrijkste functies:\n• Automatisch facturen genereren en verzenden\n• Real-time betalingsbeheer en herinneringen\n• Configuratie voor meerdere valuta en belastingen\n• Klantportaal voor factuurgoedkeuring\n• Financiële rapporten en export naar PDF/Excel\n\nZeg vaarwel tegen de chaos van handmatige facturering. Wil je een live demo van de Factuur-app?",
+          response: "Maak kennis met ons vlaggenschipproduct — de **Critic Solutions Factuur-app**. Het is een compleet facturerings- en financieel beheersysteem voor moderne bedrijven.\n\nBelangrijkste functies:\n• Automatisch facturen genereren en verzenden\n• Real-time betalingsbeheer en herinneringen\n• Configuratie voor meerdere valuta en belastingen\n• Klantportaal voor factuurgoedkeuring\n• Financiële rapporten en export naar PDF/Excel\n\nZeg vaarwel tegen de chaos van handmatige facturering. Wil je een live demo van de Factuur-app?",
         },
         {
           keywords: ['verpakking', 'drukwerk', 'doos', 'dozen', 'verpakkingsontwerp', 'printen', 'drukken'],
@@ -3622,12 +3623,12 @@ reviewModal: {
         {
           keywords: ['contact', 'email', 'bellen', 'praten', 'bereiken', 'afspraak', 'overleg', 'bespreken', 'team'],
           service: 'Contact',
-          response: "We nemen graag contact op! Zo bereik je het Critics Solutions-team:\n\n📧 **E-mail:** criticpickindustries@gmail.com\n📞 **Telefoon:** +1255995712010\n📍 **Kantoor:** Lahore, Punjab, Pakistan\n\nWe reageren doorgaans binnen 2 werkuren. Je kunt ook omhoog scrollen naar onze **Prijzen**-sectie en op 'Aanpassen' klikken om direct een samenwerking te starten.",
+          response: "We nemen graag contact op! Zo bereik je het Critic Solutionss-team:\n\n📧 **E-mail:** criticsolutions9@gmail.com\n📞 **Telefoon:** +1 (252) 424-0511\n📍 **Kantoor:** Lahore, Punjab, Pakistan\n\nWe reageren doorgaans binnen 2 werkuren. Je kunt ook omhoog scrollen naar onze **Prijzen**-sectie en op 'Aanpassen' klikken om direct een samenwerking te starten.",
         },
         {
           keywords: ['hallo', 'hoi', 'goedemorgen', 'goedemiddag', 'goedenavond', 'begroeting'],
           service: 'Begroeting',
-          response: "Hallo! 👋 Fijn dat je er bent.\n\nIk ben de **Critics Solution AI-Assistent** — hier om je te helpen alles te ontdekken wat Critics Solutions te bieden heeft. Ik kan vragen beantwoorden over:\n\n• PBI Consultant en Data Analytics\n• Social Media Marketing en Cybersecurity\n• Web- en App-ontwikkeling en UI/UX Design\n• Onze Factuur-app, Verpakking & Drukwerk of Fiscaal Advies\n\nWat wil je meer weten?",
+          response: "Hallo! 👋 Fijn dat je er bent.\n\nIk ben de **Critic Solutions AI-Assistent** — hier om je te helpen alles te ontdekken wat Critic Solutionss te bieden heeft. Ik kan vragen beantwoorden over:\n\n• PBI Consultant en Data Analytics\n• Social Media Marketing en Cybersecurity\n• Web- en App-ontwikkeling en UI/UX Design\n• Onze Factuur-app, Verpakking & Drukwerk of Fiscaal Advies\n\nWat wil je meer weten?",
         },
       ],
     },
@@ -3649,7 +3650,7 @@ reviewModal: {
       lastUpdated: "Laatst bijgewerkt: 17 juli 2026",
       privacy: {
         title: "Privacybeleid",
-        intro: "Bij Critics Solutions, bereikbaar via criticpickindustries@gmail.com, is de privacy van onze bezoekers een van onze belangrijkste prioriteiten. Dit privacybeleid beschrijft welke soorten informatie Critics Solutions verzamelt en registreert, en hoe we deze gebruiken.",
+        intro: "Bij Critic Solutionss, bereikbaar via criticsolutions9@gmail.com, is de privacy van onze bezoekers een van onze belangrijkste prioriteiten. Dit privacybeleid beschrijft welke soorten informatie Critic Solutionss verzamelt en registreert, en hoe we deze gebruiken.",
         sections: [
           {
             title: "1. Informatie die we verzamelen",
@@ -3663,7 +3664,7 @@ reviewModal: {
           },
           {
             title: "3. Cookies en webbakens",
-            content: "Zoals elke andere website gebruikt Critics Solutions 'cookies'. Deze cookies worden gebruikt om informatie op te slaan, waaronder voorkeuren van bezoekers en de pagina's van de website die de bezoeker heeft bezocht.",
+            content: "Zoals elke andere website gebruikt Critic Solutionss 'cookies'. Deze cookies worden gebruikt om informatie op te slaan, waaronder voorkeuren van bezoekers en de pagina's van de website die de bezoeker heeft bezocht.",
           },
           {
             title: "4. Beveiliging van gegevens",
@@ -3673,15 +3674,15 @@ reviewModal: {
       },
       terms: {
         title: "Servicevoorwaarden",
-        intro: "Welkom bij Critics Solutions. Deze servicevoorwaarden regelen je gebruik van onze website en diensten. Door onze website te bezoeken of te gebruiken, ga je akkoord met deze voorwaarden.",
+        intro: "Welkom bij Critic Solutionss. Deze servicevoorwaarden regelen je gebruik van onze website en diensten. Door onze website te bezoeken of te gebruiken, ga je akkoord met deze voorwaarden.",
         sections: [
           {
             title: "1. Serviceovereenkomst",
-            content: "Critics Solutions biedt hoogwaardige softwareontwikkeling, UI/UX-design en digitale marketingdiensten. De omvang van het werk wordt afzonderlijk overeengekomen via formele, ondertekende serviceovereenkomsten.",
+            content: "Critic Solutionss biedt hoogwaardige softwareontwikkeling, UI/UX-design en digitale marketingdiensten. De omvang van het werk wordt afzonderlijk overeengekomen via formele, ondertekende serviceovereenkomsten.",
           },
           {
             title: "2. Intellectueel eigendom",
-            content: "Alle broncode, softwarearchitectuur, websiteontwerpen, lay-outs, graphics en branding die door Critics Solutions worden geproduceerd, blijven ons intellectueel eigendom totdat de volledige betaling is ontvangen.",
+            content: "Alle broncode, softwarearchitectuur, websiteontwerpen, lay-outs, graphics en branding die door Critic Solutionss worden geproduceerd, blijven ons intellectueel eigendom totdat de volledige betaling is ontvangen.",
           },
           {
             title: "3. Verantwoordelijkheden van de gebruiker",
@@ -3691,7 +3692,7 @@ reviewModal: {
       },
       cookie: {
         title: "Cookiebeleid",
-        intro: "Dit cookiebeleid legt uit hoe Critics Solutions cookies en vergelijkbare trackingtechnologieën gebruikt om je te herkennen wanneer je onze website bezoekt.",
+        intro: "Dit cookiebeleid legt uit hoe Critic Solutionss cookies en vergelijkbare trackingtechnologieën gebruikt om je te herkennen wanneer je onze website bezoekt.",
         sections: [
           {
             title: "1. Wat zijn cookies?",
@@ -3714,7 +3715,7 @@ export function LangProvider({ children }) {
   const [lang, setLang] = useState('en');
 
   useEffect(() => {
-    const saved = localStorage.getItem('Critics Solution-lang') || 'en';
+    const saved = localStorage.getItem('Critic Solutions-lang') || 'en';
     applyLang(saved);
     setLang(saved);
   }, []);
@@ -3726,7 +3727,7 @@ export function LangProvider({ children }) {
   };
 
   const changeLang = (code) => {
-    localStorage.setItem('Critics Solution-lang', code);
+    localStorage.setItem('Critic Solutions-lang', code);
     applyLang(code);
     setLang(code);
   };

@@ -5,7 +5,7 @@ export default function FloatingActions() {
     <div className={styles.floatingContainer}>
       
       <a 
-        href="mailto:awaisabbas972@gmail.com" 
+        href="mailto:criticsolution9@gmail.com" 
         className={`${styles.floatingButton} ${styles.mailBtn}`}
         target="_blank"
         rel="noopener noreferrer"
@@ -19,7 +19,7 @@ export default function FloatingActions() {
 
       {/* WhatsApp Button */}
       <a 
-        href="https://wa.me/923496257662" 
+        href="https://wa.me/12524240511" 
         className={`${styles.floatingButton} ${styles.whatsappBtn}`}
         target="_blank"
         rel="noopener noreferrer"

@@ -25,7 +25,7 @@ const SOCIALS = [
   },
   {
     label: 'Whatsapp',
-    href: 'https://wa.me/+15595712010',
+    href: 'https://wa.me/12524240511',
     Icon: BsWhatsapp
   },
   {
@@ -85,20 +85,21 @@ export default function Footer({ t }) {
                 <span className={styles.logoMark}>
                   <img
                     src="/logo.png"
-                    alt="Criticpick Logo"
+                    alt="Critic Solutions Logo"
                     className={styles.logoImg}
                   />
                 </span>
-                <span>Critics Solutions</span>
+                <span>Critic Solutions</span>
               </Link>
               <p className={styles.brandDesc}>{t?.tagline || ""}</p>
 
               <div className={styles.contact}>
-                <a href="mailto:criticpickindustries@gmail.com" className={styles.contactLink}>criticpickindustries@gmail.com</a>
-                <a href="https://wa.me/923019465427" className={styles.contactLink}><span>+923019465427</span></a>
-                <a href="https://wa.me/923496257662" className={styles.contactLink}><span>+923496257662</span></a>
-                <a href="https://wa.me/1(559)571-2010" className={styles.contactLink}><span>+1 (559) 571-2010</span></a>
-                <span className={styles.contactLink}>Lahore, Punjab, Pakistan</span>
+                <a href="mailto:criticsolutions9@gmail.com" className={styles.contactLink}>criticsolutions9@gmail.com</a>
+                
+                <a href="https://wa.me/12524240511" className={styles.contactLink}><span>+1(252)424-0511</span></a>
+              
+               <span className={styles.contactLink}>Headquater: 312 W 2nd St ste 5465, Casper, WY 82601</span>
+                <span className={styles.contactLink}>Branch Office: Lahore, Punjab, Pakistan</span>
               </div>
 
               <div className={styles.socials}>
@@ -145,7 +146,7 @@ export default function Footer({ t }) {
           </div>
 
           <div className={styles.bottom}>
-            <p className={styles.copy}>© {new Date().getFullYear()} Critics Solutions. {t?.rights || ""}</p>
+            <p className={styles.copy}>© {new Date().getFullYear()} Critic Solutions. {t?.rights || ""}</p>
             <p className={styles.copy}>{t?.bottomLeft || ""}</p>
           </div>
         </div>

@@ -51,7 +51,7 @@ export default function Hero({ t, tOverview }) {
                 <span className={styles.dotYellow} />
                 <span className={styles.dotGreen} />
               </div>
-              <span className="body-sm">yae-dashboard.app</span>
+              <span className="body-sm">Critic Solutions Dashboard</span>
             </div>
 
             <div className={styles.dashBody}>

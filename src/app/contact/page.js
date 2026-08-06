@@ -27,6 +27,9 @@ const LocationIcon = () => (
   </svg>
 );
 
+
+
+
 export default function ContactPage() {
   const { t } = useLang();
   const c = t.contact; 
@@ -102,11 +105,21 @@ export default function ContactPage() {
                   </span>
                   <div>
                     <p className="label" style={{ color: 'var(--text-muted)', marginBottom: '4px' }}>{c.whatsappLabel}</p>
-                    <a href="https://wa.me/923019465427" target="_blank" rel="noopener noreferrer" className={styles.infoLink}>+92 301 946 5427</a>
+                    <a href="https://wa.me/12524240511" target="_blank" rel="noopener noreferrer" className={styles.infoLink}>+1(252)424-0511</a>
                   </div>
                 </div>
 
                 <div className={styles.infoBlock}>
+                  <span className={styles.infoIcon}>
+                    <LocationIcon />
+                  </span>
+                  <div>
+                    <p className="label" style={{ color: 'var(--text-muted)', marginBottom: '4px' }}>{c.locationLabel}</p>
+                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.9375rem', margin: 0 }}>{c.locationValue1}</p>
+                  </div>
+                </div>
+
+                 <div className={styles.infoBlock}>
                   <span className={styles.infoIcon}>
                     <LocationIcon />
                   </span>

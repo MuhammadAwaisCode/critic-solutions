@@ -70,7 +70,7 @@ export default function Navbar() {
                 className={styles.logoImg}
               />
             </span>
-            <span>Critics Solutions</span>
+            <span>Critic Solutions</span>
           </Link>
 
           <ul className={`${styles.links} ${open ? styles.linksOpen : ''}`}>
