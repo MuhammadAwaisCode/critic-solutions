@@ -44,8 +44,21 @@ export default function AIFeatures() {
   const [messages, setMessages]     = useState(makeInitial);
   const [inputValue, setInputValue] = useState('');
   const [isTyping, setIsTyping]     = useState(false);
+  
+  // Refs
   const chatEndRef = useRef(null);
   const inputRef   = useRef(null);
+  const sectionRef = useRef(null); // 👈 1. Section Top Ref
+
+  // 👈 2. Page load par view ko bilkul Top se align karne ke liye
+  useEffect(() => {
+    if (sectionRef.current) {
+      sectionRef.current.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start' // 👈 Exact top align karega
+      });
+    }
+  }, []);
 
   useEffect(() => {
     setMessages(makeInitial());
@@ -53,8 +66,14 @@ export default function AIFeatures() {
     setIsTyping(false);
   }, [makeInitial]);
 
+  // 👈 3. Chat scroll fix: Page ko neeche nahi khinchega
   useEffect(() => {
-    chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (messages.length > 1 || isTyping) {
+      chatEndRef.current?.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'nearest' 
+      });
+    }
   }, [messages, isTyping]);
 
   const getResponse = useCallback(
@@ -101,7 +120,8 @@ export default function AIFeatures() {
   };
 
   return (
-    <section className="section section--dark" id="ai-features">
+    // 👈 Section par ref attach kar diya
+    <section ref={sectionRef} className="section section--dark" id="ai-features">
       <div className="container">
         <div className="split split--40-60">
           <div className="stack stack--lg">
