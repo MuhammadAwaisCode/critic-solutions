@@ -10,6 +10,7 @@ import AIFeatures from './components/AIFeatures/AIFeatures';
 import TechStack from './components/TechStack/TechStack';
 import CaseStudies from './components/CaseStudies/CaseStudies';
 import Testimonials from './components/Testimonials/Testimonials';
+import OurTeam from './components/OurTeam/OurTeam'; // 👈 1. Import added
 import Pricing from './components/Pricing/Pricing';
 import Footer from './components/Footer/Footer';
 
@@ -20,7 +21,7 @@ export default function Home() {
     <>
       <Navbar />
       <main>
-        <Hero       t={t.hero}         tOverview={t.overview} />
+        <Hero          t={t.hero}         tOverview={t.overview} />
         <Overview   t={t.overview} />
         <Services   t={t.services} />
         <Industries t={t.industries} />
@@ -28,6 +29,7 @@ export default function Home() {
         <TechStack  />
         <CaseStudies  t={t.caseStudies} />
         <Testimonials t={t.testimonials} />
+        <OurTeam /> {/* 👈 2. Section place kar diya */}
         <Pricing      t={t.pricing} />
       </main>
       <Footer t={t.footer} />

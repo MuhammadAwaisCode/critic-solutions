@@ -1,0 +1,248 @@
+/* Container & Main Layout */
+.sliderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  gap: 3.5rem;
+  align-items: flex-start;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 16px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Light Mode Theme Overrides */
+:global([data-theme='light']) .wrapper {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+}
+
+@media (prefers-color-scheme: light) {
+  :global(:root:not([data-theme='dark'])) .wrapper {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Left Column Styling */
+.leftCol {
+  flex: 0 0 310px;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageCard {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.leftMeta {
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.leftName {
+  font-family: Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+:global([data-theme='light']) .leftName {
+  color: #111827;
+}
+
+.leftRole {
+  color: #c5a059;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+/* Right Column Styling */
+.rightCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+:global([data-theme='light']) .quote {
+  color: #1f2937;
+}
+
+.paragraph {
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: rgba(247, 246, 243, 0.75);
+  margin-bottom: 1.25rem;
+  text-align: justify;
+}
+
+:global([data-theme='light']) .paragraph {
+  color: #4b5563;
+}
+
+.signatureBlock {
+  margin-top: 0.5rem;
+}
+
+.sigName {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #c5a059;
+  margin-bottom: 0.25rem;
+}
+
+.sigRole {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+
+:global([data-theme='light']) .sigRole {
+  color: #6b7280;
+}
+
+/* Slider Controls Styling */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.navBtn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-size: 1.2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.navBtn:hover {
+  background: #c5a059;
+  color: #000000;
+  border-color: #c5a059;
+}
+
+:global([data-theme='light']) .navBtn {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.15);
+  color: #111827;
+}
+
+.dots {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+:global([data-theme='light']) .dot {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.activeDot {
+  background: #c5a059;
+  width: 24px;
+  border-radius: 12px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+  .wrapper {
+    padding: 2.25rem;
+    gap: 2.5rem;
+  }
+
+  .leftCol {
+    flex: 0 0 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 1.5rem 1.25rem;
+    gap: 2rem;
+  }
+
+  .leftCol {
+    flex: none;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .leftMeta {
+    margin-top: 1rem;
+  }
+
+  .leftName {
+    font-size: 1.3rem;
+  }
+
+  .rightCol {
+    width: 100%;
+  }
+
+  .quote {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    margin-bottom: 1.25rem;
+  }
+
+  .paragraph {
+    font-size: 0.92rem;
+    line-height: 1.65;
+  }
+
+  .sigName {
+    font-size: 1.2rem;
+  }
+}

@@ -3,15 +3,15 @@ import FloatingActions from './components/FloatingActions/FloatingActions';
 import Providers from './Providers';
 
 export const metadata = {
-  title: 'Critics Solutions — Digital Marketing & Software That Grows Your Brand',
+  title: 'Critic Solutions — Digital Marketing & Software That Grows Your Brand',
   description:
-    'Critics Solutions builds high-performance web applications, enterprise software, and digital marketing systems for ambitious businesses across Pakistan and beyond.',
+    'Critic Solutions builds high-performance web applications, enterprise software, and digital marketing systems for ambitious businesses across Pakistan and beyond.',
   keywords: 'web development, digital marketing, software solutions, ERP, UI/UX, Lahore, Pakistan',
   openGraph: {
-    title: 'Critics Solutions',
+    title: 'Critic Solutions',
     description: 'Building Seamless Digital Experiences',
     url: 'https://Criticpicksolutions.com',
-    siteName: 'Critics Solutions',
+    siteName: 'Critic Solutions',
     locale: 'en_US',
     type: 'website',
   },
