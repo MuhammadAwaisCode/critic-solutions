@@ -22,7 +22,7 @@ en: {
     hero: {
       badge: 'Now serving 50+ enterprise clients',
       headline: 'Digital Solutions That Drive Real Growth',
-      sub: 'Critic Solutionss builds high-performance web apps, enterprise software, and marketing systems for ambitious businesses.',
+      sub: 'Critic Solutions builds high-performance web apps, enterprise software, and marketing systems for ambitious businesses.',
       cta1: 'Explore Our Work', 
       cta2: 'Book a Free Call',
     },
