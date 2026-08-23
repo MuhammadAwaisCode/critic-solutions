@@ -6,9 +6,11 @@ import styles from './OurTeam.module.css';
 const teamMembers = [
   {
     id: 1,
+    number: "01",
+    sectionTitle: "Message from the CEO",
     name: "Muhammad Haris",
     role: "Founder & Chief Executive Officer",
-    image: "/haris.png",
+    image: "/Haris.png",
     quote:
       "We started Critic Solutions with a conviction that businesses deserve a digital partner who thinks like an operator, not a vendor. Every product we ship, every campaign we run, and every line of code we write is judged by one standard — does it move a real number for our client's business.",
     paragraphs: [
@@ -20,6 +22,8 @@ const teamMembers = [
   },
   {
     id: 2,
+    number: "02",
+    sectionTitle: "Message from the Director",
     name: "Sana Haris",
     role: "Director",
     image: "/Sana.jpeg",
@@ -34,6 +38,8 @@ const teamMembers = [
   },
   {
     id: 3,
+    number: "03",
+    sectionTitle: "Message from the Lead Developer",
     name: "Muhammad Awais",
     role: "Web & App Developer",
     image: "/Awais.png",
@@ -48,6 +54,8 @@ const teamMembers = [
   },
   {
     id: 4,
+    number: "04",
+    sectionTitle: "Message from the Web & App Developer",
     name: "Eysha Moh-i-u-din",
     role: "Web & App Developer",
     image: "/Eysha.png",
@@ -64,7 +72,7 @@ const teamMembers = [
     id: 5,
     number: "05",
     sectionTitle: "Message from the AI Lead",
-    name: "AI Specialist", 
+    name: "AI Specialist",
     role: "Artificial Intelligence & ML Lead",
     image: "/Nigaar.jpeg",
     quote:
@@ -89,7 +97,6 @@ export default function OurTeam() {
     setCurrentIndex((prev) => (prev === 0 ? teamMembers.length - 1 : prev - 1));
   };
 
-  // 7 Seconds Auto Play Logic
   useEffect(() => {
     const autoSlide = setInterval(() => {
       nextSlide();
@@ -102,7 +109,14 @@ export default function OurTeam() {
 
   return (
     <div className={styles.sliderContainer}>
-      <div className={styles.wrapper}>
+      {/* Top Header Section */}
+      <div className={styles.headerLine}>
+        <span className={styles.sectionNum}>{current.number}</span>
+        <h2 className={styles.sectionHeading}>{current.sectionTitle}</h2>
+      </div>
+
+      {/* Main Card Wrapper */}
+      <div className={styles.wrapper} key={currentIndex}>
         {/* Left Column */}
         <div className={styles.leftCol}>
           <div className={styles.imageCard}>
@@ -131,7 +145,7 @@ export default function OurTeam() {
         </div>
       </div>
 
-      {/* Slider Controls */}
+      {/* Slider Navigation */}
       <div className={styles.controls}>
         <button onClick={prevSlide} className={styles.navBtn} aria-label="Previous">
           &#8592;
