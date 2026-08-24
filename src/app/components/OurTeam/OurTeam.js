@@ -39,9 +39,9 @@ const teamMembers = [
   {
     id: 3,
     number: "03",
-    sectionTitle: "Message from the Lead Developer",
+    sectionTitle: "Message from the Web & App Developer Team Lead",
     name: "Muhammad Awais",
-    role: "Web & App Developer",
+    role: "Web & App Developer team Lead",
     image: "/Awais.png",
     quote:
       "Building high-performance web and mobile applications requires clean architecture, scalability, and an obsession with speed. We turn complex technical requirements into smooth, reliable digital experiences.",
@@ -50,14 +50,14 @@ const teamMembers = [
       "From modern front-end frameworks to backend integrations, our development approach delivers products that scale effortlessly as your business grows.",
     ],
     sigName: "Muhammad Awais",
-    sigRole: "Web & App Developer, Critic Solutions",
+    sigRole: "Team Lead - Web & App Developer, Critic Solutions",
   },
   {
     id: 4,
     number: "04",
-    sectionTitle: "Message from the Web & App Developer",
+    sectionTitle: "Message from the Web & App Developer Team Lead",
     name: "Eysha Moh-i-u-din",
-    role: "Web & App Developer",
+    role: "Web & App Developer Team Lead",
     image: "/Eysha.png",
     quote:
       "User experience and technical precision go hand in hand. In app and web development, our goal is to build intuitive interfaces backed by rock-solid architecture.",
@@ -66,13 +66,13 @@ const teamMembers = [
       "By adopting modern frameworks and agile methodologies, we ensure our digital products are not only visually refined but also built for long-term maintainability.",
     ],
     sigName: "Eysha Moh-i-u-din",
-    sigRole: "Web & App Developer, Critic Solutions",
+    sigRole: "Team Lead - Web & App Developer, Critic Solutions",
   },
   {
     id: 5,
     number: "05",
-    sectionTitle: "Message from the AI Lead",
-    name: "AI Specialist",
+    sectionTitle: "Message from the AI Team Lead",
+    name: "Nigaar",
     role: "Artificial Intelligence & ML Lead",
     image: "/Nigaar.jpeg",
     quote:
@@ -81,7 +81,7 @@ const teamMembers = [
       "Specializing in Machine Learning, Deep Learning, and Computer Vision, I focus on building end-to-end intelligent systems — ranging from predictive analytics pipelines to real-time object detection and facial recognition using YOLOv8 and OpenCV.",
       "By combining modern AI models (TensorFlow, Scikit-learn) with scalable full-stack web architectures (Next.js, Python, SQL), we deliver seamless, data-driven automation tailored to meet high-performance standards.",
     ],
-    sigName: "AI Specialist",
+    sigName: "Nigaar",
     sigRole: "AI & ML Lead, Critic Solutions",
   },
 ];
