@@ -532,7 +532,91 @@ en: {
           }
         ]
       }
-    }
+    },
+    ourTeam: {
+      teamMembers: [
+        {
+          id: 1,
+          number: "01",
+          sectionTitle: "Message from the CEO",
+          name: "Muhammad Haris",
+          role: "Founder & Chief Executive Officer",
+          image: "/Haris.png",
+          quote:
+            "We started Critic Solutions with a conviction that businesses deserve a digital partner who thinks like an operator, not a vendor. Every product we ship, every campaign we run, and every line of code we write is judged by one standard — does it move a real number for our client's business.",
+          paragraphs: [
+            "Under my leadership, Critic Solutions has grown into a full-stack partner trusted by 50+ enterprise clients across six-plus countries, delivering everything from enterprise ERP systems to high-conversion e-commerce platforms. As we expand our footprint from Lahore into global markets, our commitment remains the same: engineering discipline, commercial clarity, and outcomes our clients can measure.",
+            "I invite you to explore what we've built, and to let us build the next chapter of your business with you.",
+          ],
+          sigName: "Muhammad Haris",
+          sigRole: "Founder & CEO, Critic Solutions | Chairman, Criticpick Group",
+        },
+        {
+          id: 2,
+          number: "02",
+          sectionTitle: "Message from the Director",
+          name: "Sana Haris",
+          role: "Director",
+          image: "/Sana.jpeg",
+          quote:
+            "Great digital products are won or lost in the details — how a checkout feels on a slow connection, how a dashboard reads at a glance, how quickly a support query gets resolved. My focus at Critic Solutions is ensuring that discipline runs through every client relationship, every delivery, and every team we hire.",
+          paragraphs: [
+            "I oversee operational excellence, client success and quality assurance across our project portfolio, working closely with our engineering, design and marketing teams to make sure the standard we promise on our website is the standard our clients experience in practice.",
+            "We measure ourselves by retention, not just by new logos — and a 98% client retention rate is the result of that discipline.",
+          ],
+          sigName: "Sana Haris",
+          sigRole: "Director, Critic Solutions",
+        },
+        {
+          id: 3,
+          number: "03",
+          sectionTitle: "Message from the Lead Developer",
+          name: "Muhammad Awais",
+          role: "Web & App Developer",
+          image: "/Awais.png",
+          quote:
+            "Building high-performance web and mobile applications requires clean architecture, scalability, and an obsession with speed. We turn complex technical requirements into smooth, reliable digital experiences.",
+          paragraphs: [
+            "My focus is on engineering scalable web applications and mobile solutions tailored to enterprise performance standards. Every line of code is structured to ensure security, efficiency, and seamless responsiveness across all platforms.",
+            "From modern front-end frameworks to backend integrations, our development approach delivers products that scale effortlessly as your business grows.",
+          ],
+          sigName: "Muhammad Awais",
+          sigRole: "Web & App Developer, Critic Solutions",
+        },
+        {
+          id: 4,
+          number: "04",
+          sectionTitle: "Message from the Web & App Developer",
+          name: "Eysha Moh-i-u-din",
+          role: "Web & App Developer",
+          image: "/Eysha.png",
+          quote:
+            "User experience and technical precision go hand in hand. In app and web development, our goal is to build intuitive interfaces backed by rock-solid architecture.",
+          paragraphs: [
+            "I specialize in crafting cross-platform mobile apps and dynamic web interfaces that elevate how users interact with brands, bridging the gap between design vision and technical execution.",
+            "By adopting modern frameworks and agile methodologies, we ensure our digital products are not only visually refined but also built for long-term maintainability.",
+          ],
+          sigName: "Eysha Moh-i-u-din",
+          sigRole: "Web & App Developer, Critic Solutions",
+        },
+        {
+          id: 5,
+          number: "05",
+          sectionTitle: "Message from the AI Lead",
+          name: "AI Specialist",
+          role: "Artificial Intelligence & ML Lead",
+          image: "/Nigaar.jpeg",
+          quote:
+            "Transforming complex data and computer vision into intelligent, real-world AI solutions that drive automation and enterprise growth.",
+          paragraphs: [
+            "Specializing in Machine Learning, Deep Learning, and Computer Vision, I focus on building end-to-end intelligent systems — ranging from predictive analytics pipelines to real-time object detection and facial recognition using YOLOv8 and OpenCV.",
+            "By combining modern AI models (TensorFlow, Scikit-learn) with scalable full-stack web architectures (Next.js, Python, SQL), we deliver seamless, data-driven automation tailored to meet high-performance standards.",
+          ],
+          sigName: "AI Specialist",
+          sigRole: "AI & ML Lead, Critic Solutions",
+        },
+      ],
+    },
   },
 
 
@@ -1059,6 +1143,90 @@ ar: {
         },
       ],
     },
+  },
+  ourTeam: {
+    teamMembers: [
+      {
+        id: 1,
+        number: "01",
+        sectionTitle: "رسالة من الرئيس التنفيذي",
+        name: "محمد حارث",
+        role: "المؤسس والرئيس التنفيذي",
+        image: "/Haris.png",
+        quote:
+          "بدأنا كراتيك سوليوشنز بقناعة راسخة بأن الشركات تستحق شريكاً رقمياً يفكر كشريك تشغيلي، وليس مجرد مزود خدمة. كل منتج نطلقه، وكل حملة نديرها، وكل سطر كود نكتبه يُحكم عليه بمعيار واحد — هل يحقق نمواً فعلياً وقابلاً للقياس لأعمال عملائنا.",
+        paragraphs: [
+          "تحت قيادتي، نمت كراتيك سوليوشنز لتصبح شريكاً شاملاً موثوقاً به من قبل أكثر من 50 عميلاً مؤسسياً عبر أكثر من 6 دول، حيث نقدم كل شيء بدءاً من أنظمة تخطيط موارد المؤسسات (ERP) وحتى منصات التجارة الإلكترونية عالية التحويل. ومع توسيع تواجدنا من لاهور إلى الأسواق العالمية، يظل التزامنا ثابتاً: الانضباط الهندسي، والوضوح التجاري، والنتائج القابلة للقياس.",
+          "أدعوكم لاستكشاف ما بنيناه، ومشاركتنا في بناء الفصل التالي من قصة نجاح أعمالكم.",
+        ],
+        sigName: "محمد حارث",
+        sigRole: "المؤسس والرئيس التنفيذي، كراتيك سوليوشنز | رئيس مجلس إدارة مجموعة كراتيك بيك",
+      },
+      {
+        id: 2,
+        number: "02",
+        sectionTitle: "رسالة من مديرة الإدارة",
+        name: "سناء حارث",
+        role: "مديرة الإدارة",
+        image: "/Sana.jpeg",
+        quote:
+          "المنتجات الرقمية الرائعة تنجح أو تفشل في التفاصيل — تجربة الدفع السلسة حتى مع الاتصال الضعيف، وضوح لوحات المعلومات بنظرة سريعة، وسرعة معالجة استفسارات الدعم. تركيزي ينصب على ضمان سريان هذا الانضباط الدقيق في كل علاقة عمل، وكل تسليم، وكل فريق نقوم بتوظيفه.",
+        paragraphs: [
+          "أشرف على التميز التشغيلي ونجاح العملاء وضمان الجودة عبر محفظة مشاريعنا، بالتعاون الوثيق مع فرق الهندسة والتصميم والتسويق لضمان أن المعيار الذي نعد به على موقعنا هو نفسه ما يعيشه عملاؤنا عملياً.",
+          "نحن نقيس نجاحنا بمعدل استبقاء العملاء وليس فقط بعدد المشاريع الجديدة — ويعد معدل الاحتفاظ بالعملاء البالغ 98% ثمرة مباشرة لهذا الانضباط.",
+        ],
+        sigName: "سناء حارث",
+        sigRole: "مديرة الإدارة، كراتيك سوليوشنز",
+      },
+      {
+        id: 3,
+        number: "03",
+        sectionTitle: "رسالة من كبير المطورين",
+        name: "محمد عويس",
+        role: "مطور ويب وتطبيقات",
+        image: "/Awais.png",
+        quote:
+          "بناء تطبيقات الويب والهاتف المحمول عالية الأداء يتطلب بنية برمجية نقية، وقابلية فائقة للتوسع، وشغفاً بالسرعة. نحن نحول المتطلبات التقنية المعقدة إلى تجارب رقمية سلسة وموثوقة.",
+        paragraphs: [
+          "ينصب تركيزي على هندسة تطبيقات الويب وحلول الجوال القابلة للتوسع وفقاً لأعلى معايير الأداء المؤسسي. تم تصميم كل سطر كود بعناية لضمان الأمان والكفاءة والاستجابة المثالية عبر جميع الأجهزة والمنصات.",
+          "من أحدث أطر العمل للواجهات الأمامية وحتى تكاملات الخوادم الخلفية، تضمن منهجيتنا في التطوير تقديم منتجات تنمو وتتوسع بسلاسة مع نمو أعمالك.",
+        ],
+        sigName: "محمد عويس",
+        sigRole: "مطور ويب وتطبيقات، كراتيك سوليوشنز",
+      },
+      {
+        id: 4,
+        number: "04",
+        sectionTitle: "رسالة من مطورة الويب والتطبيقات",
+        name: "عائشة محي الدين",
+        role: "مطورة ويب وتطبيقات",
+        image: "/Eysha.png",
+        quote:
+          "تجربة المستخدم والدقة التقنية متلازمتان. في تطوير تطبيقات الجوال والويب، هدفنا هو بناء واجهات استخدام بديهية مدعومة بهندسة معمارية برمجية راسخة.",
+        paragraphs: [
+          "أتخصص في تطوير تطبيقات الجوال متعددة المنصات وواجهات الويب التفاعلية التي ترتقي بتفاعل المستخدمين مع العلامات التجارية، مع سد الفجوة بين الرؤية التصميمية والتنفيذ البرمجي المتقن.",
+          "من خلال اعتماد أحدث أطر العمل والمنهجيات المرنة (Agile)، نضمن أن منتجاتنا الرقمية ليست متميزة بصرياً فحسب، بل تم بناؤها أيضاً لضمان سهولة الصيانة والتطوير طويل الأمد.",
+        ],
+        sigName: "عائشة محي الدين",
+        sigRole: "مطورة ويب وتطبيقات، كراتيك سوليوشنز",
+      },
+      {
+        id: 5,
+        number: "05",
+        sectionTitle: "رسالة من رئيس فريق الذكاء الاصطناعي",
+        name: "أخصائي الذكاء الاصطناعي",
+        role: "رئيس الذكاء الاصطناعي وتعلم الآلة",
+        image: "/Nigaar.jpeg",
+        quote:
+          "تحويل البيانات المعقدة والرؤية الحاسوبية إلى حلول ذكاء اصطناعي ذكية وعملية تقود الأتمتة ونمو المؤسسات.",
+        paragraphs: [
+          "متخصص في تعلم الآلة، والتعلم العميق، والرؤية الحاسوبية؛ أركز على بناء أنظمة ذكية متكاملة — بدءاً من خطوط التحليلات التنبؤية ووصولاً إلى التعرف الفوري على الكائنات والوجوه باستخدام YOLOv8 وOpenCV.",
+          "من خلال الدمج بين نماذج الذكاء الاصطناعي الحديثة (TensorFlow, Scikit-learn) والبنى المعمارية للويب المتكاملة القابلة للتوسع (Next.js, Python, SQL)، نقدم حلول أتمتة سلسة ومبنية على البيانات لتلبية أرقى معايير الأداء.",
+        ],
+        sigName: "أخصائي الذكاء الاصطناعي",
+        sigRole: "رئيس الذكاء الاصطناعي وتعلم الآلة، كراتيك سوليوشنز",
+      },
+    ],
   },
 },
 
@@ -1599,6 +1767,90 @@ reviewModal: {
       ],
     },
   },
+  ourTeam: {
+    teamMembers: [
+      {
+        id: 1,
+        number: "01",
+        sectionTitle: "Обращение генерального директора",
+        name: "Muhammad Haris",
+        role: "Основатель и генеральный директор (CEO)",
+        image: "/Haris.png",
+        quote:
+          "Мы создали Critic Solutions с убеждением, что бизнесу нужен цифровой партнер, который мыслит как практик и оператор, а не как обычный подрядчик. Каждый выпущенный нами продукт, каждая запущенная кампания и каждая строчка кода оцениваются по одному стандарту — приносят ли они реальный, измеримый результат для бизнеса нашего клиента.",
+        paragraphs: [
+          "Под моим руководством компания Critic Solutions выросла в комплексного партнера полного цикла, которому доверяют более 50 корпоративных клиентов в шести странах мира. Мы создаем все: от корпоративных ERP-систем до высококонверсионных платформ электронной коммерции. Расширяя наше присутствие из Лахора на мировые рынки, наши принципы остаются неизменными: инженерная дисциплина, коммерческая ясность и результаты, которые клиенты могут измерить.",
+          "Я приглашаю вас ознакомиться с нашими разработками и вместе с нами открыть новую главу в развитии вашего бизнеса.",
+        ],
+        sigName: "Muhammad Haris",
+        sigRole: "Основатель и CEO, Critic Solutions | Председатель Criticpick Group",
+      },
+      {
+        id: 2,
+        number: "02",
+        sectionTitle: "Обращение директора",
+        name: "Sana Haris",
+        role: "Директор",
+        image: "/Sana.jpeg",
+        quote:
+          "Успех отличных цифровых продуктов определяется деталями — как работает оформление заказа при медленном интернете, насколько легко считывается дашборд с первого взгляда, как быстро решаются запросы клиентов. Моя цель в Critic Solutions — гарантировать, чтобы эта строгая дисциплина пронизывала каждые клиентские отношения, каждую поставку и каждого сотрудника в нашей команде.",
+        paragraphs: [
+          "Я курирую операционную эффективность, успех клиентов и контроль качества во всем портфеле наших проектов, тесно сотрудничая с отделами инженерии, дизайна и маркетинга, чтобы гарантировать: стандарты, обещанные на нашем сайте, полностью соответствуют реальному клиентскому опыту.",
+          "Мы оцениваем себя по уровню удержания клиентов, а не только по новым логотипам — и 98% показатель удержания клиентов является прямым подтверждением этой дисциплины.",
+        ],
+        sigName: "Sana Haris",
+        sigRole: "Директор, Critic Solutions",
+      },
+      {
+        id: 3,
+        number: "03",
+        sectionTitle: "Обращение ведущего разработчика",
+        name: "Muhammad Awais",
+        role: "Разработчик веб- и мобильных приложений",
+        image: "/Awais.png",
+        quote:
+          "Создание высокопроизводительных веб- и мобильных приложений требует чистой архитектуры, масштабируемости и постоянного внимания к скорости работы. Мы превращаем сложные технические требования в удобные и надежные цифровые решения.",
+        paragraphs: [
+          "Моя работа сосредоточена на проектировании масштабируемых веб-приложений и мобильных платформ, отвечающих строгим стандартам корпоративной производительности. Каждая строка кода пишется с учетом безопасности, эффективности и бесперебойной адаптивности на всех платформах.",
+          "От современных фронтенд-фреймворков до серверных интеграций — наш подход к разработке гарантирует создание решений, которые легко масштабируются по мере роста вашего бизнеса.",
+        ],
+        sigName: "Muhammad Awais",
+        sigRole: "Разработчик веб- и мобильных приложений, Critic Solutions",
+      },
+      {
+        id: 4,
+        number: "04",
+        sectionTitle: "Обращение веб- и мобильного разработчика",
+        name: "Eysha Moh-i-u-din",
+        role: "Разработчик веб- и мобильных приложений",
+        image: "/Eysha.png",
+        quote:
+          "Пользовательский опыт и техническая точность неразрывно связаны. В разработке мобильных и веб-приложений наша цель — создавать интуитивные интерфейсы на базе безупречной архитектуры.",
+        paragraphs: [
+          "Я специализируюсь на создании кроссплатформенных мобильных приложений и динамических веб-интерфейсов, которые улучшают взаимодействие пользователей с брендами, объединяя дизайнерское видение с безупречной технической реализацией.",
+          "Используя передовые фреймворки и гибкие методологии (Agile), мы обеспечиваем не только визуальную привлекательность наших цифровых продуктов, но и их долговременную надежность и простоту поддержки.",
+        ],
+        sigName: "Eysha Moh-i-u-din",
+        sigRole: "Разработчик веб- и мобильных приложений, Critic Solutions",
+      },
+      {
+        id: 5,
+        number: "05",
+        sectionTitle: "Обращение руководителя направления ИИ",
+        name: "AI Specialist",
+        role: "Руководитель направления ИИ и машинного обучения (ML Lead)",
+        image: "/Nigaar.jpeg",
+        quote:
+          "Преобразование сложных данных и компьютерного зрения в интеллектуальные, прикладные решения на базе ИИ, стимулирующие автоматизацию и рост бизнеса.",
+        paragraphs: [
+          "Специализируясь на машинном обучении, глубоком обучении и компьютерном зрении, я занимаюсь разработкой комплексных интеллектуальных систем — от конвейеров прогнозной аналитики до распознавания объектов и лиц в реальном времени с использованием YOLOv8 и OpenCV.",
+          "Объединяя современные модели искусственного интеллекта (TensorFlow, Scikit-learn) с масштабируемыми фулстек веб-архитектурами (Next.js, Python, SQL), мы создаем надежную автоматизацию на основе данных, отвечающую самым высоким стандартам производительности.",
+        ],
+        sigName: "AI Specialist",
+        sigRole: "Руководитель направления ИИ и ML, Critic Solutions",
+      },
+    ],
+  },
 },
   ////////////////////////////////////////////////
 es: {
@@ -2126,6 +2378,90 @@ es: {
           },
         ],
       },
+    },
+    ourTeam: {
+      teamMembers: [
+        {
+          id: 1,
+          number: "01",
+          sectionTitle: "Mensaje del Director Ejecutivo",
+          name: "Muhammad Haris",
+          role: "Fundador y Director Ejecutivo (CEO)",
+          image: "/Haris.png",
+          quote:
+            "Fundamos Critic Solutions con la convicción de que las empresas merecen un socio digital que piense como un operador y no como un simple proveedor. Cada producto que lanzamos, cada campaña que gestionamos y cada línea de código que escribimos se evalúa según un único estándar: si genera un impacto medible y real en el negocio de nuestros clientes.",
+          paragraphs: [
+            "Bajo mi liderazgo, Critic Solutions se ha convertido en un socio integral de confianza para más de 50 clientes empresariales en más de seis países, desarrollando desde robustos sistemas ERP hasta plataformas de comercio electrónico de alta conversión. A medida que expandimos nuestra presencia desde Lahore hacia los mercados globales, nuestro compromiso permanece firme: disciplina de ingeniería, claridad comercial y resultados que nuestros clientes pueden medir con precisión.",
+            "Los invito a explorar lo que hemos construido y a permitirnos escribir el próximo capítulo de crecimiento de su empresa junto a ustedes.",
+          ],
+          sigName: "Muhammad Haris",
+          sigRole: "Fundador y CEO, Critic Solutions | Presidente, Criticpick Group",
+        },
+        {
+          id: 2,
+          number: "02",
+          sectionTitle: "Mensaje de la Directora",
+          name: "Sana Haris",
+          role: "Directora",
+          image: "/Sana.jpeg",
+          quote:
+            "Los grandes productos digitales se ganan o pierden en los pequeños detalles: la fluidez del proceso de pago en una conexión lenta, la claridad inmediata de un panel de control o la rapidez con la que se resuelve una consulta de soporte. Mi enfoque en Critic Solutions es asegurar que esa disciplina se refleje en cada relación con el cliente, cada entrega y cada profesional que incorporamos.",
+          paragraphs: [
+            "Superviso la excelencia operativa, el éxito de los clientes y el control de calidad en toda nuestra cartera de proyectos, colaborando estrechamente con nuestros equipos de ingeniería, diseño y marketing para garantizar que el estándar que prometemos en nuestro sitio web sea exactamente el que nuestros clientes experimentan en la práctica.",
+            "Nos evaluamos por la retención y satisfacción de nuestros clientes, no sólo por nuevos contratos — y una tasa de retención del 98% es el fruto directo de esta disciplina constante.",
+          ],
+          sigName: "Sana Haris",
+          sigRole: "Directora, Critic Solutions",
+        },
+        {
+          id: 3,
+          number: "03",
+          sectionTitle: "Mensaje del Desarrollador Principal",
+          name: "Muhammad Awais",
+          role: "Desarrollador Web y Móvil",
+          image: "/Awais.png",
+          quote:
+            "Desarrollar aplicaciones web y móviles de alto rendimiento exige una arquitectura limpia, escalabilidad y una búsqueda incansable de la máxima velocidad. Convertimos requerimientos técnicos complejos en experiencias digitales fluidas y confiables.",
+          paragraphs: [
+            "Mi labor se centra en la ingeniería de aplicaciones web escalables y soluciones móviles diseñadas bajo los más exigentes estándares corporativos. Cada línea de código está optimizada para garantizar la máxima seguridad, eficiencia y una experiencia totalmente responsiva en todas las plataformas.",
+            "Desde los frameworks front-end más avanzados hasta integraciones complejas en el backend, nuestra metodología asegura productos que crecen y se adaptan al ritmo de su negocio.",
+          ],
+          sigName: "Muhammad Awais",
+          sigRole: "Desarrollador Web y Móvil, Critic Solutions",
+        },
+        {
+          id: 4,
+          number: "04",
+          sectionTitle: "Mensaje de la Desarrolladora Web y Móvil",
+          name: "Eysha Moh-i-u-din",
+          role: "Desarrolladora Web y Móvil",
+          image: "/Eysha.png",
+          quote:
+            "La experiencia de usuario y la precisión técnica van siempre de la mano. En el desarrollo móvil y web, nuestro objetivo es construir interfaces intuitivas respaldadas por una arquitectura técnica sólida como una roca.",
+          paragraphs: [
+            "Me especializo en crear aplicaciones móviles multiplataforma e interfaces web dinámicas que elevan la interacción de los usuarios con las marcas, uniendo la visión de diseño con una impecable ejecución técnica.",
+            "Adoptando frameworks modernos y metodologías ágiles, garantizamos que nuestros productos digitales no solo destaquen visualmente, sino que también estén preparados para un mantenimiento óptimo a largo plazo.",
+          ],
+          sigName: "Eysha Moh-i-u-din",
+          sigRole: "Desarrolladora Web y Móvil, Critic Solutions",
+        },
+        {
+          id: 5,
+          number: "05",
+          sectionTitle: "Mensaje del Líder de IA",
+          name: "AI Specialist",
+          role: "Líder de Inteligencia Artificial y Machine Learning",
+          image: "/Nigaar.jpeg",
+          quote:
+            "Transformamos datos complejos y visión computacional en soluciones de inteligencia artificial prácticas e inteligentes que impulsan la automatización y el crecimiento empresarial.",
+          paragraphs: [
+            "Especializado en Machine Learning, Deep Learning y Visión por Computadora, me concentro en construir sistemas inteligentes integrales — desde pipelines de análisis predictivo hasta detección de objetos y reconocimiento facial en tiempo real usando YOLOv8 y OpenCV.",
+            "Combinando modelos avanzados de inteligencia artificial (TensorFlow, Scikit-learn) con arquitecturas web full-stack altamente escalables (Next.js, Python, SQL), ofrecemos una automatización inteligente basada en datos y adaptada a los estándares de más alto rendimiento.",
+          ],
+          sigName: "AI Specialist",
+          sigRole: "Líder de IA y ML, Critic Solutions",
+        },
+      ],
     },
 },
   ////////////////////////////////////////
@@ -2658,6 +2994,90 @@ fr: {
         ],
       },
     },
+    ourTeam: {
+      teamMembers: [
+        {
+          id: 1,
+          number: "01",
+          sectionTitle: "Message du Directeur Général",
+          name: "Muhammad Haris",
+          role: "Fondateur et Directeur Général (CEO)",
+          image: "/Haris.png",
+          quote:
+            "Nous avons fondé Critic Solutions avec la conviction que les entreprises méritent un partenaire numérique qui pense comme un gestionnaire opérationnel, et non comme un simple prestataire. Chaque produit que nous livrons, chaque campagne que nous orchestrons et chaque ligne de code que nous rédigeons est évalué selon une exigence unique : apporte-t-il une valeur concrète et mesurable à la croissance de nos clients.",
+          paragraphs: [
+            "Sous ma direction, Critic Solutions est devenu un partenaire technologique complet et reconnu, auquel font confiance plus de 50 grandes entreprises dans plus de six pays, assurant la livraison d'ERP d'entreprise sophistiqués jusqu'à des plateformes d'e-commerce à forte conversion. Alors que nous étendons notre présence depuis Lahore vers les marchés internationaux, notre engagement reste inébranlable : rigueur d'ingénierie, clarté stratégique et résultats tangibles.",
+            "Je vous invite à découvrir nos réalisations et à nous laisser concevoir le prochain chapitre de la croissance de votre entreprise.",
+          ],
+          sigName: "Muhammad Haris",
+          sigRole: "Fondateur et CEO, Critic Solutions | Président, Criticpick Group",
+        },
+        {
+          id: 2,
+          number: "02",
+          sectionTitle: "Message de la Directrice",
+          name: "Sana Haris",
+          role: "Directrice",
+          image: "/Sana.jpeg",
+          quote:
+            "L'excellence d'un produit numérique se forge dans la précision des détails : la fluidité du paiement sur une connexion lente, la clarté instantanée d'un tableau de bord, ou la rapidité de traitement d'une requête client. Ma priorité chez Critic Solutions est d'insuffler cette rigueur dans chaque partenariat, chaque livraison et auprès de chaque collaborateur que nous recrutons.",
+          paragraphs: [
+            "Je supervise l'excellence opérationnelle, la satisfaction client et l'assurance qualité à travers l'ensemble de notre portefeuille de projets, en étroite synergie avec nos équipes d'ingénierie, de design et de marketing pour garantir que la promesse faite sur notre site se traduise par une expérience irréprochable sur le terrain.",
+            "Nous mesurons notre succès à la fidélité de nos clients, bien au-delà de la simple acquisition — et un taux de rétention de 98% est l'aboutissement direct de cette exigence continue.",
+          ],
+          sigName: "Sana Haris",
+          sigRole: "Directrice, Critic Solutions",
+        },
+        {
+          id: 3,
+          number: "03",
+          sectionTitle: "Message du Développeur Principal",
+          name: "Muhammad Awais",
+          role: "Développeur Web & Mobile",
+          image: "/Awais.png",
+          quote:
+            "Développer des applications web et mobiles à haute performance exige une architecture pure, une évolutivité exemplaire et une recherche constante de la vitesse. Nous transformons des spécifications techniques complexes en expériences numériques parfaitement fluides et sécurisées.",
+          paragraphs: [
+            "Mon expertise s'articule autour de l'ingénierie d'applications web évolutives et de solutions mobiles conformes aux standards les plus stricts du secteur d'entreprise. Chaque ligne de code est conçue pour garantir sécurité, rapidité d'exécution et réactivité optimale sur tous les appareils.",
+            "Des architectures front-end les plus modernes aux intégrations d'API en backend, notre méthodologie de développement produit des plateformes solides capables d'accompagner sereinement votre croissance.",
+          ],
+          sigName: "Muhammad Awais",
+          sigRole: "Développeur Web & Mobile, Critic Solutions",
+        },
+        {
+          id: 4,
+          number: "04",
+          sectionTitle: "Message de la Développeuse Web & Mobile",
+          name: "Eysha Moh-i-u-din",
+          role: "Développeuse Web & Mobile",
+          image: "/Eysha.png",
+          quote:
+            "L'expérience utilisateur et la rigueur technique sont indissociables. Dans le développement web et mobile, notre mission est de créer des interfaces intuitives soutenues par une architecture logicielle d'une robustesse absolue.",
+          paragraphs: [
+            "Je suis spécialisée dans la conception d'applications mobiles multiplateformes et d'interfaces web dynamiques qui subliment l'interaction entre les utilisateurs et les marques, faisant le pont entre ambition graphique et excellence technique.",
+            "Grâce à l'utilisation des frameworks modernes et des pratiques agiles, nous garantissons des créations digitales visuellement soignées, hautement modulaires et simples à maintenir sur le long terme.",
+          ],
+          sigName: "Eysha Moh-i-u-din",
+          sigRole: "Développeuse Web & Mobile, Critic Solutions",
+        },
+        {
+          id: 5,
+          number: "05",
+          sectionTitle: "Message du Responsable IA",
+          name: "AI Specialist",
+          role: "Responsable Intelligence Artificielle & Machine Learning",
+          image: "/Nigaar.jpeg",
+          quote:
+            "Transformer la complexité des données et de la vision par ordinateur en solutions d'intelligence artificielle intelligentes et concrètes au service de l'automatisation de votre entreprise.",
+          paragraphs: [
+            "Spécialisé en Machine Learning, Deep Learning et Vision par Ordinateur, je conçois des systèmes intelligents de bout en bout — allant des pipelines d'analyse prédictive jusqu'à la détection d'objets et la reconnaissance faciale en temps réel avec YOLOv8 et OpenCV.",
+            "En associant les modèles d'IA de dernière génération (TensorFlow, Scikit-learn) à des architectures full-stack évolutives (Next.js, Python, SQL), nous déployons des automatisations intelligentes fondées sur la donnée répondant aux normes de performance les plus élevées.",
+          ],
+          sigName: "AI Specialist",
+          sigRole: "Responsable IA & ML, Critic Solutions",
+        },
+      ],
+    },
 },
 
 
@@ -3187,6 +3607,90 @@ reviewModal: {
         ],
       },
     },
+    ourTeam: {
+      teamMembers: [
+        {
+          id: 1,
+          number: "01",
+          sectionTitle: "Messaggio del CEO",
+          name: "Muhammad Haris",
+          role: "Fondatore e Amministratore Delegato (CEO)",
+          image: "/Haris.png",
+          quote:
+            "Abbiamo fondato Critic Solutions con la ferma convinzione che le aziende meritino un partner digitale che pensi come un operatore commerciale, non come un semplice fornitore. Ogni prodotto che rilasciamo, ogni campagna che gestiamo e ogni riga di codice che scriviamo viene valutata in base a un unico criterio: genera una crescita reale e misurabile per l'attività dei nostri clienti.",
+          paragraphs: [
+            "Sotto la mia guida, Critic Solutions è cresciuta fino a diventare un partner tecnologico a 360 gradi a cui si affidano oltre 50 aziende leader in più di sei paesi, realizzando sia complessi sistemi ERP aziendali che piattaforme e-commerce ad altissima conversione. Mentre espandiamo la nostra presenza da Lahore verso i mercati globali, il nostro impegno rimane lo stesso: rigore ingegneristico, visione commerciale e risultati tangibili.",
+            "Vi invito a esplorare ciò che abbiamo realizzato e a permetterci di costruire insieme il prossimo capitolo di successo della vostra azienda.",
+          ],
+          sigName: "Muhammad Haris",
+          sigRole: "Fondatore e CEO, Critic Solutions | Presidente, Criticpick Group",
+        },
+        {
+          id: 2,
+          number: "02",
+          sectionTitle: "Messaggio della Direttrice",
+          name: "Sana Haris",
+          role: "Direttrice",
+          image: "/Sana.jpeg",
+          quote:
+            "I grandi prodotti digitali vincono o perdono nei dettagli: la rapidità del checkout su una connessione lenta, la chiarezza immediata di una dashboard, la tempestività con cui viene gestita una richiesta di supporto. Il mio impegno in Critic Solutions è garantire che questa disciplina guidi ogni relazione con i clienti, ogni consegna e ogni membro che inseriamo nel team.",
+          paragraphs: [
+            "Supervisiono l'eccellenza operativa, il successo dei clienti e il controllo di qualità in tutto il nostro portafoglio di progetti, collaborando a stretto contatto con i team di ingegneria, design e marketing per garantire che lo standard promesso sul nostro sito web sia esattamente quello vissuto dai nostri clienti nella realtà.",
+            "Misuriamo il nostro valore attraverso la fidelizzazione dei clienti, non solo con nuovi contratti — e un tasso di ritenzione del 98% è il frutto tangibile di questa dedizione costante.",
+          ],
+          sigName: "Sana Haris",
+          sigRole: "Direttrice, Critic Solutions",
+        },
+        {
+          id: 3,
+          number: "03",
+          sectionTitle: "Messaggio del Lead Developer",
+          name: "Muhammad Awais",
+          role: "Sviluppatore Web e Mobile",
+          image: "/Awais.png",
+          quote:
+            "Costruire applicazioni web e mobili ad alte prestazioni richiede un'architettura pulita, scalabilità e una ricerca continua della velocità. Trasformiamo requisiti tecnici complessi in esperienze digitali fluide, sicure e affidabili.",
+          paragraphs: [
+            "Il mio lavoro è focalizzato sull'ingegnerizzazione di applicazioni web scalabili e soluzioni per dispositivi mobili progettate secondo i più elevati standard aziendali. Ogni riga di codice è strutturata per garantire massima sicurezza, efficienza e una perfetta reattività su qualsiasi piattaforma.",
+            "Dalle più moderne tecnologie front-end alle integrazioni back-end avanzate, il nostro metodo di sviluppo produce soluzioni che crescono ed evolvono armoniosamente con la tua azienda.",
+          ],
+          sigName: "Muhammad Awais",
+          sigRole: "Sviluppatore Web e Mobile, Critic Solutions",
+        },
+        {
+          id: 4,
+          number: "04",
+          sectionTitle: "Messaggio della Sviluppatrice Web e Mobile",
+          name: "Eysha Moh-i-u-din",
+          role: "Sviluppatrice Web e Mobile",
+          image: "/Eysha.png",
+          quote:
+            "Esperienza utente e precisione tecnica camminano sempre di pari passo. Nello sviluppo web e app, il nostro obiettivo è realizzare interfacce intuitive sostenute da un'architettura software solida come una roccia.",
+          paragraphs: [
+            "Sono specializzata nella creazione di app mobili multipiattaforma e interfacce web dinamiche che valorizzano l'interazione tra utenti e brand, unendo l'estetica del design a un'impeccabile eccellenza tecnica.",
+            "Adottando framework di ultima generazione e metodologie agili (Agile), garantiamo prodotti digitali non solo visivamente accattivanti, ma anche facili da mantenere e scalare a lungo termine.",
+          ],
+          sigName: "Eysha Moh-i-u-din",
+          sigRole: "Sviluppatrice Web e Mobile, Critic Solutions",
+        },
+        {
+          id: 5,
+          number: "05",
+          sectionTitle: "Messaggio del Responsabile AI",
+          name: "AI Specialist",
+          role: "Responsabile Intelligenza Artificiale e Machine Learning",
+          image: "/Nigaar.jpeg",
+          quote:
+            "Trasformiamo dati complessi e visione artificiale in soluzioni intelligenti e concrete basate su intelligenza artificiale, per guidare l'automazione e la crescita aziendale.",
+          paragraphs: [
+            "Specializzato in Machine Learning, Deep Learning e Visione Artificiale, mi occupo dello sviluppo di sistemi intelligenti completi — dai modelli di analisi predittiva al rilevamento di oggetti e riconoscimento facciale in tempo reale con YOLOv8 e OpenCV.",
+            "Integrando avanzati modelli di intelligenza artificiale (TensorFlow, Scikit-learn) con architetture web full-stack altamente scalabili (Next.js, Python, SQL), forniamo un'automazione solida, intelligente e guidata dai dati.",
+          ],
+          sigName: "AI Specialist",
+          sigRole: "Responsabile AI e ML, Critic Solutions",
+        },
+      ],
+    },
   },
   //////////////////////////////////////////////
 nl: {
@@ -3712,6 +4216,90 @@ reviewModal: {
         ],
       },
     },
+    ourTeam: {
+      teamMembers: [
+        {
+          id: 1,
+          number: "01",
+          sectionTitle: "Boodschap van de CEO",
+          name: "Muhammad Haris",
+          role: "Oprichter & Chief Executive Officer (CEO)",
+          image: "/Haris.png",
+          quote:
+            "We zijn Critic Solutions gestart vanuit de overtuiging dat bedrijven een digitale partner verdienen die denkt als een operationele ondernemer en niet als een gewone leverancier. Elk product dat we opleveren, elke campagne die we beheren en elke regel code die we schrijven wordt beoordeeld volgens één norm: levert het meetbare, reële groei op voor de onderneming van onze klant.",
+          paragraphs: [
+            "Onder mijn leiding is Critic Solutions uitgegroeid tot een full-stack technologiepartner die het vertrouwen geniet van meer dan 50 zakelijke klanten in meer dan zes landen. Wij leveren geavanceerde enterprise ERP-systemen tot conversiegerichte e-commerceplatforms. Terwijl we onze aanwezigheid uitbreiden van Lahore naar wereldwijde markten, blijft onze toewijding hetzelfde: technische discipline, commerciële duidelijkheid en resultaten die klanten nauwkeurig kunnen meten.",
+            "Ik nodig u uit om te ontdekken wat we hebben gebouwd en samen met ons het volgende succesvolle hoofdstuk van uw bedrijf vorm te geven.",
+          ],
+          sigName: "Muhammad Haris",
+          sigRole: "Oprichter & CEO, Critic Solutions | Voorzitter, Criticpick Group",
+        },
+        {
+          id: 2,
+          number: "02",
+          sectionTitle: "Boodschap van de Directeur",
+          name: "Sana Haris",
+          role: "Directeur",
+          image: "/Sana.jpeg",
+          quote:
+            "Geweldige digitale producten slagen of falen in de details: hoe soepel het afrekenen verloopt op een trage internetverbinding, hoe snel een dashboard te interpreteren is en hoe vlot ondersteuningsvragen worden afgehandeld. Mijn focus bij Critic Solutions is ervoor zorgen dat deze discipline voelbaar is in elke klantrelatie, elke oplevering en bij elk teamlid dat we verwelkomen.",
+          paragraphs: [
+            "Ik houd toezicht op operationele uitmuntendheid, klantsucces en kwaliteitsborging over onze volledige projectportfolio, in nauwe samenwerking met onze engineering-, ontwerp- en marketingteams om ervoor te zorgen dat de belofte op onze website in de praktijk volledig wordt waargemaakt.",
+            "We meten ons succes aan klantbehoud en tevredenheid, niet alleen aan nieuwe opdrachten — en een klantbehoudratio van 98% is het directe resultaat van deze toewijding.",
+          ],
+          sigName: "Sana Haris",
+          sigRole: "Directeur, Critic Solutions",
+        },
+        {
+          id: 3,
+          number: "03",
+          sectionTitle: "Boodschap van de Lead Developer",
+          name: "Muhammad Awais",
+          role: "Web- & App-ontwikkelaar",
+          image: "/Awais.png",
+          quote:
+            "Het bouwen van hoogwaardige web- en mobiele applicaties vereist een zuivere architectuur, schaalbaarheid en een voortdurende focus op snelheid. We transformeren complexe technische vereisten naar vloeiende, betrouwbare digitale ervaringen.",
+          paragraphs: [
+            "Mijn werk richt zich op het ontwikkelen van schaalbare webapplicaties en mobiele oplossingen die voldoen aan de hoogste zakelijke prestatiestandaarden. Elke regel code is gestructureerd om maximale beveiliging, efficiëntie en naadloze responsiviteit op alle platformen te garanderen.",
+            "Van moderne front-end frameworks tot robuuste back-end integraties: onze ontwikkelingsaanpak levert producten op die moeiteloos meegroeien met de expansie van uw onderneming.",
+          ],
+          sigName: "Muhammad Awais",
+          sigRole: "Web- & App-ontwikkelaar, Critic Solutions",
+        },
+        {
+          id: 4,
+          number: "04",
+          sectionTitle: "Boodschap van de Web- & App-ontwikkelaar",
+          name: "Eysha Moh-i-u-din",
+          role: "Web- & App-ontwikkelaar",
+          image: "/Eysha.png",
+          quote:
+            "Gebruikerservaring en technische precisie zijn onlosmakelijk met elkaar verbonden. Bij app- en webontwikkeling is ons doel om intuïtieve interfaces te creëren, ondersteund door een ijzersterke technische architectuur.",
+          paragraphs: [
+            "Ik ben gespecialiseerd in het ontwerpen van cross-platform mobiele apps en dynamische webinterfaces die de interactie tussen gebruikers en merken naar een hoger niveau tillen, waarbij designvisie naadloos aansluit op vlekkeloze technische uitvoering.",
+            "Door moderne frameworks en agile methodieken te hanteren, zorgen we ervoor dat onze digitale producten visueel verfijnd zijn en optimaal onderhoudbaar blijven op de lange termijn.",
+          ],
+          sigName: "Eysha Moh-i-u-din",
+          sigRole: "Web- & App-ontwikkelaar, Critic Solutions",
+        },
+        {
+          id: 5,
+          number: "05",
+          sectionTitle: "Boodschap van de AI Lead",
+          name: "AI Specialist",
+          role: "Lead Kunstmatige Intelligentie & Machine Learning",
+          image: "/Nigaar.jpeg",
+          quote:
+            "Complexe data en computer vision transformeren naar intelligente, praktische AI-oplossingen die automatisering en bedrijfsgroei versnellen.",
+          paragraphs: [
+            "Gespecialiseerd in Machine Learning, Deep Learning en Computer Vision richt ik mij op het bouwen van end-to-end intelligente systemen — van voorspellende analysepipelines tot realtime objectdetectie en gezichtsherkenning met YOLOv8 en OpenCV.",
+            "Door geavanceerde AI-modellen (TensorFlow, Scikit-learn) te combineren met schaalbare full-stack webarchitecturen (Next.js, Python, SQL), leveren we datagestuurde automatisering van topkwaliteit.",
+          ],
+          sigName: "AI Specialist",
+          sigRole: "AI & ML Lead, Critic Solutions",
+        },
+      ],
+    },
   },
 };
 
@@ -3740,11 +4328,14 @@ export function LangProvider({ children }) {
 
   const t = translations[lang] || translations['en'];
 
+  const currentLang = lang;
+
   return (
-    <LangContext.Provider value={{ lang, changeLang, t }}>
+    <LangContext.Provider value={{ lang, currentLang, changeLang, t, translations }}>
       {children}
     </LangContext.Provider>
   );
 }
 
 export const useLang = () => useContext(LangContext);
+export const useLanguage = () => useContext(LangContext);
