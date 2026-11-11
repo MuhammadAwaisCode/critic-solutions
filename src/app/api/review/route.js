@@ -1,59 +1,108 @@
+import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
+import { supabaseServer } from '@/lib/supabase';
+
+// Helper for automated OpenAI moderation
+async function moderateContent(text) {
+  if (!process.env.OPENAI_API_KEY) {
+    return { flagged: false, categories: {} };
+  }
+
+  try {
+    const res = await fetch('https://api.openai.com/v1/moderations', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+      },
+      body: JSON.stringify({ input: text }),
+    });
+
+    const data = await res.json();
+    return data.results?.[0] || { flagged: false, categories: {} };
+  } catch (error) {
+    console.error('[OpenAI Moderation Error]', error);
+    return { flagged: false, error: true };
+  }
+}
 
 export async function POST(request) {
   try {
-    // ── Safe API Key Check ────────────────────────────────────
-    if (!process.env.RESEND_API_KEY) {
-      console.error('CRITICAL ERROR: RESEND_API_KEY is not defined in .env.local');
-      return Response.json(
-        { error: 'Email service configuration is missing on the server.' },
-        { status: 500 }
-      );
-    }
-
-    const resend = new Resend(process.env.RESEND_API_KEY);
     const body = await request.json();
-    const { name, designation, rating, message } = body;
+    const { name, designation, rating, message, email, reviewTitle, originalLang } = body;
 
-    // ── Server-side validation for Review ──────────────────────
+    // ── 1. Server-side validation ─────────────────────────────────
     if (!name?.trim() || !message?.trim()) {
-      return Response.json(
+      return NextResponse.json(
         { error: 'Name and Review message are required.' },
         { status: 400 }
       );
     }
 
-  
-    const host = request.headers.get('host'); 
-    const protocol = request.headers.get('x-forwarded-proto') || 'http';
-    const logoUrl = `${protocol}://${host}/logo.png`; 
-
     const starsCount = Number(rating) || 5;
+    const reviewerEmail = email?.trim() || 'no-email@criticsolutions.com';
 
-    // ── Send email via Resend ─────────────────────────────────
-    const { error } = await resend.emails.send({
-      from: 'Critic Solutions Reviews <onboarding@resend.dev>',
-      to: ['criticsolutions9@gmail.com'],
-      
-  
-      subject: `⭐ New Web Review from ${name} (${starsCount}/5 Stars)`,
-      html: buildReviewEmailHtml({ name, designation, rating: starsCount, message, logoUrl }),
-      text: buildReviewEmailText({ name, designation, rating: starsCount, message }),
-    });
+    // ── 2. OpenAI AI Content Screening ────────────────────────────
+    const moderationResult = await moderateContent(message);
+    const initialStatus = moderationResult.flagged ? 'quarantined' : 'pending';
 
-    if (error) {
-      console.error('[Resend Review error]', error);
-      return Response.json(
-        { error: 'Failed to send review email via Resend service.' },
+    // ── 3. Insert into Supabase Database ──────────────────────────
+    const { data: newReview, error: dbError } = await supabaseServer
+      .from('reviews')
+      .insert([
+        {
+          reviewer_name: name.trim(),
+          company_name: designation?.trim() || null,
+          reviewer_email: reviewerEmail,
+          review_title: reviewTitle?.trim() || null,
+          review_text: message.trim(),
+          rating: starsCount,
+          original_lang: originalLang || 'en',
+          status: initialStatus,
+          moderation_flags: moderationResult,
+        },
+      ])
+      .select()
+      .single();
+
+    if (dbError) {
+      console.error('[Supabase DB Insert Error]', dbError);
+      return NextResponse.json(
+        { error: 'Failed to save review into database.' },
         { status: 500 }
       );
     }
 
-    return Response.json({ success: true }, { status: 200 });
+    // ── 4. Send Email Notification via Resend ──────────────────────
+    if (process.env.RESEND_API_KEY) {
+      const resend = new Resend(process.env.RESEND_API_KEY);
+      const host = request.headers.get('host');
+      const protocol = request.headers.get('x-forwarded-proto') || 'https';
+      const logoUrl = `${protocol}://${host}/logo.png`;
+
+      const targetEmail = process.env.ADMIN_NOTIFICATION_EMAIL || 'criticsolutions9@gmail.com';
+
+      await resend.emails.send({
+        from: 'Critic Solutions Reviews <onboarding@resend.dev>',
+        to: [targetEmail],
+        subject: `⭐ New Review from ${name} (${starsCount}/5 Stars) [${initialStatus.toUpperCase()}]`,
+        html: buildReviewEmailHtml({ name, designation, rating: starsCount, message, logoUrl, status: initialStatus }),
+        text: buildReviewEmailText({ name, designation, rating: starsCount, message }),
+      });
+    }
+
+    return NextResponse.json(
+      {
+        success: true,
+        message: 'Review submitted successfully and queued for admin moderation.',
+        id: newReview.id,
+      },
+      { status: 200 }
+    );
 
   } catch (err) {
     console.error('[Review API error]', err);
-    return Response.json(
+    return NextResponse.json(
       { error: 'An unexpected server error occurred. Please try again.' },
       { status: 500 }
     );
@@ -61,7 +110,7 @@ export async function POST(request) {
 }
 
 // ── HTML Email Template Generator ─────────────────────────────
-function buildReviewEmailHtml({ name, designation, rating, message, logoUrl }) {
+function buildReviewEmailHtml({ name, designation, rating, message, logoUrl, status }) {
   const esc = (str) =>
     String(str || '')
       .replace(/&/g, '&amp;')
@@ -129,6 +178,12 @@ function buildReviewEmailHtml({ name, designation, rating, message, logoUrl }) {
                         </td>
                       </tr>
                       <tr>
+                        <td style="padding-top:16px;padding-bottom:16px;border-top:1px solid #E2E8F0;">
+                          <span style="font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748B;display:block;margin-bottom:4px;">Moderation Status</span>
+                          <span style="font-size:0.9rem;color:${status === 'quarantined' ? '#DC2626' : '#2563EB'};font-weight:700;text-transform:uppercase;">${status}</span>
+                        </td>
+                      </tr>
+                      <tr>
                         <td style="padding-top:16px;border-top:1px solid #E2E8F0;">
                           <span style="font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748B;display:block;margin-bottom:4px;">Rating Given</span>
                           <span style="font-size:1.1rem;color:#D97706;font-weight:700;">${starsVisual} (${rating}/5)</span>
@@ -148,7 +203,7 @@ function buildReviewEmailHtml({ name, designation, rating, message, logoUrl }) {
               <!-- ACTION NOTE -->
               <div style="background-color:#EFF6FF; border:1px solid #BFDBFE; border-radius:10px; padding:16px; text-align:center;">
                 <p style="margin:0; font-size:0.875rem; color:#1E40AF; font-weight:500;">
-                  💡 <strong>Admin Verification Tip:</strong> If you approve this review, copy the text above and add it to your website's testimonials data file to make it live.
+                  💡 <strong>Admin Action Required:</strong> Log in to your Admin Panel to approve this review and publish it live on the website.
                 </p>
               </div>
 

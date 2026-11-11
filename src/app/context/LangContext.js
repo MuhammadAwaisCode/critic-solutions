@@ -75,19 +75,27 @@ en: {
           accent: '#EEF2FF',
         },
         {
-          client: 'Largify Solutions',
-          category: 'Enterprise Software & CMS',
-          metrics: [['48hrs', 'to Launch'], ['99.9%', 'Uptime'], ['12K+', 'Active Users']],
-          desc: 'End-to-end enterprise management and content platform built for seamless scalability, compliance, and operational efficiency.',
-          accent: '#DCFCE7',
-        },
-        {
-          client: 'Eraxon – Expert Digital Solutions for Your Business',
-          category: 'Digital Services & SaaS Automation',
-          metrics: [['↓ 28%', 'Operating Costs'], ['Real-time', 'Analytics'], ['800+', 'Daily Workflows']],
-          desc: 'AI-assisted digital workflow platform streamlining enterprise operations and automating complex business processes.',
-          accent: '#FEF9C3',
-        },
+        client: 'HHH Groups',
+        category: 'Business Management & Enterprise Solutions',
+        metrics: [
+        ['Centralized', 'Business Operations'],
+        ['Real-time', 'Data Management'],
+        ['Scalable', 'Infrastructure']
+       ],
+       desc: 'A comprehensive business management solution designed to streamline organizational operations, centralize business data, and improve operational visibility through an integrated digital platform.',
+       accent: '#DCFCE7',
+       },
+       {
+      client: 'CriticPick Invoice App',
+      category: 'FBR Digital Invoicing & Tax Automation',
+      metrics: [
+      ['FBR', 'Integration'],
+      ['Real-time', 'Invoice Reporting'],
+      ['Automated', 'Tax Compliance']
+       ],
+       desc: 'A digital invoicing and tax management solution integrated with Pakistan’s FBR system, enabling businesses to generate invoices, automate tax calculations, manage transaction records, and streamline digital tax reporting.',
+       accent: '#FEF9C3',
+      },
       ],
     },
     reviewModal: {
@@ -152,6 +160,20 @@ en: {
           initials: 'ZA',
           color: '#FBCFE8',
         },
+        {
+    quote: "The team delivered a well-structured digital solution that helped us streamline our business operations and manage information more efficiently. Their understanding of our requirements and commitment to quality made the entire experience smooth and professional.",
+    name: 'HHH Groups Team',
+    role: 'Management, HHH Groups',
+    initials: 'HH',
+    color: '#DCFCE7',
+  },
+  {
+    quote: "Managing invoices and tax compliance has become much more organized with CriticPick Invoice App. The FBR integration simplifies our invoicing workflow, while automated tax calculations and digital records make everyday financial operations easier to manage.",
+    name: 'CriticPick Client',
+    role: 'Business Owner, CriticPick Invoice App',
+    initials: 'CP',
+    color: '#FEF9C3',
+  },
       ],
     },
     pricing: {
@@ -570,7 +592,7 @@ en: {
         {
           id: 3,
           number: "03",
-          sectionTitle: "Message from the Lead Developer",
+          sectionTitle: "Message from the Web & App Developer",
           name: "Muhammad Awais",
           role: "Web & App Developer",
           image: "/Awais.png",
@@ -603,7 +625,7 @@ en: {
           id: 5,
           number: "05",
           sectionTitle: "Message from the AI Lead",
-          name: "AI Specialist",
+          name: "Nigaar",
           role: "Artificial Intelligence & ML Lead",
           image: "/Nigaar.jpeg",
           quote:
@@ -612,7 +634,7 @@ en: {
             "Specializing in Machine Learning, Deep Learning, and Computer Vision, I focus on building end-to-end intelligent systems — ranging from predictive analytics pipelines to real-time object detection and facial recognition using YOLOv8 and OpenCV.",
             "By combining modern AI models (TensorFlow, Scikit-learn) with scalable full-stack web architectures (Next.js, Python, SQL), we deliver seamless, data-driven automation tailored to meet high-performance standards.",
           ],
-          sigName: "AI Specialist",
+          sigName: "Nigaar",
           sigRole: "AI & ML Lead, Critic Solutions",
         },
       ],
@@ -745,19 +767,27 @@ ar: {
         accent: '#EEF2FF',
       },
       {
-        client: 'Largify Solutions',
-        category: 'برمجيات المؤسسات ونظام إدارة المحتوى',
-        metrics: [['48hrs', 'حتى الإطلاق'], ['99.9%', 'وقت التشغيل'], ['12K+', 'مرضى نشطون']],
-        desc: 'منصة متكاملة لإدارة المؤسسات والمحتوى تم بناؤها للتوسع السلس، والامتثال، والكفاءة التشغيلية.',
-        accent: '#DCFCE7',
-      },
-      {
-        client: 'Eraxon – حلول رقمية خبيرة لأعمالك',
-        category: 'الخدمات الرقمية وأتمتة SaaS',
-        metrics: [['↓ 28%', 'تكاليف الوقود'], ['Real-time', 'تتبع لحظي'], ['800+', 'مسارات يومية']],
-        desc: 'منصة سير عمل رقمية مدعومة بالذكاء الاصطناعي تعمل على تبسيط عمليات المؤسسة وأتمتة إجراءات العمل المعقدة.',
-        accent: '#FEF9C3',
-      },
+  client: 'HHH Groups',
+  category: 'إدارة الأعمال والحلول المؤسسية',
+  metrics: [
+    ['مركزي', 'العمليات التجارية'],
+    ['فوري', 'إدارة البيانات'],
+    ['قابل للتوسع', 'البنية التحتية']
+  ],
+  desc: 'حل متكامل لإدارة الأعمال مصمم لتبسيط العمليات التنظيمية، وتوحيد بيانات الأعمال، وتحسين الرؤية التشغيلية من خلال منصة رقمية متكاملة.',
+  accent: '#DCFCE7',
+},
+{
+  client: 'CriticPick Invoice App',
+  category: 'الفوترة الرقمية والتكامل الضريبي مع FBR',
+  metrics: [
+    ['FBR', 'التكامل'],
+    ['فوري', 'تقارير الفواتير'],
+    ['آلي', 'الامتثال الضريبي']
+  ],
+  desc: 'حل رقمي للفوترة وإدارة الضرائب متكامل مع نظام هيئة الإيرادات الفيدرالية الباكستانية (FBR)، يتيح للشركات إنشاء الفواتير، وأتمتة حساب الضرائب، وإدارة سجلات المعاملات، وتبسيط التقارير الضريبية الرقمية.',
+  accent: '#FEF9C3',
+},
     ],
   },
   reviewModal: {
@@ -823,6 +853,20 @@ ar: {
         initials: 'ZA',
         color: '#FBCFE8',
       },
+      {
+    quote: "قدم الفريق حلاً رقمياً منظماً ساعدنا على تبسيط عمليات الأعمال وإدارة المعلومات بكفاءة أكبر. إن فهمهم لمتطلباتنا والتزامهم بالجودة جعلا تجربة العمل معهم سلسة واحترافية.",
+    name: 'فريق HHH Groups',
+    role: 'الإدارة، HHH Groups',
+    initials: 'HH',
+    color: '#DCFCE7',
+  },
+  {
+    quote: "أصبح التعامل مع الفواتير والامتثال الضريبي أكثر تنظيماً بفضل تطبيق CriticPick Invoice App. يساعد تكامل FBR على تبسيط عملية إصدار الفواتير، كما تجعل الحسابات الضريبية الآلية والسجلات الرقمية العمليات المالية اليومية أسهل في الإدارة.",
+    name: 'عميل CriticPick',
+    role: 'صاحب عمل، CriticPick Invoice App',
+    initials: 'CP',
+    color: '#FEF9C3',
+  },
     ],
   },
   pricing: {
@@ -1368,19 +1412,27 @@ reviewModal: {
         accent: '#EEF2FF',
       },
       {
-        client: 'Largify Solutions',
-        category: 'Корпоративное ПО и CMS',
-        metrics: [['48hrs', 'До запуска'], ['99.9%', 'Аптайм'], ['12K+', 'Активных пользователей']],
-        desc: 'Комплексная платформа управления предприятием и контентом, созданная для безупречной масштабируемости, соответствия стандартам и операционной эффективности.',
-        accent: '#DCFCE7',
-      },
-      {
-        client: 'Eraxon – Expert Digital Solutions for Your Business',
-        category: 'Цифровые услуги и SaaS-автоматизация',
-        metrics: [['↓ 28%', 'Операционные расходы'], ['Real-time', 'Аналитика в реальном времени'], ['800+', 'Процессов в день']],
-        desc: 'Платформа цифровых рабочих процессов с ИИ, оптимизирующая корпоративные операции и автоматизирующая сложные бизнес-процессы.',
-        accent: '#FEF9C3',
-      },
+  client: 'HHH Groups',
+  category: 'Управление бизнесом и корпоративные решения',
+  metrics: [
+    ['Централизованные', 'Бизнес-операции'],
+    ['В реальном времени', 'Управление данными'],
+    ['Масштабируемая', 'Инфраструктура']
+  ],
+  desc: 'Комплексное решение для управления бизнесом, разработанное для оптимизации организационных процессов, централизации бизнес-данных и повышения прозрачности операционной деятельности с помощью интегрированной цифровой платформы.',
+  accent: '#DCFCE7',
+},
+{
+  client: 'CriticPick Invoice App',
+  category: 'Электронное выставление счетов и налоговая автоматизация FBR',
+  metrics: [
+    ['FBR', 'Интеграция'],
+    ['В реальном времени', 'Отчётность по счетам'],
+    ['Автоматизация', 'Налоговое соответствие']
+  ],
+  desc: 'Цифровое решение для выставления счетов и управления налогами, интегрированное с системой FBR Пакистана. Позволяет компаниям создавать счета, автоматизировать расчёт налогов, управлять записями транзакций и упрощать электронную налоговую отчётность.',
+  accent: '#FEF9C3',
+},
     ],
   },
   testimonials: {
@@ -1429,6 +1481,20 @@ reviewModal: {
         initials: 'ZA',
         color: '#FBCFE8',
       },
+      {
+    quote: "Команда предоставила хорошо структурированное цифровое решение, которое помогло нам оптимизировать бизнес-процессы и эффективнее управлять информацией. Понимание наших требований и приверженность качеству сделали сотрудничество простым и профессиональным.",
+    name: 'Команда HHH Groups',
+    role: 'Руководство, HHH Groups',
+    initials: 'HH',
+    color: '#DCFCE7',
+  },
+  {
+    quote: "Управление счетами и соблюдение налоговых требований стали намного удобнее благодаря приложению CriticPick Invoice App. Интеграция с FBR упрощает процесс выставления счетов, а автоматический расчёт налогов и цифровые записи облегчают повседневные финансовые операции.",
+    name: 'Клиент CriticPick',
+    role: 'Владелец бизнеса, CriticPick Invoice App',
+    initials: 'CP',
+    color: '#FEF9C3',
+  },
     ],
   },
   pricing: {
@@ -1970,19 +2036,27 @@ es: {
           accent: '#EEF2FF',
         },
         {
-          client: 'Largify Solutions',
-          category: 'Software empresarial y CMS',
-          metrics: [['48hrs', 'Hasta el lanzamiento'], ['99.9%', 'Disponibilidad'], ['12K+', 'Usuarios activos']],
-          desc: 'Plataforma integral de gestión empresarial y contenidos, diseñada para una escalabilidad fluida, cumplimiento normativo y eficiencia operativa.',
-          accent: '#DCFCE7',
-        },
-        {
-          client: 'Eraxon – Soluciones digitales expertas para tu negocio',
-          category: 'Servicios digitales y automatización SaaS',
-          metrics: [['↓ 28%', 'Costos operativos'], ['En tiempo real', 'Analítica'], ['800+', 'Flujos de trabajo diarios']],
-          desc: 'Plataforma de flujo de trabajo digital asistida por IA que optimiza las operaciones empresariales y automatiza procesos comerciales complejos.',
-          accent: '#FEF9C3',
-        },
+  client: 'HHH Groups',
+  category: 'Gestión Empresarial y Soluciones Corporativas',
+  metrics: [
+    ['Centralizadas', 'Operaciones Empresariales'],
+    ['En tiempo real', 'Gestión de Datos'],
+    ['Escalable', 'Infraestructura']
+  ],
+  desc: 'Una solución integral de gestión empresarial diseñada para optimizar las operaciones organizativas, centralizar los datos empresariales y mejorar la visibilidad operativa mediante una plataforma digital integrada.',
+  accent: '#DCFCE7',
+},
+{
+  client: 'CriticPick Invoice App',
+  category: 'Facturación Digital y Automatización Fiscal FBR',
+  metrics: [
+    ['FBR', 'Integración'],
+    ['En tiempo real', 'Informes de Facturación'],
+    ['Automatizado', 'Cumplimiento Fiscal']
+  ],
+  desc: 'Una solución digital de facturación y gestión fiscal integrada con el sistema FBR de Pakistán, que permite a las empresas generar facturas, automatizar los cálculos de impuestos, gestionar registros de transacciones y simplificar la presentación de informes fiscales digitales.',
+  accent: '#FEF9C3',
+},
       ],
     },
     reviewModal: {
@@ -2050,6 +2124,20 @@ es: {
           initials: 'ZA',
           color: '#FBCFE8',
         },
+        {
+    quote: "El equipo desarrolló una solución digital bien estructurada que nos ayudó a optimizar nuestras operaciones comerciales y gestionar la información de manera más eficiente. Su comprensión de nuestras necesidades y su compromiso con la calidad hicieron que toda la experiencia fuera fluida y profesional.",
+    name: 'Equipo de HHH Groups',
+    role: 'Dirección, HHH Groups',
+    initials: 'HH',
+    color: '#DCFCE7',
+  },
+  {
+    quote: "La gestión de facturas y el cumplimiento fiscal se han vuelto mucho más organizados con CriticPick Invoice App. La integración con FBR simplifica nuestro proceso de facturación, mientras que los cálculos fiscales automatizados y los registros digitales facilitan las operaciones financieras diarias.",
+    name: 'Cliente de CriticPick',
+    role: 'Propietario de Empresa, CriticPick Invoice App',
+    initials: 'CP',
+    color: '#FEF9C3',
+  },
       ],
     },
     pricing: {
@@ -2572,34 +2660,44 @@ fr: {
         devops: "DevOps & Cloud",
       },
     },
-   caseStudies: {
-      badge: 'Results',
-      headline: 'Work that speaks in metrics',
-      sub: 'Every engagement ends with numbers that matter — not screenshots in a Notion doc.',
-      list: [
-        {
-          client: 'Criticpick MarketPlace',
-          category: 'E-Commerce & Multi-Vendor Marketplace',
-          metrics: [['↑ 340%', 'Conversion Rate'], ['2.1s', 'Page Load'], ['$1.2M', 'Revenue / Month']],
-          desc: 'Built a high-performance multi-vendor commerce engine using Next.js, reducing checkout friction by 62% and driving rapid sales growth.',
-          accent: '#EEF2FF',
-        },
-        {
-          client: 'Largify Solutions',
-          category: 'Enterprise Software & CMS',
-          metrics: [['48hrs', 'to Launch'], ['99.9%', 'Uptime'], ['12K+', 'Active Users']],
-          desc: 'End-to-end enterprise management and content platform built for seamless scalability, compliance, and operational efficiency.',
-          accent: '#DCFCE7',
-        },
-        {
-          client: 'Eraxon – Expert Digital Solutions for Your Business',
-          category: 'Digital Services & SaaS Automation',
-          metrics: [['↓ 28%', 'Operating Costs'], ['Real-time', 'Analytics'], ['800+', 'Daily Workflows']],
-          desc: 'AI-assisted digital workflow platform streamlining enterprise operations and automating complex business processes.',
-          accent: '#FEF9C3',
-        },
-      ],
+   
+caseStudies: {
+  badge: 'Résultats',
+  headline: 'Des résultats qui parlent d’eux-mêmes',
+  sub: 'Chaque collaboration se termine par des résultats mesurables — pas simplement des captures d’écran dans un document Notion.',
+  list: [
+    {
+      client: 'Criticpick MarketPlace',
+      category: 'Commerce électronique et Marketplace Multi-Vendeurs',
+      metrics: [['↑ 340%', 'Taux de Conversion'], ['2.1s', 'Temps de Chargement'], ['$1.2M', 'Revenus / Mois']],
+      desc: 'Développement d’une plateforme e-commerce multi-vendeurs haute performance avec Next.js, réduisant les obstacles au paiement de 62 % et accélérant considérablement la croissance des ventes.',
+      accent: '#EEF2FF',
     },
+    {
+  client: 'HHH Groups',
+  category: 'Gestion d’Entreprise et Solutions pour les Organisations',
+  metrics: [
+    ['Centralisées', 'Opérations Commerciales'],
+    ['En temps réel', 'Gestion des Données'],
+    ['Évolutive', 'Infrastructure']
+  ],
+  desc: 'Une solution complète de gestion d’entreprise conçue pour rationaliser les opérations organisationnelles, centraliser les données commerciales et améliorer la visibilité opérationnelle grâce à une plateforme numérique intégrée.',
+  accent: '#DCFCE7',
+},
+{
+  client: 'CriticPick Invoice App',
+  category: 'Facturation Numérique et Automatisation Fiscale FBR',
+  metrics: [
+    ['FBR', 'Intégration'],
+    ['En temps réel', 'Rapports de Facturation'],
+    ['Automatisée', 'Conformité Fiscale']
+  ],
+  desc: 'Une solution numérique de facturation et de gestion fiscale intégrée au système FBR du Pakistan, permettant aux entreprises de générer des factures, d’automatiser les calculs fiscaux, de gérer les registres de transactions et de simplifier les déclarations fiscales numériques.',
+  accent: '#FEF9C3',
+},
+  ],
+},
+
     reviewModal: {
   title: "Écrire un avis",
   nameLabel: "Nom",
@@ -2665,6 +2763,20 @@ fr: {
           initials: 'ZA',
           color: '#FBCFE8',
         },
+        {
+    quote: "L’équipe a fourni une solution numérique bien structurée qui nous a permis de rationaliser nos opérations commerciales et de gérer les informations plus efficacement. Leur compréhension de nos besoins et leur engagement envers la qualité ont rendu toute l’expérience fluide et professionnelle.",
+    name: 'Équipe HHH Groups',
+    role: 'Direction, HHH Groups',
+    initials: 'HH',
+    color: '#DCFCE7',
+  },
+  {
+    quote: "La gestion des factures et la conformité fiscale sont devenues beaucoup plus organisées grâce à CriticPick Invoice App. L’intégration avec FBR simplifie notre processus de facturation, tandis que les calculs fiscaux automatisés et les registres numériques facilitent les opérations financières quotidiennes.",
+    name: 'Client CriticPick',
+    role: 'Propriétaire d’Entreprise, CriticPick Invoice App',
+    initials: 'CP',
+    color: '#FEF9C3',
+  },
       ],
     },
     pricing: {
@@ -3201,19 +3313,27 @@ it: {
       accent: '#EEF2FF',
     },
     {
-      client: 'Largify Solutions',
-      category: 'Software aziendale e CMS',
-      metrics: [['48 ore', 'Fino al lancio'], ['99.9%', 'Disponibilità'], ['12K+', 'Utenti attivi']],
-      desc: 'Piattaforma completa di gestione aziendale e contenuti, progettata per una scalabilità fluida, conformità normativa ed efficienza operativa.',
-      accent: '#DCFCE7',
-    },
-    {
-      client: 'Eraxon – Soluzioni digitali esperte per il tuo business',
-      category: 'Servizi digitali e automazione SaaS',
-      metrics: [['↓ 28%', 'Costi operativi'], ['In tempo reale', 'Analisi'], ['800+', 'Flussi di lavoro giornalieri']],
-      desc: 'Piattaforma di flusso di lavoro digitale assistita da IA che ottimizza le operazioni aziendali e automatizza complessi processi commerciali.',
-      accent: '#FEF9C3',
-    },
+  client: 'HHH Groups',
+  category: 'Gestione Aziendale e Soluzioni Enterprise',
+  metrics: [
+    ['Centralizzate', 'Operazioni Aziendali'],
+    ['In tempo reale', 'Gestione dei Dati'],
+    ['Scalabile', 'Infrastruttura']
+  ],
+  desc: 'Una soluzione completa per la gestione aziendale, progettata per ottimizzare le operazioni organizzative, centralizzare i dati aziendali e migliorare la visibilità operativa attraverso una piattaforma digitale integrata.',
+  accent: '#DCFCE7',
+},
+{
+  client: 'CriticPick Invoice App',
+  category: 'Fatturazione Digitale e Automazione Fiscale FBR',
+  metrics: [
+    ['FBR', 'Integrazione'],
+    ['In tempo reale', 'Report delle Fatture'],
+    ['Automatizzata', 'Conformità Fiscale']
+  ],
+  desc: 'Una soluzione digitale per la fatturazione e la gestione fiscale integrata con il sistema FBR del Pakistan, che consente alle aziende di generare fatture, automatizzare i calcoli delle imposte, gestire i registri delle transazioni e semplificare la rendicontazione fiscale digitale.',
+  accent: '#FEF9C3',
+},
   ],
 },
 reviewModal: {
@@ -3281,6 +3401,20 @@ reviewModal: {
           initials: 'ZA',
           color: '#FBCFE8',
         },
+        {
+    quote: "Il team ha fornito una soluzione digitale ben strutturata che ci ha aiutato a semplificare le operazioni aziendali e a gestire le informazioni in modo più efficiente. La comprensione delle nostre esigenze e l'attenzione alla qualità hanno reso l'intera esperienza fluida e professionale.",
+    name: 'Team HHH Groups',
+    role: 'Direzione, HHH Groups',
+    initials: 'HH',
+    color: '#DCFCE7',
+  },
+  {
+    quote: "La gestione delle fatture e la conformità fiscale sono diventate molto più organizzate grazie a CriticPick Invoice App. L'integrazione con FBR semplifica il processo di fatturazione, mentre i calcoli fiscali automatizzati e gli archivi digitali rendono più semplici le operazioni finanziarie quotidiane.",
+    name: 'Cliente CriticPick',
+    role: 'Titolare di Azienda, CriticPick Invoice App',
+    initials: 'CP',
+    color: '#FEF9C3',
+  },
       ],
     },
     pricing: {
@@ -3810,19 +3944,27 @@ nl: {
       accent: '#EEF2FF',
     },
     {
-      client: 'Largify Solutions',
-      category: 'Bedrijfssoftware en CMS',
-      metrics: [['48 uur', 'Tot lancering'], ['99.9%', 'Uptime'], ['12K+', 'Actieve gebruikers']],
-      desc: 'Integraal platform voor bedrijfs- en contentbeheer, ontworpen voor naadloze schaalbaarheid, naleving van regelgeving en operationele efficiëntie.',
-      accent: '#DCFCE7',
-    },
-    {
-      client: 'Eraxon – Expert digitale oplossingen voor uw bedrijf',
-      category: 'Digitale diensten en SaaS-automatisering',
-      metrics: [['↓ 28%', 'Operationele kosten'], ['Realtime', 'Analyses'], ['800+', 'Dagelijkse workflows']],
-      desc: 'AI-gestuurd digitaal workflowplatform dat bedrijfsactiviteiten optimaliseert en complexe bedrijfsprocessen automatiseert.',
-      accent: '#FEF9C3',
-    },
+  client: 'HHH Groups',
+  category: 'Bedrijfsbeheer en Enterprise-oplossingen',
+  metrics: [
+    ['Gecentraliseerd', 'Bedrijfsprocessen'],
+    ['Realtime', 'Gegevensbeheer'],
+    ['Schaalbaar', 'Infrastructuur']
+  ],
+  desc: 'Een uitgebreide oplossing voor bedrijfsbeheer, ontworpen om organisatorische processen te stroomlijnen, bedrijfsgegevens te centraliseren en operationeel inzicht te verbeteren via een geïntegreerd digitaal platform.',
+  accent: '#DCFCE7',
+},
+{
+  client: 'CriticPick Invoice App',
+  category: 'Digitale Facturatie en FBR-belastingautomatisering',
+  metrics: [
+    ['FBR', 'Integratie'],
+    ['Realtime', 'Factuurrapportage'],
+    ['Geautomatiseerd', 'Belastingnaleving']
+  ],
+  desc: 'Een digitale oplossing voor facturatie en belastingbeheer, geïntegreerd met het FBR-systeem van Pakistan. Hiermee kunnen bedrijven facturen genereren, belastingberekeningen automatiseren, transactieregistraties beheren en digitale belastingrapportages vereenvoudigen.',
+  accent: '#FEF9C3',
+},
   ],
 },
 reviewModal: {
@@ -3890,6 +4032,20 @@ reviewModal: {
           initials: 'ZA',
           color: '#FBCFE8',
         },
+         {
+    quote: "Het team heeft een goed gestructureerde digitale oplossing geleverd die ons heeft geholpen bedrijfsprocessen te stroomlijnen en informatie efficiënter te beheren. Hun inzicht in onze behoeften en hun toewijding aan kwaliteit maakten de hele samenwerking soepel en professioneel.",
+    name: 'HHH Groups Team',
+    role: 'Management, HHH Groups',
+    initials: 'HH',
+    color: '#DCFCE7',
+  },
+  {
+    quote: "Het beheren van facturen en het naleven van belastingverplichtingen is veel overzichtelijker geworden met CriticPick Invoice App. De FBR-integratie vereenvoudigt ons facturatieproces, terwijl geautomatiseerde belastingberekeningen en digitale registraties de dagelijkse financiële werkzaamheden gemakkelijker maken.",
+    name: 'CriticPick Klant',
+    role: 'Bedrijfseigenaar, CriticPick Invoice App',
+    initials: 'CP',
+    color: '#FEF9C3',
+  },
       ],
     },
     pricing: {
