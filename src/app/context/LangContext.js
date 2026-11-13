@@ -68,12 +68,19 @@ en: {
       sub: 'Every engagement ends with numbers that matter — not screenshots in a Notion doc.',
       list: [
         {
-          client: 'Criticpick MarketPlace',
-          category: 'E-Commerce & Multi-Vendor Marketplace',
-          metrics: [['↑ 340%', 'Conversion Rate'], ['2.1s', 'Page Load'], ['$1.2M', 'Revenue / Month']],
-          desc: 'Built a high-performance multi-vendor commerce engine using Next.js, reducing checkout friction by 62% and driving rapid sales growth.',
-          accent: '#EEF2FF',
-        },
+    client: 'CriticPick Marketplace',
+    category: 'Global Multi-Vendor, Multi-Affiliate E-Commerce Platform',
+    metrics: [
+      ['↑ 340%', 'Conversion Rate'],
+      ['2.1s', 'Page Load Speed'],
+      ['$1.2M', 'Revenue / Month'],
+      ['Global', 'Multi-Country Operations'],
+      ['Multi-Vendor', 'Seller Ecosystem'],
+      ['Multi-Affiliate', 'Referral & Commission Network']
+    ],
+    desc: 'Built a high-performance, scalable global e-commerce ecosystem using Next.js, connecting vendors, customers, and affiliates through a unified multi-vendor and multi-affiliate marketplace. Supporting international markets including the EU, UK, Canada, USA, Pakistan, and other countries, the platform features centralized vendor management, affiliate tracking, referral commissions, international product distribution, and optimized checkout experiences. Designed to reduce checkout friction, improve conversion performance, and support seamless cross-border commerce.',
+    accent: '#EEF2FF',
+  },
         {
         client: 'HHH Groups',
         category: 'Business Management & Enterprise Solutions',
@@ -85,6 +92,17 @@ en: {
        desc: 'A comprehensive business management solution designed to streamline organizational operations, centralize business data, and improve operational visibility through an integrated digital platform.',
        accent: '#DCFCE7',
        },
+       {
+    client: 'Lahore View City',
+    category: 'Digital Marketing & Brand Growth',
+    metrics: [
+      ['18.9K', 'TikTok Followers'],
+      ['230.6K', 'Total Likes'],
+      ['Ongoing', 'Partnership']
+    ],
+    desc: 'A comprehensive digital growth partnership delivering social media management, creative content production, professional video editing, targeted digital advertising, website development, and complete brand identity solutions to strengthen Lahore View City’s online presence.',
+    accent: '#DBEAFE',
+  },
        {
       client: 'CriticPick Invoice App',
       category: 'FBR Digital Invoicing & Tax Automation',
@@ -760,12 +778,20 @@ ar: {
     sub: 'كل مشروع ينتهي بأرقام مهمة — لا بلقطات شاشة في مستند.',
     list: [
       {
-        client: 'متجر Criticpick',
-        category: 'التجارة الإلكترونية والسوق متعدد البائعين',
-        metrics: [['↑ 340%', 'معدل التحويل'], ['2.1s', 'وقت تحميل الصفحة'], ['$1.2M', 'الإيرادات / شهرياً']],
-        desc: 'تم بناء محرك تجارة متعدد البائعين عالي الأداء باستخدام Next.js، مما قلل من احتكاك الدفع بنسبة 62% ودفع نمو المبيعات السريع.',
-        accent: '#EEF2FF',
-      },
+    client: 'CriticPick Marketplace',
+    category: 'منصة تجارة إلكترونية عالمية متعددة البائعين والمسوقين بالعمولة',
+    metrics: [
+      ['↑ 340%', 'معدل التحويل'],
+      ['2.1s', 'سرعة تحميل الصفحة'],
+      ['$1.2M', 'الإيرادات الشهرية'],
+      ['عالمي', 'عمليات متعددة الدول'],
+      ['متعدد البائعين', 'منظومة البائعين'],
+      ['متعدد المسوقين', 'شبكة الإحالات والعمولات']
+    ],
+    desc: 'تم تطوير منظومة تجارة إلكترونية عالمية عالية الأداء وقابلة للتوسع باستخدام Next.js، تربط بين البائعين والعملاء والمسوقين بالعمولة عبر منصة موحدة متعددة البائعين والمسوقين. تدعم المنصة أسواقًا دولية تشمل الاتحاد الأوروبي والمملكة المتحدة وكندا والولايات المتحدة وباكستان ودولًا أخرى، وتوفر إدارة مركزية للبائعين، وتتبع المسوقين بالعمولة، وإدارة عمولات الإحالة، وتوزيع المنتجات دوليًا، وتجربة دفع محسّنة. صُممت لتقليل تعقيدات إتمام الطلبات وتحسين معدلات التحويل ودعم التجارة الدولية بسلاسة.',
+    accent: '#EEF2FF',
+  },
+
       {
   client: 'HHH Groups',
   category: 'إدارة الأعمال والحلول المؤسسية',
@@ -777,6 +803,17 @@ ar: {
   desc: 'حل متكامل لإدارة الأعمال مصمم لتبسيط العمليات التنظيمية، وتوحيد بيانات الأعمال، وتحسين الرؤية التشغيلية من خلال منصة رقمية متكاملة.',
   accent: '#DCFCE7',
 },
+{
+    client: 'Lahore View City',
+    category: 'التسويق الرقمي ونمو العلامة التجارية',
+    metrics: [
+      ['18.9K', 'متابع على تيك توك'],
+      ['230.6K', 'إجمالي الإعجابات'],
+      ['مستمر', 'شراكة مستمرة']
+    ],
+    desc: 'شراكة متكاملة للنمو الرقمي تشمل إدارة وسائل التواصل الاجتماعي، وإنتاج المحتوى الإبداعي، وتحرير الفيديو، والإعلانات الرقمية المستهدفة، وتطوير المواقع الإلكترونية، وبناء هوية متكاملة للعلامة التجارية لتعزيز الحضور الرقمي لمدينة لاهور فيو.',
+    accent: '#DBEAFE',
+  },
 {
   client: 'CriticPick Invoice App',
   category: 'الفوترة الرقمية والتكامل الضريبي مع FBR',
@@ -1405,12 +1442,20 @@ reviewModal: {
     sub: 'Каждый проект завершается значимыми показателями, а не скриншотами в документах Notion.',
     list: [
       {
-        client: 'Criticpick MarketPlace',
-        category: 'Электронная коммерция и мультивендорная торговая площадка',
-        metrics: [['↑ 340%', 'Конверсия'], ['2.1s', 'Загрузка страницы'], ['$1.2M', 'Выручка / месяц']],
-        desc: 'Создали высокопроизводительный движок мультивендорной коммерции на Next.js, сократив трение при оформлении заказа на 62% и обеспечив быстрый рост продаж.',
-        accent: '#EEF2FF',
-      },
+    client: 'CriticPick Marketplace',
+    category: 'Глобальная мультивендорная и мультиаффилиатная платформа электронной коммерции',
+    metrics: [
+      ['↑ 340%', 'Коэффициент конверсии'],
+      ['2.1s', 'Скорость загрузки страницы'],
+      ['$1.2M', 'Выручка в месяц'],
+      ['Global', 'Работа в нескольких странах'],
+      ['Multi-Vendor', 'Экосистема продавцов'],
+      ['Multi-Affiliate', 'Сеть рефералов и комиссий']
+    ],
+    desc: 'Создана высокопроизводительная и масштабируемая глобальная экосистема электронной коммерции на базе Next.js, объединяющая продавцов, покупателей и партнёров по продвижению в единой мультивендорной и мультиаффилиатной платформе. Платформа поддерживает международные рынки, включая ЕС, Великобританию, Канаду, США, Пакистан и другие страны. Она предлагает централизованное управление продавцами, отслеживание партнёрских программ, управление реферальными комиссиями, международное распространение товаров и оптимизированный процесс оформления заказов. Решение направлено на упрощение оформления покупок, повышение конверсии и поддержку международной торговли.',
+    accent: '#EEF2FF',
+  },
+
       {
   client: 'HHH Groups',
   category: 'Управление бизнесом и корпоративные решения',
@@ -1422,6 +1467,17 @@ reviewModal: {
   desc: 'Комплексное решение для управления бизнесом, разработанное для оптимизации организационных процессов, централизации бизнес-данных и повышения прозрачности операционной деятельности с помощью интегрированной цифровой платформы.',
   accent: '#DCFCE7',
 },
+{
+    client: 'Lahore View City',
+    category: 'Цифровой маркетинг и развитие бренда',
+    metrics: [
+      ['18.9K', 'Подписчиков в TikTok'],
+      ['230.6K', 'Всего лайков'],
+      ['Ongoing', 'Текущее сотрудничество']
+    ],
+    desc: 'Комплексное партнёрство в сфере цифрового развития, включающее управление социальными сетями, создание креативного контента, профессиональный монтаж видео, целевую цифровую рекламу, разработку веб-сайта и формирование целостного фирменного стиля для укрепления онлайн-присутствия Lahore View City.',
+    accent: '#DBEAFE',
+  },
 {
   client: 'CriticPick Invoice App',
   category: 'Электронное выставление счетов и налоговая автоматизация FBR',
@@ -2029,12 +2085,19 @@ es: {
       sub: 'Cada proyecto termina con números que importan — no capturas de pantalla en un documento de Notion.',
       list: [
         {
-          client: 'Criticpick MarketPlace',
-          category: 'Comercio electrónico y Marketplace multivendedor',
-          metrics: [['↑ 340%', 'Tasa de conversión'], ['2.1s', 'Carga de página'], ['$1.2M', 'Ingresos / mes']],
-          desc: 'Desarrollamos un motor de comercio multivendedor de alto rendimiento utilizando Next.js, reduciendo la fricción del checkout en un 62% e impulsando un rápido crecimiento en las ventas.',
-          accent: '#EEF2FF',
-        },
+    client: 'CriticPick Marketplace',
+    category: 'Plataforma Global de Comercio Electrónico Multivendedor y Multiafiliado',
+    metrics: [
+      ['↑ 340%', 'Tasa de Conversión'],
+      ['2.1s', 'Velocidad de Carga'],
+      ['$1.2M', 'Ingresos Mensuales'],
+      ['Global', 'Operaciones Multipaís'],
+      ['Multi-Vendor', 'Ecosistema de Vendedores'],
+      ['Multi-Affiliate', 'Red de Referidos y Comisiones']
+    ],
+    desc: 'Desarrollamos un ecosistema global de comercio electrónico de alto rendimiento y escalable utilizando Next.js, que conecta vendedores, clientes y afiliados mediante una plataforma unificada multivendedor y multiafiliado. La plataforma opera en mercados internacionales como la Unión Europea, Reino Unido, Canadá, Estados Unidos, Pakistán y otros países. Incluye gestión centralizada de vendedores, seguimiento de afiliados, administración de comisiones por referidos, distribución internacional de productos y procesos de pago optimizados. Está diseñada para reducir las dificultades durante la compra, mejorar las conversiones y facilitar el comercio internacional.',
+    accent: '#EEF2FF',
+  },
         {
   client: 'HHH Groups',
   category: 'Gestión Empresarial y Soluciones Corporativas',
@@ -2046,6 +2109,17 @@ es: {
   desc: 'Una solución integral de gestión empresarial diseñada para optimizar las operaciones organizativas, centralizar los datos empresariales y mejorar la visibilidad operativa mediante una plataforma digital integrada.',
   accent: '#DCFCE7',
 },
+{
+    client: 'Lahore View City',
+    category: 'Marketing Digital y Crecimiento de Marca',
+    metrics: [
+      ['18.9K', 'Seguidores en TikTok'],
+      ['230.6K', 'Me gusta totales'],
+      ['Ongoing', 'Colaboración activa']
+    ],
+    desc: 'Una colaboración integral de crecimiento digital que incluye gestión de redes sociales, creación de contenido creativo, edición profesional de vídeos, publicidad digital segmentada, desarrollo web y soluciones completas de identidad de marca para fortalecer la presencia online de Lahore View City.',
+    accent: '#DBEAFE',
+  },
 {
   client: 'CriticPick Invoice App',
   category: 'Facturación Digital y Automatización Fiscal FBR',
@@ -2667,12 +2741,19 @@ caseStudies: {
   sub: 'Chaque collaboration se termine par des résultats mesurables — pas simplement des captures d’écran dans un document Notion.',
   list: [
     {
-      client: 'Criticpick MarketPlace',
-      category: 'Commerce électronique et Marketplace Multi-Vendeurs',
-      metrics: [['↑ 340%', 'Taux de Conversion'], ['2.1s', 'Temps de Chargement'], ['$1.2M', 'Revenus / Mois']],
-      desc: 'Développement d’une plateforme e-commerce multi-vendeurs haute performance avec Next.js, réduisant les obstacles au paiement de 62 % et accélérant considérablement la croissance des ventes.',
-      accent: '#EEF2FF',
-    },
+    client: 'CriticPick Marketplace',
+    category: 'Plateforme E-Commerce Mondiale Multi-Vendeurs et Multi-Affiliés',
+    metrics: [
+      ['↑ 340%', 'Taux de Conversion'],
+      ['2.1s', 'Vitesse de Chargement'],
+      ['$1.2M', 'Chiffre d’Affaires Mensuel'],
+      ['Global', 'Activités Multinationales'],
+      ['Multi-Vendor', 'Écosystème de Vendeurs'],
+      ['Multi-Affiliate', 'Réseau de Parrainage et de Commissions']
+    ],
+    desc: 'Nous avons développé un écosystème mondial de commerce électronique performant et évolutif avec Next.js, reliant vendeurs, clients et affiliés au sein d’une plateforme unifiée multi-vendeurs et multi-affiliés. La plateforme prend en charge les marchés internationaux, notamment l’Union européenne, le Royaume-Uni, le Canada, les États-Unis, le Pakistan et d’autres pays. Elle comprend une gestion centralisée des vendeurs, le suivi des affiliés, la gestion des commissions de parrainage, la distribution internationale des produits et un processus de paiement optimisé. Elle vise à simplifier le parcours d’achat, à améliorer les conversions et à faciliter le commerce transfrontalier.',
+    accent: '#EEF2FF',
+  },
     {
   client: 'HHH Groups',
   category: 'Gestion d’Entreprise et Solutions pour les Organisations',
@@ -2684,6 +2765,17 @@ caseStudies: {
   desc: 'Une solution complète de gestion d’entreprise conçue pour rationaliser les opérations organisationnelles, centraliser les données commerciales et améliorer la visibilité opérationnelle grâce à une plateforme numérique intégrée.',
   accent: '#DCFCE7',
 },
+{
+    client: 'Lahore View City',
+    category: 'Marketing Digital et Développement de Marque',
+    metrics: [
+      ['18.9K', 'Abonnés TikTok'],
+      ['230.6K', 'Mentions J’aime'],
+      ['Ongoing', 'Partenariat en cours']
+    ],
+    desc: 'Un partenariat complet de développement numérique comprenant la gestion des réseaux sociaux, la création de contenu créatif, le montage vidéo professionnel, la publicité numérique ciblée, le développement de sites web et des solutions complètes d’identité de marque afin de renforcer la présence en ligne de Lahore View City.',
+    accent: '#DBEAFE',
+  },
 {
   client: 'CriticPick Invoice App',
   category: 'Facturation Numérique et Automatisation Fiscale FBR',
@@ -3306,12 +3398,20 @@ it: {
   sub: 'Ogni progetto si conclude con numeri che contano — non screenshot in un documento Notion.',
   list: [
     {
-      client: 'Criticpick MarketPlace',
-      category: 'E-commerce e Marketplace multivenditore',
-      metrics: [['↑ 340%', 'Tasso di conversione'], ['2.1s', 'Caricamento pagina'], ['$1.2M', 'Entrate / mese']],
-      desc: 'Abbiamo sviluppato un motore di commercio multivenditore ad alte prestazioni utilizzando Next.js, riducendo la frizione al checkout del 62% e guidando una rapida crescita delle vendite.',
-      accent: '#EEF2FF',
-    },
+    client: 'CriticPick Marketplace',
+    category: 'Piattaforma E-Commerce Globale Multi-Vendor e Multi-Affiliate',
+    metrics: [
+      ['↑ 340%', 'Tasso di Conversione'],
+      ['2.1s', 'Velocità di Caricamento'],
+      ['$1.2M', 'Ricavi Mensili'],
+      ['Global', 'Operazioni in Più Paesi'],
+      ['Multi-Vendor', 'Ecosistema di Venditori'],
+      ['Multi-Affiliate', 'Rete di Referral e Commissioni']
+    ],
+    desc: 'Abbiamo sviluppato un ecosistema globale di e-commerce ad alte prestazioni e scalabile utilizzando Next.js, che collega venditori, clienti e affiliati attraverso una piattaforma unificata multi-vendor e multi-affiliate. La piattaforma supporta mercati internazionali tra cui Unione Europea, Regno Unito, Canada, Stati Uniti, Pakistan e altri Paesi. Include gestione centralizzata dei venditori, monitoraggio degli affiliati, gestione delle commissioni referral, distribuzione internazionale dei prodotti e un processo di checkout ottimizzato. È progettata per semplificare gli acquisti, migliorare le conversioni e favorire il commercio internazionale.',
+    accent: '#EEF2FF',
+  },
+
     {
   client: 'HHH Groups',
   category: 'Gestione Aziendale e Soluzioni Enterprise',
@@ -3323,6 +3423,18 @@ it: {
   desc: 'Una soluzione completa per la gestione aziendale, progettata per ottimizzare le operazioni organizzative, centralizzare i dati aziendali e migliorare la visibilità operativa attraverso una piattaforma digitale integrata.',
   accent: '#DCFCE7',
 },
+
+{
+    client: 'Lahore View City',
+    category: 'Marketing Digitale e Crescita del Brand',
+    metrics: [
+      ['18.9K', 'Follower su TikTok'],
+      ['230.6K', 'Mi piace totali'],
+      ['Ongoing', 'Collaborazione attiva']
+    ],
+    desc: 'Una partnership completa per la crescita digitale che comprende gestione dei social media, creazione di contenuti creativi, montaggio video professionale, pubblicità digitale mirata, sviluppo web e soluzioni complete di identità del brand per rafforzare la presenza online di Lahore View City.',
+    accent: '#DBEAFE',
+  },
 {
   client: 'CriticPick Invoice App',
   category: 'Fatturazione Digitale e Automazione Fiscale FBR',
@@ -3937,12 +4049,19 @@ nl: {
   sub: 'Elk project eindigt met cijfers die er toe doen — geen screenshots in een Notion-document.',
   list: [
     {
-      client: 'Criticpick MarketPlace',
-      category: 'E-commerce en multivendor-marktplaats',
-      metrics: [['↑ 340%', 'Conversieratio'], ['2.1s', 'Paginalaadtijd'], ['$1.2M', 'Omzet / maand']],
-      desc: 'We hebben een hoogwaardige multivendor e-commerce engine ontwikkeld met Next.js, wat de frictie bij het afrekenen met 62% verminderde en zorgde voor een snelle omzetgroei.',
-      accent: '#EEF2FF',
-    },
+    client: 'CriticPick Marketplace',
+    category: 'Wereldwijd Multi-Vendor en Multi-Affiliate E-Commerceplatform',
+    metrics: [
+      ['↑ 340%', 'Conversiepercentage'],
+      ['2.1s', 'Laadsnelheid van Pagina’s'],
+      ['$1.2M', 'Omzet per Maand'],
+      ['Global', 'Activiteiten in Meerdere Landen'],
+      ['Multi-Vendor', 'Verkopersnetwerk'],
+      ['Multi-Affiliate', 'Verwijs- en Commissienetwerk']
+    ],
+    desc: 'We hebben met Next.js een krachtige en schaalbare wereldwijde e-commerceomgeving ontwikkeld die verkopers, klanten en affiliates verbindt via één geïntegreerd multi-vendor- en multi-affiliateplatform. Het platform ondersteunt internationale markten, waaronder de EU, het VK, Canada, de VS, Pakistan en andere landen. Het biedt centraal verkopersbeheer, affiliate-tracking, beheer van verwijzingscommissies, internationale productdistributie en een geoptimaliseerd afrekenproces. Het platform is ontworpen om obstakels tijdens het afrekenen te verminderen, conversies te verbeteren en internationale handel te ondersteunen.',
+    accent: '#EEF2FF',
+  },
     {
   client: 'HHH Groups',
   category: 'Bedrijfsbeheer en Enterprise-oplossingen',
@@ -3954,6 +4073,17 @@ nl: {
   desc: 'Een uitgebreide oplossing voor bedrijfsbeheer, ontworpen om organisatorische processen te stroomlijnen, bedrijfsgegevens te centraliseren en operationeel inzicht te verbeteren via een geïntegreerd digitaal platform.',
   accent: '#DCFCE7',
 },
+{
+    client: 'Lahore View City',
+    category: 'Digitale Marketing & Merkgroei',
+    metrics: [
+      ['18.9K', 'TikTok-volgers'],
+      ['230.6K', 'Totaal aantal likes'],
+      ['Ongoing', 'Lopende samenwerking']
+    ],
+    desc: 'Een uitgebreid digitaal groeipartnerschap met socialmediabeheer, creatieve contentproductie, professionele videobewerking, gerichte digitale advertenties, websiteontwikkeling en complete merkidentiteitsoplossingen om de online aanwezigheid van Lahore View City te versterken.',
+    accent: '#DBEAFE',
+  },
 {
   client: 'CriticPick Invoice App',
   category: 'Digitale Facturatie en FBR-belastingautomatisering',
