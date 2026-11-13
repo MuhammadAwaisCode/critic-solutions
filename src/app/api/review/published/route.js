@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
-import { supabaseServer } from '@/lib/supabase';
+import { supabaseServer } from '../../../../lib/supabase';
+
+export const dynamic = 'force-dynamic';
 
 export async function GET() {
   try {
@@ -14,7 +16,7 @@ export async function GET() {
       return NextResponse.json({ error: 'Failed to fetch published reviews' }, { status: 500 });
     }
 
-    return NextResponse.json({ reviews: publishedReviews });
+    return NextResponse.json({ reviews: publishedReviews || [] });
   } catch (err) {
     console.error('Published route error:', err);
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
