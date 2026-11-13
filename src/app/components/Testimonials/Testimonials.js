@@ -41,7 +41,7 @@ export default function Testimonials({ t }) {
   useEffect(() => {
     async function fetchPublishedReviews() {
       try {
-        const res = await fetch('/api/reviews/published', { cache: 'no-store' });
+        const res = await fetch('/api/review/published', { cache: 'no-store' });
         if (res.ok) {
           const data = await res.json();
           if (data.reviews && data.reviews.length > 0) {
