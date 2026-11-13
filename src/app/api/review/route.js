@@ -2,26 +2,46 @@ import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import { supabaseServer } from '@/lib/supabase';
 
-// Helper for automated OpenAI moderation
+// Helper for automated Groq moderation (Free Tier)
 async function moderateContent(text) {
-  if (!process.env.OPENAI_API_KEY) {
+  if (!process.env.GROQ_API_KEY) {
     return { flagged: false, categories: {} };
   }
 
   try {
-    const res = await fetch('https://api.openai.com/v1/moderations', {
+    const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+        Authorization: `Bearer ${process.env.GROQ_API_KEY}`,
       },
-      body: JSON.stringify({ input: text }),
+      body: JSON.stringify({
+        model: 'llama-3.1-8b-instant',
+        messages: [
+          {
+            role: 'system',
+            content:
+              'You are a review moderation filter. Flag ONLY hate speech, harassment, threats, sexually explicit content, or obvious spam/malicious links. Do NOT flag legitimate negative feedback about service, support, or delivery. Respond ONLY with valid JSON: {"flagged": boolean, "category": string, "reason": string}.',
+          },
+          {
+            role: 'user',
+            content: text,
+          },
+        ],
+        response_format: { type: 'json_object' },
+        temperature: 0,
+      }),
     });
 
     const data = await res.json();
-    return data.results?.[0] || { flagged: false, categories: {} };
+    if (!res.ok) {
+      throw new Error(data.error?.message || 'Groq API error');
+    }
+
+    const raw = data.choices?.[0]?.message?.content || '{"flagged":false}';
+    return JSON.parse(raw);
   } catch (error) {
-    console.error('[OpenAI Moderation Error]', error);
+    console.error('[Groq Moderation Error]', error);
     return { flagged: false, error: true };
   }
 }
@@ -42,7 +62,7 @@ export async function POST(request) {
     const starsCount = Number(rating) || 5;
     const reviewerEmail = email?.trim() || 'no-email@criticsolutions.com';
 
-    // ── 2. OpenAI AI Content Screening ────────────────────────────
+    // ── 2. Groq AI Content Screening ──────────────────────────────
     const moderationResult = await moderateContent(message);
     const initialStatus = moderationResult.flagged ? 'quarantined' : 'pending';
 

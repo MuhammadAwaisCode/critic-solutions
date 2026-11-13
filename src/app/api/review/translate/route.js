@@ -1,6 +1,21 @@
 import { NextResponse } from 'next/server';
 import { supabaseServer } from '@/lib/supabase';
 
+const LANG_NAMES = {
+  en: 'English',
+  es: 'Spanish',
+  fr: 'French',
+  de: 'German',
+  ur: 'Urdu',
+  ar: 'Arabic',
+  nl: 'Dutch',
+  zh: 'Chinese',
+  hi: 'Hindi',
+  pt: 'Portuguese',
+  it: 'Italian',
+  tr: 'Turkish',
+};
+
 export async function POST(req) {
   try {
     const { reviewId, targetLang } = await req.json();
@@ -12,7 +27,7 @@ export async function POST(req) {
       );
     }
 
-    // 1. Check if translation exists in Supabase DB cache
+    // 1. Check if translation already exists in Supabase DB cache
     const { data: cached } = await supabaseServer
       .from('review_translations')
       .select('translated_title, translated_text')
@@ -44,51 +59,73 @@ export async function POST(req) {
       );
     }
 
-    // 3. Call Google Translate API
-    const apiKey = process.env.GOOGLE_TRANSLATE_API_KEY;
+    // 3. Call Groq API (Free Tier) for translation
+    const apiKey = process.env.GROQ_API_KEY;
     if (!apiKey) {
       return NextResponse.json(
-        { error: 'Translation API key is missing' },
+        { error: 'GROQ_API_KEY is missing in environment variables' },
         { status: 500 }
       );
     }
 
-    const res = await fetch(
-      `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          q: review.review_text,
-          target: targetLang,
-          format: 'text',
-        }),
-      }
-    );
+    const languageLabel = LANG_NAMES[targetLang] || targetLang;
 
-    const translateData = await res.json();
-    const translatedText =
-      translateData?.data?.translations?.[0]?.translatedText || review.review_text;
+    const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify({
+        model: 'llama-3.1-8b-instant',
+        messages: [
+          {
+            role: 'system',
+            content: `You are a professional translator. Translate the given customer review accurately and naturally into ${languageLabel} (${targetLang}). Preserve the original tone, meaning, and formatting. Respond ONLY with valid JSON in this exact format: {"translatedTitle": string or null, "translatedText": string}.`,
+          },
+          {
+            role: 'user',
+            content: JSON.stringify({
+              title: review.review_title || null,
+              text: review.review_text,
+            }),
+          },
+        ],
+        response_format: { type: 'json_object' },
+        temperature: 0.2,
+      }),
+    });
 
-    // 4. Save result into cache table
+    const groqData = await res.json();
+    if (!res.ok) {
+      throw new Error(groqData.error?.message || 'Groq translation API error');
+    }
+
+    const raw = groqData.choices?.[0]?.message?.content || '{}';
+    const parsed = JSON.parse(raw);
+
+    const translatedTitle = parsed.translatedTitle || review.review_title;
+    const translatedText = parsed.translatedText || review.review_text;
+
+    // 4. Save result into Supabase cache table
     await supabaseServer.from('review_translations').insert([
       {
         review_id: reviewId,
         target_lang: targetLang,
-        translated_title: review.review_title,
+        translated_title: translatedTitle,
         translated_text: translatedText,
-        provider: 'google',
+        provider: 'groq',
       },
     ]);
 
     return NextResponse.json({
       success: true,
       cached: false,
-      translatedTitle: review.review_title,
-      translatedText: translatedText,
+      translatedTitle,
+      translatedText,
     });
   } catch (error) {
-    console.error('Translation error:', error);
+    console.error('[Groq Translation Error]', error);
     return NextResponse.json({ error: 'Translation failed' }, { status: 500 });
   }
 }
